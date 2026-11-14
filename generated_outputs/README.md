@@ -43,15 +43,18 @@ generated_outputs/
 
 ## 🛠️ How to Re-render or Tweak
 
-From the `my-video` folder:
+From the repository root:
 
 ```bash
 # Day 2 Reel
-cmd /c npx remotion render MyDayTwoReel "../generated_outputs/videos/Day_02_MyDayTwoReel.mp4"
+npm run render:day2
 
 # Day 3 Puzzle Challenge Reel
-cmd /c npx remotion render MyDayThreeReel "../generated_outputs/videos/Day_03_Puzzle_Challenge.mp4"
+npm run render:day3
 
-# Scrub & Inspect in Studio
-cmd /c npm run dev
+# Batch Render All Compositions
+npm run render:all
+
+# Launch Studio (Interactive Web Preview)
+npm run dev
 ```

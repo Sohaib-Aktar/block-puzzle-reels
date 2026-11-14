@@ -1,6 +1,14 @@
 node_modules/
 my-video/node_modules/
 my-video/out/
+my-video/build/
+build/
+dist/
 *.log
 .DS_Store
 Thumbs.db
+
+# Temporary render frames
+my-video/out-*.png
+my-video/test-*.png
+*.tmp

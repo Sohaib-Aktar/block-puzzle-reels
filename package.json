@@ -1,0 +1,23 @@
+{
+  "name": "block-puzzle-reels",
+  "version": "1.0.0",
+  "description": "Deterministic Instagram Reels generation for Block Puzzle game using Remotion",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix my-video run dev",
+    "build": "npm --prefix my-video run build",
+    "lint": "npm --prefix my-video run lint",
+    "render:day2": "npx --prefix my-video remotion render MyDayTwoReel ../generated_outputs/videos/Day_02_MyDayTwoReel.mp4",
+    "render:day3": "npx --prefix my-video remotion render MyDayThreeReel ../generated_outputs/videos/Day_03_Puzzle_Challenge.mp4",
+    "render:all": "npm run render:day2 && npm run render:day3"
+  },
+  "keywords": [
+    "remotion",
+    "instagram-reels",
+    "video-generator",
+    "block-puzzle",
+    "react",
+    "typescript"
+  ],
+  "author": "Sohaib Aktar"
+}
