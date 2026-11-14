@@ -16,14 +16,12 @@ block-puzzle-reels/
 │   ├── sample_1.jpg               # UI & board sample reference
 │   └── sample_2.jpg               # Board state reference
 │
-├── Output_files/                  # Fast-access rendered MP4 videos
-│   ├── MyDayTwoReel.mp4           # Day 2: Continuous variable-speed Reel
-│   ├── day3-puzzle-challenge.mp4  # Day 3: 90%+ filled board freeze puzzle Reel
-│   └── BlockPuzzleBurst.mp4       # Baseline composition export
-│
 ├── generated_outputs/             # Complete deliverables hub (Videos + Previews + Plans)
 │   ├── README.md                  # Detailed catalog of all generated assets
-│   ├── videos/                    # Master copies of rendered Reels
+│   ├── videos/                    # Rendered Reels (1080x1920 MP4)
+│   │   ├── Day_02_MyDayTwoReel.mp4
+│   │   ├── Day_03_Puzzle_Challenge.mp4
+│   │   └── BlockPuzzleBurst_Original.mp4
 │   ├── previews/                  # PNG verification snapshots across critical frames
 │   └── plans/                     # Architecture & 30-Day strategic blueprints
 │       ├── Master_30_Day_Reels_Plan.md
@@ -77,10 +75,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 To render directly via CLI:
 ```bash
 # Day 2: Continuous Gameplay + Slow-Mo Combo
-npx remotion render MyDayTwoReel ../Output_files/MyDayTwoReel.mp4
+npx remotion render MyDayTwoReel ../generated_outputs/videos/Day_02_MyDayTwoReel.mp4
 
 # Day 3: Puzzle Challenge (93% Board Fill)
-npx remotion render MyDayThreeReel ../Output_files/day3-puzzle-challenge.mp4
+npx remotion render MyDayThreeReel ../generated_outputs/videos/Day_03_Puzzle_Challenge.mp4
 ```
 
 ---
