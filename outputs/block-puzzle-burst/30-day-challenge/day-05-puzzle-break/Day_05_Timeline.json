@@ -1,0 +1,109 @@
+{
+  "content_id": "BPB_DAY_05",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "topic": "A Little Puzzle Break After a Long Day",
+  "target_duration_seconds": 22.0,
+  "fps": 30.0,
+  "total_frames": 660,
+  "resolution": {
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16"
+  },
+  "character_continuity": {
+    "required": true,
+    "character_name": "Young Professional",
+    "attire": "Dark navy crewneck / charcoal blazer, white undershirt, dark trousers, wristwatch",
+    "scenes_linked": [1, 2, 3, 4]
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "name": "Office Desk Fatigue",
+      "timecode_start": "00:00.00",
+      "timecode_end": "00:03.00",
+      "frame_start": 0,
+      "frame_end": 90,
+      "duration_seconds": 3.0,
+      "on_screen_text": "Long day at work...",
+      "music_mood": "Soft, reflective, ambient fatigue"
+    },
+    {
+      "scene_number": 2,
+      "name": "Evening Commute Transit",
+      "timecode_start": "00:03.00",
+      "timecode_end": "00:06.00",
+      "frame_start": 90,
+      "frame_end": 180,
+      "duration_seconds": 3.0,
+      "on_screen_text": "Finally, heading home.",
+      "music_mood": "Transit rumble, continuing reflective melody"
+    },
+    {
+      "scene_number": 3,
+      "name": "Home Sofa Arrival",
+      "timecode_start": "00:06.00",
+      "timecode_end": "00:09.00",
+      "frame_start": 180,
+      "frame_end": 270,
+      "duration_seconds": 3.0,
+      "on_screen_text": "Still feeling bored?",
+      "music_mood": "Soft room tone, subtle upbeat transition begins"
+    },
+    {
+      "scene_number": 4,
+      "name": "Phone Pick-up & Unlock",
+      "timecode_start": "00:09.00",
+      "timecode_end": "00:12.00",
+      "frame_start": 270,
+      "frame_end": 360,
+      "duration_seconds": 3.0,
+      "on_screen_text": "Time for a little break.",
+      "music_mood": "Upbeat rhythm kicks in with phone click SFX"
+    },
+    {
+      "scene_number": 5,
+      "name": "Game Launch / App Opening",
+      "timecode_start": "00:12.00",
+      "timecode_end": "00:15.00",
+      "frame_start": 360,
+      "frame_end": 450,
+      "duration_seconds": 3.0,
+      "source_asset": "icon block game.png / recording_3_cfr30.mp4",
+      "on_screen_text": "Let's play!",
+      "music_mood": "Energetic, playful puzzle theme"
+    },
+    {
+      "scene_number": 6,
+      "name": "Authentic Puzzle Gameplay",
+      "timecode_start": "00:15.00",
+      "timecode_end": "00:20.00",
+      "frame_start": 450,
+      "frame_end": 600,
+      "duration_seconds": 5.0,
+      "source_asset": "recording_3_cfr30.mp4 (00:11.0 - 00:16.0)",
+      "on_screen_text": "Play. Place. Enjoy.",
+      "audio": "Authentic block placement clicks + upbeat rhythm"
+    },
+    {
+      "scene_number": 7,
+      "name": "Branded Logo Outro",
+      "timecode_start": "00:20.00",
+      "timecode_end": "00:22.00",
+      "frame_start": 600,
+      "frame_end": 660,
+      "duration_seconds": 2.0,
+      "source_asset": "pyapiras games icon.png / icon block game.png",
+      "on_screen_text": "Block Puzzle Burst",
+      "brand": "Pyapiras Games",
+      "music_mood": "Crisp musical outro resolve + fade to black"
+    }
+  ],
+  "audio_specifications": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "loudness_target_lufs": -14.0
+  }
+}

@@ -26,13 +26,19 @@ def sync_to_drive(
         raise FileNotFoundError("Google Drive for Desktop is not detected at G:\\My Drive.")
 
     if not source_dir:
-        # Default source mapping
-        if "DAY_04" in content_id.upper() or "DAY-04" in content_id.upper():
-            source_dir = os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "day-04")
-        else:
-            source_dir = os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, content_id)
+        # Default source mappings
+        candidates = [
+            os.path.join(WORKSPACE_ROOT, "outputs", project_id, "30-day-challenge", "day-05-puzzle-break"),
+            os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "day-04"),
+            os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, content_id),
+            os.path.join(WORKSPACE_ROOT, "outputs", project_id, content_id),
+        ]
+        for c in candidates:
+            if os.path.exists(c):
+                source_dir = c
+                break
 
-    if not os.path.exists(source_dir):
+    if not source_dir or not os.path.exists(source_dir):
         raise FileNotFoundError(f"Source output directory not found: {source_dir}")
 
     dest_folder = os.path.join(GDRIVE_ROOT, content_id)
@@ -45,6 +51,9 @@ def sync_to_drive(
         if os.path.isfile(src_item) and item.endswith((".mp4", ".txt", ".md", ".json")):
             shutil.copy2(src_item, dst_item)
             synced_files.append(item)
+        elif os.path.isdir(src_item):
+            shutil.copytree(src_item, dst_item, dirs_exist_ok=True)
+            synced_files.append(f"{item}/ (folder)")
 
     return {
         "status": "success",
@@ -58,11 +67,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Sync deliverables to Google Drive")
     parser.add_argument("--content-id", required=True, help="Content ID e.g. BPB_DAY_04")
     parser.add_argument("--project", default="block-puzzle-burst", help="Project name")
+    parser.add_argument("--source-dir", default=None, help="Explicit source directory")
     args = parser.parse_args()
 
     try:
-        res = sync_to_drive(args.content_id, args.project)
-        print(f"✅ Successfully synced {len(res['synced_files'])} files to Google Drive:")
+        res = sync_to_drive(args.content_id, args.project, args.source_dir)
+        print(f"✅ Successfully synced {len(res['synced_files'])} items to Google Drive:")
         print(f"📁 Destination: {res['destination']}")
         for f in res["synced_files"]:
             print(f"   • {f}")
