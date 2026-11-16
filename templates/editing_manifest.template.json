@@ -1,0 +1,111 @@
+{
+  "content_id": "example-content-id",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "platform": "instagram",
+  "format": "reel",
+  "renderer": "remotion",
+  "composition_id": "SolveItReel",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16",
+    "fps": 30,
+    "duration_seconds": 20.0
+  },
+  "timeline": [
+    {
+      "shot_id": "shot-01-hook",
+      "source_file": "Raw_input_files/recording_2.mp4",
+      "start_time": 0.0,
+      "duration": 3.0,
+      "source_start": 87.5,
+      "source_duration": 3.0,
+      "playback_rate": 1.2,
+      "freeze": false,
+      "text_overlays": [
+        {
+          "text": "Solve it in ONE MOVE!",
+          "style": "headline-gold",
+          "position_y": 140
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-02-challenge",
+      "source_file": "Raw_input_files/recording_2.mp4",
+      "start_time": 3.0,
+      "duration": 4.0,
+      "source_start": 90.0,
+      "source_duration": 4.0,
+      "playback_rate": 1.0,
+      "freeze": true,
+      "text_overlays": [
+        {
+          "text": "Which piece would you place first? 🤔",
+          "style": "subhead-white",
+          "position_y": 120
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-03-countdown",
+      "source_file": "Raw_input_files/recording_2.mp4",
+      "start_time": 7.0,
+      "duration": 5.0,
+      "source_start": 90.0,
+      "source_duration": 5.0,
+      "playback_rate": 1.0,
+      "freeze": true,
+      "text_overlays": [
+        {
+          "text": "Think carefully!",
+          "style": "headline-purple",
+          "position_y": 110
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-04-cta",
+      "source_file": "Raw_input_files/recording_2.mp4",
+      "start_time": 12.0,
+      "duration": 4.0,
+      "source_start": 90.0,
+      "source_duration": 4.0,
+      "playback_rate": 1.0,
+      "freeze": true,
+      "text_overlays": [
+        {
+          "text": "Comment A, B or C! 👇",
+          "style": "headline-gold",
+          "position_y": 160
+        }
+      ]
+    },
+    {
+      "shot_id": "shot-05-promo",
+      "source_file": "Raw_input_files/recording_2.mp4",
+      "start_time": 16.0,
+      "duration": 4.0,
+      "source_start": 100.0,
+      "source_duration": 4.0,
+      "playback_rate": 1.0,
+      "freeze": false,
+      "text_overlays": [
+        {
+          "text": "PLAY NOW 🎮",
+          "style": "button-gold",
+          "position_y": 1200
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "bgm_file": null,
+    "bgm_volume": 0.3,
+    "voiceover_file": null,
+    "voiceover_volume": 1.0,
+    "mute_source_audio": false
+  },
+  "output_target": "outputs/block-puzzle-burst/30-day-challenge/solve-it-reel/final/instagram_reel.mp4"
+}

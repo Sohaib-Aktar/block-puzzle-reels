@@ -1,0 +1,39 @@
+{
+  "platform": "youtube",
+  "content_type": "longform_tutorial",
+  "aspect_ratio": "16:9",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "frame_rate": 30,
+  "video_codec": "libx264",
+  "video_profile": "high",
+  "crf": 20,
+  "pixel_format": "yuv420p",
+  "color_range": "tv",
+  "audio_codec": "aac",
+  "audio_bitrate": "192k",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "duration_constraints": {
+    "min_seconds": 60.0,
+    "max_seconds": 43200.0,
+    "recommended_seconds": 480.0
+  },
+  "text_safe_areas": {
+    "top_px": 60,
+    "bottom_px": 120,
+    "left_px": 90,
+    "right_px": 90,
+    "safe_width_px": 1740,
+    "safe_height_px": 900
+  },
+  "thumbnail_requirements": {
+    "width": 1280,
+    "height": 720,
+    "format": "jpg",
+    "max_file_size_mb": 2.0
+  },
+  "ffmpeg_flags": "-movflags +faststart"
+}

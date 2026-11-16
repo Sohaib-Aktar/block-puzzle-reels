@@ -1,0 +1,33 @@
+{
+  "renderer": "ffmpeg",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 15.0
+  },
+  "timeline": [
+    {
+      "shot_id": "step-01-select-store",
+      "source_file": "Raw_input_files/recording_3.mp4",
+      "source_start": 5.0,
+      "duration": 5.0
+    },
+    {
+      "shot_id": "step-02-add-items",
+      "source_file": "Raw_input_files/recording_3.mp4",
+      "source_start": 10.0,
+      "duration": 5.0
+    },
+    {
+      "shot_id": "step-03-confirm-sync",
+      "source_file": "Raw_input_files/recording_3.mp4",
+      "source_start": 15.0,
+      "duration": 5.0
+    }
+  ],
+  "output_target": "c:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-order-booking\\final\\software_tutorial_vertical.mp4",
+  "content_id": "ezisales-tut-01-order-booking",
+  "project": "expand-ezisales",
+  "campaign": "quick-start-tutorials"
+}

@@ -1,21 +1,40 @@
 {
   "platform": "instagram",
   "content_type": "reel",
-  "width": 1080,
-  "height": 1920,
   "aspect_ratio": "9:16",
-  "fps": 30,
-  "max_duration_seconds": 90,
-  "codec": "libx264",
-  "profile": "high",
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "frame_rate": 30,
+  "video_codec": "libx264",
+  "video_profile": "high",
   "crf": 23,
-  "audio_codec": "aac",
-  "audio_bitrate": "128k",
   "pixel_format": "yuv420p",
   "color_range": "tv",
-  "safe_zone_top_px": 192,
-  "safe_zone_bottom_px": 192,
-  "safe_zone_left_px": 54,
-  "safe_zone_right_px": 54,
+  "audio_codec": "aac",
+  "audio_bitrate": "128k",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "duration_constraints": {
+    "min_seconds": 3.0,
+    "max_seconds": 90.0,
+    "recommended_seconds": 20.0
+  },
+  "text_safe_areas": {
+    "top_px": 192,
+    "bottom_px": 280,
+    "left_px": 54,
+    "right_px": 120,
+    "safe_width_px": 906,
+    "safe_height_px": 1448
+  },
+  "thumbnail_requirements": {
+    "width": 1080,
+    "height": 1920,
+    "feed_cover_crop": "1080x1080",
+    "format": "jpg",
+    "max_file_size_mb": 4.0
+  },
   "ffmpeg_flags": "-movflags +faststart"
 }

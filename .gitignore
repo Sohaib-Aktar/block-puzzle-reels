@@ -8,6 +8,10 @@ dist/
 .DS_Store
 Thumbs.db
 
+# Python
+__pycache__/
+*.pyc
+
 # Temporary render frames
 my-video/out-*.png
 my-video/test-*.png

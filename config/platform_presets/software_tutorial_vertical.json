@@ -1,0 +1,39 @@
+{
+  "platform": "generic",
+  "content_type": "software_tutorial_vertical",
+  "aspect_ratio": "9:16",
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "frame_rate": 30,
+  "video_codec": "libx264",
+  "video_profile": "high",
+  "crf": 22,
+  "pixel_format": "yuv420p",
+  "color_range": "tv",
+  "audio_codec": "aac",
+  "audio_bitrate": "160k",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "duration_constraints": {
+    "min_seconds": 15.0,
+    "max_seconds": 60.0,
+    "recommended_seconds": 35.0
+  },
+  "text_safe_areas": {
+    "top_px": 180,
+    "bottom_px": 240,
+    "left_px": 60,
+    "right_px": 100,
+    "safe_width_px": 920,
+    "safe_height_px": 1500
+  },
+  "thumbnail_requirements": {
+    "width": 1080,
+    "height": 1920,
+    "format": "jpg",
+    "max_file_size_mb": 4.0
+  },
+  "ffmpeg_flags": "-movflags +faststart"
+}

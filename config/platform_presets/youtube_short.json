@@ -1,17 +1,39 @@
 {
   "platform": "youtube",
-  "content_type": "shorts",
-  "width": 1080,
-  "height": 1920,
+  "content_type": "short",
   "aspect_ratio": "9:16",
-  "fps": 30,
-  "max_duration_seconds": 180,
-  "codec": "libx264",
-  "profile": "high",
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "frame_rate": 30,
+  "video_codec": "libx264",
+  "video_profile": "high",
   "crf": 20,
-  "audio_codec": "aac",
-  "audio_bitrate": "192k",
   "pixel_format": "yuv420p",
   "color_range": "tv",
+  "audio_codec": "aac",
+  "audio_bitrate": "192k",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "duration_constraints": {
+    "min_seconds": 3.0,
+    "max_seconds": 180.0,
+    "recommended_seconds": 30.0
+  },
+  "text_safe_areas": {
+    "top_px": 150,
+    "bottom_px": 300,
+    "left_px": 54,
+    "right_px": 120,
+    "safe_width_px": 906,
+    "safe_height_px": 1470
+  },
+  "thumbnail_requirements": {
+    "width": 1080,
+    "height": 1920,
+    "format": "jpg",
+    "max_file_size_mb": 2.0
+  },
   "ffmpeg_flags": "-movflags +faststart"
 }

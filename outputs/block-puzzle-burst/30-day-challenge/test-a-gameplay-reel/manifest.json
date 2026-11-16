@@ -1,0 +1,21 @@
+{
+  "renderer": "ffmpeg",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 12.0
+  },
+  "timeline": [
+    {
+      "shot_id": "shot-01-combo",
+      "source_file": "Raw_input_files/recording_1.mp4",
+      "source_start": 45.0,
+      "duration": 12.0
+    }
+  ],
+  "output_target": "c:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\test-a-gameplay-reel\\final\\instagram_reel.mp4",
+  "content_id": "test-a-gameplay-reel",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge"
+}
