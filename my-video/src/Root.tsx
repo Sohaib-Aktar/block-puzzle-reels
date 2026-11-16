@@ -3,6 +3,7 @@ import { FrameFinder } from "./FrameFinder";
 import { MyDayThreeReel } from "./MyDayThreeReel";
 import { MyDayTwoReel } from "./MyDayTwoReel";
 import { SolveItReel } from "./SolveItReel";
+import { DayFourOfflineReel } from "./DayFourOfflineReel";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ export const RemotionRoot: React.FC = () => {
       <MyDayTwoReel />
       <MyDayThreeReel />
       <SolveItReel />
+      <DayFourOfflineReel />
     </>
   );
 };

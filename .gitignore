@@ -16,3 +16,6 @@ __pycache__/
 my-video/out-*.png
 my-video/test-*.png
 *.tmp
+
+# Editor
+.vscode/

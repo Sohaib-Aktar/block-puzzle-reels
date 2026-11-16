@@ -1,0 +1,95 @@
+{
+  "content_id": "BPB_DAY_04",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "topic": "Offline Gameplay Proof",
+  "target_duration_seconds": 15.0,
+  "fps": 30.0,
+  "total_frames": 450,
+  "resolution": {
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "name": "Opening Hook",
+      "timecode_start": "00:00.00",
+      "timecode_end": "00:02.00",
+      "frame_start": 0,
+      "frame_end": 60,
+      "duration_seconds": 2.0,
+      "source_file": "recording_3_cfr30.mp4",
+      "source_in_frame": 0,
+      "source_out_frame": 60,
+      "on_screen_text": "No WiFi? No problem.",
+      "subtitle": "100% Offline Gameplay",
+      "safe_area_top_px": 220
+    },
+    {
+      "scene_number": 2,
+      "name": "Airplane Mode Toggle",
+      "timecode_start": "00:02.00",
+      "timecode_end": "00:04.00",
+      "frame_start": 60,
+      "frame_end": 120,
+      "duration_seconds": 2.0,
+      "source_file": "recording_3_cfr30.mp4",
+      "source_in_frame": 195,
+      "source_out_frame": 255,
+      "on_screen_text": "Airplane Mode: ON ✈️",
+      "action": "Live touch on Aeroplane Mode tile, status bar airplane icon activated"
+    },
+    {
+      "scene_number": 3,
+      "name": "Return to Game",
+      "timecode_start": "00:04.00",
+      "timecode_end": "00:05.00",
+      "frame_start": 120,
+      "frame_end": 150,
+      "duration_seconds": 1.0,
+      "source_file": "recording_3_cfr30.mp4",
+      "source_in_frame": 255,
+      "source_out_frame": 285,
+      "action": "Quick settings shade slides up, game board revealed with airplane icon active"
+    },
+    {
+      "scene_number": 4,
+      "name": "Offline Gameplay",
+      "timecode_start": "00:05.00",
+      "timecode_end": "00:13.00",
+      "frame_start": 150,
+      "frame_end": 390,
+      "duration_seconds": 8.0,
+      "source_file": "recording_3_cfr30.mp4",
+      "source_in_frame": 285,
+      "source_out_frame": 525,
+      "on_screen_text": "Zero Data • Zero Lag ⚡",
+      "action": "Genuine 10x10 puzzle gameplay, dragging and placing blocks with zero latency"
+    },
+    {
+      "scene_number": 5,
+      "name": "Closing Message",
+      "timecode_start": "00:13.00",
+      "timecode_end": "00:15.00",
+      "frame_start": 390,
+      "frame_end": 450,
+      "duration_seconds": 2.0,
+      "source_file": "recording_3_cfr30.mp4",
+      "source_in_frame": 525,
+      "source_out_frame": 585,
+      "on_screen_text": "Play Anywhere. Stay Offline.",
+      "subtitle": "Trains • Flights • Zero Signal",
+      "cta": "Play Free Today 🧩",
+      "brand": "Pyapiras Games"
+    }
+  ],
+  "audio_specifications": {
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "loudness_target_lufs": -14.0,
+    "true_peak_db": -1.5
+  }
+}
