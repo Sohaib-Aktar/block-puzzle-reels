@@ -32,7 +32,7 @@ export interface DayFiveLifestyleReelProps {
 }
 
 export const DayFiveLifestyleReelContent: React.FC<DayFiveLifestyleReelProps> = ({
-  gameplaySrc = staticFile("recording_3_cfr30.mp4"),
+  gameplaySrc = staticFile("gameplay_lifestyle_cfr30.mp4"),
   hookScene1Text = "Long day at work...",
   hookScene2Text = "Finally, heading home.",
   hookScene3Text = "Still feeling bored?",
@@ -485,10 +485,10 @@ const GameplayScene: React.FC<{
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#070B14", overflow: "hidden" }}>
-      {/* 5 Seconds of Genuine Active Gameplay (CFR30: 330 to 480) */}
+      {/* 5 Seconds of Genuine Active Gameplay from CFR30 */}
       <OffthreadVideo
         src={gameplaySrc}
-        startFrom={330}
+        startFrom={90}
         volume={1.0}
         style={{
           width: "100%",
