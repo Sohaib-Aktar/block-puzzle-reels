@@ -6,7 +6,7 @@ Root workspace: `c:\Users\Dell\Downloads\video gen`
 
 ## Developer
 - **Developer name (Play Store):** Pyapiras Games
-- **Brand name:** [BRAND_NAME] — not yet decided. Options: Pyapiras Games, Pixel Adda, Puzzle Chai. Confirm before hard-coding anywhere.
+- **Brand name:** Pyapiras Games
 - **App ID:** `com.pyapiras.blockpuzzleburst`
 - **Developer location:** West Bengal, India
 - **Developer type:** Solo indie developer
