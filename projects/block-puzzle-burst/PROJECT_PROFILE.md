@@ -69,6 +69,7 @@ Root workspace: `c:\Users\Dell\Downloads\video gen`
 ## Source assets location
 - Raw gameplay recordings: `Raw_input_files/recording_1.mp4`, `recording_2.mp4`, `recording_3.mp4`
 - Screenshots: `Raw_input_files/sample_1.jpg`, `Raw_input_files/sample_2.jpg`
+- Offline proof asset: `Raw_input_files/sample_airplane.jpg` (Confirmed for Day 4 Airplane Mode proof)
 - Remotion public folder: `my-video/public/gameplay.mp4`, `gameplay2.mp4`
 
 ## Remotion renderer

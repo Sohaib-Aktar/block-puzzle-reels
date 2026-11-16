@@ -15,7 +15,7 @@
 | **01** | Founder dev log | Solo dev intro | 20s | I built a game. Alone. | Brief ready (`briefs/day-01.md`) |
 | **02** | Satisfying clears | 8x combo burst | 15s | Wait for the last piece | Rendered (`outputs/.../day-02-satisfying-clear/`) |
 | **03** | Puzzle challenges | Challenge: One move | 15s | Solve it in ONE move | Rendered (`outputs/.../day-03-puzzle-challenge/`) |
-| **04** | Culture / Utility | Offline proof | 12s | No WiFi? No problem. | Asset identified (`sample_airplane.jpg`) |
+| **04** | Culture / Utility | Offline proof | 12s | No WiFi? No problem. | Brief ready (`briefs/day-04.md`), asset confirmed |
 | **05** | Culture / Calm | Chai break | 15s | 2 minutes. 1 cup of chai. | Planned |
 | **06** | Founder dev log | First 10 downloads | 25s | My game has [10] downloads. What I learned. | Planned |
 | **07** | Satisfying / Viral | Score card challenge | 15s | Beat my score card | Planned |
