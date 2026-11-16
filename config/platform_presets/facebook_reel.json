@@ -1,0 +1,17 @@
+{
+  "platform": "facebook",
+  "content_type": "reel",
+  "width": 1080,
+  "height": 1920,
+  "aspect_ratio": "9:16",
+  "fps": 30,
+  "max_duration_seconds": 60,
+  "codec": "libx264",
+  "profile": "high",
+  "crf": 23,
+  "audio_codec": "aac",
+  "audio_bitrate": "128k",
+  "pixel_format": "yuv420p",
+  "color_range": "tv",
+  "ffmpeg_flags": "-movflags +faststart"
+}

@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "studio_name": "AI Social Media Content Studio",
+  "default_language": "en",
+  "on_screen_text_language": "en",
+  "multilingual_note": "BN and HI translations go in caption files only. Never burn non-English text into video renders.",
+  "default_renderer": "ffmpeg",
+  "remotion_for_motion_graphics": true,
+  "auto_publish": false,
+  "require_qc_approval": true,
+  "output_root": "outputs/",
+  "output_naming": "<project>/<campaign>/<content-id>/",
+  "revision_policy": "never_overwrite_approved",
+  "blur_sensitive": true,
+  "paid_api_approval_required": true,
+  "platforms": ["instagram", "facebook", "youtube_shorts", "youtube_longform"],
+  "default_platform": "instagram"
+}

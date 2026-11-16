@@ -137,7 +137,7 @@ const HookScene: React.FC = () => {
           </div>
         </div>
 
-        {/* Multilingual sub-headlines */}
+        {/* EN sub-headline only — multilingual text goes in captions, never on-screen */}
         <div style={{ transform: `scale(${subScale})`, marginTop: 16, textAlign: "center" }}>
           <div
             style={{
@@ -149,19 +149,7 @@ const HookScene: React.FC = () => {
               letterSpacing: 0.5,
             }}
           >
-            মাত্র এক চালে সমাধান করুন!
-          </div>
-          <div
-            style={{
-              fontFamily: THEME_FONTS.main,
-              fontSize: 26,
-              fontWeight: 600,
-              color: "rgba(255,255,255,0.75)",
-              textShadow: "0 2px 10px rgba(0,0,0,0.9)",
-              marginTop: 4,
-            }}
-          >
-            सिर्फ़ एक चाल में हल करो!
+            🧩 Think. Place. Clear.
           </div>
         </div>
 
@@ -712,7 +700,7 @@ const InteractionScene: React.FC = () => {
           ))}
         </div>
 
-        {/* Multilingual sub-CTAs */}
+        {/* EN-only CTA sub-line — captions file holds BN/HI translations */}
         <div
           style={{
             textAlign: "center",
@@ -725,21 +713,13 @@ const InteractionScene: React.FC = () => {
           <div
             style={{
               fontFamily: THEME_FONTS.main,
-              fontSize: 24,
-              color: "rgba(255,255,255,0.8)",
-              marginBottom: 6,
+              fontSize: 26,
+              fontWeight: 700,
+              color: THEME_COLORS.goldHighlight,
+              letterSpacing: 0.5,
             }}
           >
-            আপনার উত্তর কী? A, B নাকি C? কমেন্ট করুন!
-          </div>
-          <div
-            style={{
-              fontFamily: THEME_FONTS.main,
-              fontSize: 22,
-              color: "rgba(255,255,255,0.65)",
-            }}
-          >
-            आपका जवाब क्या है? A, B या C? कमेंट करें!
+            Drop your answer below! 👇
           </div>
         </div>
 

@@ -1,0 +1,21 @@
+{
+  "platform": "instagram",
+  "content_type": "reel",
+  "width": 1080,
+  "height": 1920,
+  "aspect_ratio": "9:16",
+  "fps": 30,
+  "max_duration_seconds": 90,
+  "codec": "libx264",
+  "profile": "high",
+  "crf": 23,
+  "audio_codec": "aac",
+  "audio_bitrate": "128k",
+  "pixel_format": "yuv420p",
+  "color_range": "tv",
+  "safe_zone_top_px": 192,
+  "safe_zone_bottom_px": 192,
+  "safe_zone_left_px": 54,
+  "safe_zone_right_px": 54,
+  "ffmpeg_flags": "-movflags +faststart"
+}

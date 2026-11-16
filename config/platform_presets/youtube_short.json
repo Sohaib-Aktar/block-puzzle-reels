@@ -1,0 +1,17 @@
+{
+  "platform": "youtube",
+  "content_type": "shorts",
+  "width": 1080,
+  "height": 1920,
+  "aspect_ratio": "9:16",
+  "fps": 30,
+  "max_duration_seconds": 180,
+  "codec": "libx264",
+  "profile": "high",
+  "crf": 20,
+  "audio_codec": "aac",
+  "audio_bitrate": "192k",
+  "pixel_format": "yuv420p",
+  "color_range": "tv",
+  "ffmpeg_flags": "-movflags +faststart"
+}
