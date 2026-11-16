@@ -7,10 +7,11 @@
     "dev": "npm --prefix my-video run dev",
     "build": "npm --prefix my-video run build",
     "lint": "npm --prefix my-video run lint",
-    "render:day2": "npm --prefix my-video exec remotion -- render src/index.ts MyDayTwoReel ../generated_outputs/videos/Day_02_MyDayTwoReel.mp4",
-    "render:day3": "npm --prefix my-video exec remotion -- render src/index.ts MyDayThreeReel ../generated_outputs/videos/Day_03_Puzzle_Challenge.mp4",
-    "render:solveit": "npm --prefix my-video exec remotion -- render src/index.ts SolveItReel ../generated_outputs/videos/SolveItReel_Puzzle_Challenge.mp4",
-    "render:all": "npm run render:day2 && npm run render:day3 && npm run render:solveit"
+    "render:day2": "npm --prefix my-video exec remotion -- render src/index.ts MyDayTwoReel ../outputs/block-puzzle-burst/30-day-challenge/day-02-satisfying-clear/final/instagram_reel.mp4",
+    "render:day3": "npm --prefix my-video exec remotion -- render src/index.ts MyDayThreeReel ../outputs/block-puzzle-burst/30-day-challenge/day-03-puzzle-challenge/final/instagram_reel.mp4",
+    "render:solveit": "npm --prefix my-video exec remotion -- render src/index.ts SolveItReel ../outputs/block-puzzle-burst/30-day-challenge/solve-it-reel/final/instagram_reel.mp4",
+    "render:all": "npm run render:day2 && npm run render:day3 && npm run render:solveit",
+    "inspect": "python scripts/inspect_footage.py"
   },
   "keywords": [
     "remotion",

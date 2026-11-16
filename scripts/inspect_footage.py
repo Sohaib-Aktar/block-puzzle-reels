@@ -19,25 +19,29 @@ import sys
 import os
 
 WORKSPACE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FFPROBE_REL = r"my-video\node_modules\remotion\node_modules\.bin\ffprobe.cmd"
-FFPROBE_PATH = os.path.join(WORKSPACE_ROOT, FFPROBE_REL)
+MY_VIDEO_DIR = os.path.join(WORKSPACE_ROOT, "my-video")
 
-# Fallback: system ffprobe if bundled one not found
-if not os.path.exists(FFPROBE_PATH):
-    FFPROBE_PATH = "ffprobe"
+def get_ffprobe_cmd():
+    # 1. System ffprobe on PATH
+    import shutil
+    if shutil.which("ffprobe"):
+        return ["ffprobe"]
+    # 2. Bundled inside my-video via npx remotion ffprobe
+    return ["cmd", "/c", "npx", "remotion", "ffprobe"]
 
 
 def inspect(video_path: str) -> dict:
     """Run ffprobe and return parsed metadata dict."""
-    cmd = [
-        FFPROBE_PATH,
+    cmd_base = get_ffprobe_cmd()
+    abs_path = os.path.abspath(video_path)
+    cmd = cmd_base + [
         "-v", "quiet",
         "-print_format", "json",
         "-show_format",
         "-show_streams",
-        video_path,
+        abs_path,
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
+    result = subprocess.run(cmd, cwd=MY_VIDEO_DIR, capture_output=True, text=True, encoding="utf-8")
     if result.returncode != 0:
         print(f"ERROR: ffprobe failed\n{result.stderr}", file=sys.stderr)
         sys.exit(1)

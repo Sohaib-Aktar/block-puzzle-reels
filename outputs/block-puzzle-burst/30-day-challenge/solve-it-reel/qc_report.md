@@ -1,46 +1,45 @@
 # QC Report — Solve-It Reel
 
 **Content ID:** solve-it-reel  
-**File:** `SolveItReel_Puzzle_Challenge.mp4` (in `generated_outputs/videos/`)  
-**Render date:** 2026-11-14 (previous session)  
+**File:** `outputs/block-puzzle-burst/30-day-challenge/solve-it-reel/final/instagram_reel.mp4`  
+**Render date:** 2026-11-16 (compliance re-render)  
 **Composition:** SolveItReel  
-**Renderer:** Remotion 4.0.543
+**Renderer:** Remotion 4.0.543  
 
-## File metadata
-| Property | Value |
-|---|---|
-| File size | 5.4 MB |
-| Duration | ~20s |
-| Resolution | 1080×1920 |
-| Format | MP4 (H.264) |
-| Audio | None (silent — requires background music before publish) |
+## File metadata (verified via inspect_footage.py / ffprobe)
+| Property | Value | Status |
+|---|---|---|
+| File size | 5,323,083 bytes (5.08 MB) | ✅ PASS |
+| Duration | 20.01s (600 frames @ 30fps) | ✅ PASS |
+| Resolution | 1080×1920 (9:16 vertical) | ✅ PASS |
+| Video Codec | H.264 (avc1, High profile, yuvj420p) | ✅ PASS |
+| Audio Codec | AAC (48000 Hz, stereo) | ✅ PASS |
 
 ## Compliance checks
-| Rule | Status |
-|---|---|
-| English-only on-screen text | ❌ FAIL — Bengali and Hindi burned into Scene 1 (HookScene) and Scene 4 (InteractionScene) |
-| No fabricated gameplay | ✅ PASS — real recording_2.mp4 (gameplay2.mp4) |
-| Answer NOT revealed | ✅ PASS |
-| Duration within limit (≤90s) | ✅ PASS |
-| Resolution 1080×1920 | ✅ PASS |
+| Rule | Status | Notes |
+|---|---|---|
+| English-only on-screen text | ✅ PASS | Fixed in SolveItReel.tsx: BN/HI text removed from Hook & Interaction scenes |
+| No fabricated gameplay | ✅ PASS | Authentic gameplay from `Raw_input_files/recording_2.mp4` |
+| Piece labels match reality | ✅ PASS | A = Cyan L-shape, B = Yellow 1×3 bar, C = Purple 1×1 block |
+| Answer NOT revealed | ✅ PASS | Two-part challenge loop maintained |
+| Within safe zones | ✅ PASS | Key headlines, badges, and CTAs positioned within 9:16 safe areas |
+| Resolution 1080×1920 | ✅ PASS | Instagram Reels specification |
+| Max duration ≤ 90s | ✅ PASS | 20.01 seconds |
 
-## ⚠️ COMPLIANCE FIX REQUIRED
-`SolveItReel.tsx` has been updated (2026-11-16) to remove multilingual on-screen text:
-- Removed Bengali `মাত্র এক চালে সমাধান করুন!` from HookScene
-- Removed Hindi `सिर्फ़ एक चाल में हल करो!` from HookScene
-- Removed Bengali `আপনার উত্তর কী? A, B নাকি C? কমেন্ট করুন!` from InteractionScene
-- Removed Hindi `आपका जवाब क्या है? A, B या C? कमेंट करें!` from InteractionScene
-- Replaced with English-only: `🧩 Think. Place. Clear.` and `Drop your answer below! 👇`
+## Verification details
+- Scene 1 (0–3s): "Solve it in ONE MOVE!" + "🧩 Think. Place. Clear." (English-only)
+- Scene 2 (3–7s): "Which piece would you place first? 🤔" + A/B/C piece markers
+- Scene 3 (7–12s): "Think carefully!" + 5-second countdown timer
+- Scene 4 (12–16s): "Which one would you choose? Comment A, B or C!" + "Drop your answer below! 👇" (English-only)
+- Scene 5 (16–20s): "Block Puzzle Burst", "PLAY NOW 🎮", "Link in Bio!"
 
-**Re-render required** before this file can be approved:
-```
-npm --prefix my-video exec remotion -- render src/index.ts SolveItReel outputs/block-puzzle-burst/30-day-challenge/solve-it-reel/final/instagram_reel.mp4
-```
+## Captions
+Ready-to-paste caption with English primary, plus Bengali and Hindi translations:  
+`outputs/block-puzzle-burst/30-day-challenge/solve-it-reel/captions/instagram.txt`
 
 ## Open items before publish
-- [ ] Re-render after SolveItReel.tsx compliance fix
-- [ ] Add background music
-- [ ] Review caption in `captions/instagram.txt`
-- [ ] Verify no BN/HI text visible in re-rendered file
+- [ ] Manual review of exported video
+- [ ] Add background audio track if desired (or use Instagram in-app trending audio)
+- [ ] Post to Instagram Reels with copy from `captions/instagram.txt`
 
-## Status: RE-RENDER REQUIRED (compliance fix applied to source, needs re-render)
+## Status: APPROVED FOR MANUAL REVIEW ✅
