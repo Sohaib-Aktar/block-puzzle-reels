@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-11-16",
+  "videos": {
+    "recording_1.mp4": {
+      "path": "Raw_input_files/recording_1.mp4",
+      "duration_seconds": 169.51575,
+      "width": 720,
+      "height": 1600,
+      "fps": 60.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "verified_moments": [
+        {
+          "name": "Early Game Setup",
+          "start_sec": 0.0,
+          "end_sec": 30.0,
+          "type": "board_filling",
+          "suitability": [
+            "dev_log",
+            "tutorial"
+          ]
+        },
+        {
+          "name": "Mid-Game High Density Board",
+          "start_sec": 30.0,
+          "end_sec": 85.0,
+          "type": "dense_board",
+          "suitability": [
+            "puzzle_challenge",
+            "thinking"
+          ]
+        },
+        {
+          "name": "Multi-Line Combo Burst (8X Chain)",
+          "start_sec": 45.0,
+          "end_sec": 65.0,
+          "type": "combo_burst",
+          "suitability": [
+            "satisfying_clear",
+            "viral_hook"
+          ]
+        },
+        {
+          "name": "Late Game High Tension",
+          "start_sec": 120.0,
+          "end_sec": 160.0,
+          "type": "high_score_climb",
+          "suitability": [
+            "score_challenge",
+            "tension"
+          ]
+        },
+        {
+          "name": "End Game & Score Card Flow",
+          "start_sec": 160.0,
+          "end_sec": 169.51575,
+          "type": "game_over_card",
+          "suitability": [
+            "score_challenge",
+            "outro_cta"
+          ]
+        }
+      ]
+    },
+    "recording_2.mp4": {
+      "path": "Raw_input_files/recording_2.mp4",
+      "duration_seconds": 201.280396,
+      "width": 720,
+      "height": 1600,
+      "fps": 90000.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "verified_moments": [
+        {
+          "name": "Fast Opening Pace",
+          "start_sec": 0.0,
+          "end_sec": 40.0,
+          "type": "fast_clears",
+          "suitability": [
+            "action_hook",
+            "satisfying_clear"
+          ]
+        },
+        {
+          "name": "Dense Puzzle Board State (Challenge Freeze)",
+          "start_sec": 87.0,
+          "end_sec": 95.0,
+          "type": "puzzle_freeze",
+          "suitability": [
+            "puzzle_challenge",
+            "one_move_solve"
+          ]
+        },
+        {
+          "name": "Cascading Clear Burst",
+          "start_sec": 96.0,
+          "end_sec": 120.0,
+          "type": "burst_particles",
+          "suitability": [
+            "reveal",
+            "satisfying_clear"
+          ]
+        },
+        {
+          "name": "Master Score Progression",
+          "start_sec": 150.0,
+          "end_sec": 190.0,
+          "type": "combo_streak",
+          "suitability": [
+            "dev_log",
+            "high_score"
+          ]
+        }
+      ]
+    },
+    "recording_3.mp4": {
+      "path": "Raw_input_files/recording_3.mp4",
+      "duration_seconds": 30.2506,
+      "width": 720,
+      "height": 1600,
+      "fps": 90000.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "verified_moments": [
+        {
+          "name": "App Navigation / Beat Selection",
+          "start_sec": 0.0,
+          "end_sec": 10.0,
+          "type": "step_1",
+          "suitability": [
+            "software_tutorial",
+            "feature_demo"
+          ]
+        },
+        {
+          "name": "Item Addition / Catalog Interaction",
+          "start_sec": 10.0,
+          "end_sec": 20.0,
+          "type": "step_2",
+          "suitability": [
+            "software_tutorial",
+            "feature_demo"
+          ]
+        },
+        {
+          "name": "Action Confirmation & Cloud Sync",
+          "start_sec": 20.0,
+          "end_sec": 30.2506,
+          "type": "step_3",
+          "suitability": [
+            "software_tutorial",
+            "conclusion"
+          ]
+        }
+      ]
+    }
+  },
+  "images": {
+    "sample_1.jpg": {
+      "path": "Raw_input_files/sample_1.jpg",
+      "description": "Dense board state (1,600 score) with 3 piece tray (Cyan L, Yellow Bar, Purple Block)",
+      "suitability": [
+        "puzzle_challenge",
+        "freeze_board"
+      ]
+    },
+    "sample_2.jpg": {
+      "path": "Raw_input_files/sample_2.jpg",
+      "description": "Active Combo x4 burst effect with particle explosion",
+      "suitability": [
+        "satisfying_clear",
+        "combo_highlight"
+      ]
+    },
+    "sample_airplane.jpg": {
+      "path": "Raw_input_files/sample_airplane.jpg",
+      "description": "Phone status tray in Airplane mode with network and WiFi off",
+      "suitability": [
+        "offline_proof",
+        "day_04_reel"
+      ]
+    }
+  }
+}

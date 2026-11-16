@@ -1,0 +1,15 @@
+{
+  "platform": "instagram_reel",
+  "aspect_ratio": "9:16",
+  "resolution": "1080x1920",
+  "safe_zones": {
+    "top_px": 220,
+    "bottom_px": 280,
+    "left_px": 40,
+    "right_px": 40
+  },
+  "hook_text": "Solve it in ONE move! \ud83e\udd14",
+  "cta_type": "comment_trigger",
+  "cta_text": "Comment A, B or C! Link in bio",
+  "target_audience": "Casual mobile gamers, puzzle enthusiasts"
+}

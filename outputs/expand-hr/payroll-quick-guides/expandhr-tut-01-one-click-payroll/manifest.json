@@ -1,0 +1,17 @@
+{
+  "content_id": "expandhr-tut-01-one-click-payroll",
+  "project": "expand-hr",
+  "campaign": "payroll-quick-guides",
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "fps": 30,
+  "target_duration_sec": 12.0,
+  "hook": "Payroll Done in One Click",
+  "cta": "Simplify HR Today",
+  "audio": {
+    "voiceover": "voiceover.wav",
+    "loudness_target_lufs": -14.0
+  }
+}

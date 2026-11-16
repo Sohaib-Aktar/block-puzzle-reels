@@ -1,0 +1,34 @@
+{
+  "platform": "youtube_tutorial",
+  "aspect_ratio": "16:9",
+  "resolution": "1920x1080",
+  "format": "horizontal_walkthrough",
+  "chapters": [
+    {
+      "timecode": "0:00",
+      "title": "Introduction & Board Layout"
+    },
+    {
+      "timecode": "0:15",
+      "title": "Identifying Blocking Formations"
+    },
+    {
+      "timecode": "0:45",
+      "title": "Placement Analysis: A vs B vs C"
+    },
+    {
+      "timecode": "1:15",
+      "title": "Executing Multi-Line Clears"
+    },
+    {
+      "timecode": "1:45",
+      "title": "Pro Tips for High Score Streaks"
+    }
+  ],
+  "seo_keywords": [
+    "block puzzle burst walkthrough",
+    "how to play block puzzle",
+    "pyapiras games",
+    "puzzle game tips"
+  ]
+}
