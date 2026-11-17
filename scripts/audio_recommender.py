@@ -119,6 +119,8 @@ def recommend_audio(
 ) -> Dict[str, Any]:
     """
     Recommends and ranks the best audio assets based on multi-dimensional scoring.
+    Strictly distinguishes commercial clearance from preview recommendations.
+    Provides explicit rejection tracking for explainable AI decisions.
     """
     catalog = load_catalog()
     assets = list(catalog.get("assets", {}).values())
@@ -127,17 +129,42 @@ def recommend_audio(
     query_moods = [m.strip().lower() for m in desired_mood.replace(",", " ").replace(";", " ").split() if m.strip()]
 
     ranked_recommendations = []
+    rejected_assets = []
 
     for item in assets:
-        # Only evaluate music for background music queries (exclude raw voiceovers unless requested)
+        # 0. Deduplication Filter: Skip duplicate instances from top recommendations
+        if item.get("is_duplicate"):
+            rejected_assets.append({
+                "asset_id": item["asset_id"],
+                "filename": item.get("filename"),
+                "reason": f"Deduplication: Duplicate of canonical asset {item.get('duplicate_of_asset_id')}."
+            })
+            continue
+
+        # Classification Filter
         is_vo = item.get("sound_classification") == "voiceover_speech"
         is_sfx = item.get("sound_classification") == "sound_effect"
 
         if "voiceover" in content_category.lower() and not is_vo:
+            rejected_assets.append({
+                "asset_id": item["asset_id"],
+                "filename": item.get("filename"),
+                "reason": f"Classification mismatch: Query requested voiceover, but asset is {item.get('sound_classification')}."
+            })
             continue
         if "sound_effect" in content_category.lower() and not is_sfx:
+            rejected_assets.append({
+                "asset_id": item["asset_id"],
+                "filename": item.get("filename"),
+                "reason": f"Classification mismatch: Query requested sound effect, but asset is {item.get('sound_classification')}."
+            })
             continue
         if "voiceover" not in content_category.lower() and "sound_effect" not in content_category.lower() and (is_vo or is_sfx):
+            rejected_assets.append({
+                "asset_id": item["asset_id"],
+                "filename": item.get("filename"),
+                "reason": f"Classification mismatch: Background music query excludes voiceover/SFX ({item.get('sound_classification')})."
+            })
             continue
 
         item_path = item.get("path", "")
@@ -154,7 +181,8 @@ def recommend_audio(
         elif any(pm in item_moods for pm in profile["primary_moods"]):
             proj_score += 15
 
-        if any(bm in item_moods for bm in profile.get("banned_moods", [])):
+        banned_hits = [bm for bm in profile.get("banned_moods", []) if bm in item_moods]
+        if banned_hits:
             proj_score -= 20
 
         # 2. Mood & Emotional Tone Score (0–35 pts)
@@ -180,10 +208,19 @@ def recommend_audio(
             lic_cleared = True
         elif lic_status in ["UNKNOWN", "NEEDS_REVIEW", "RESTRICTED"]:
             lic_cleared = False
-            lic_warning = f"⚠️ Licensing Status: {lic_status}. Requires human clearance before commercial publishing."
+            lic_warning = f"⚠️ Licensing Status: {lic_status}. User-supplied track; restricted from commercial publishing until provenance clearance is verified."
         else:
             lic_cleared = False
             lic_warning = f"⚠️ Commercial Use Prohibited: {lic_status}."
+
+        # If production mode requires verified commercial licenses and this track isn't cleared:
+        if not allow_unverified_licenses and not lic_cleared:
+            rejected_assets.append({
+                "asset_id": item["asset_id"],
+                "filename": item.get("filename"),
+                "reason": f"Licensing gate: Track has license_status '{lic_status}' and is not cleared for commercial production (requires allow_unverified_licenses=True for preview)."
+            })
+            continue
 
         total_score = round(max(0.0, min(100.0, proj_score + mood_score + energy_score + duration_score)), 1)
 
@@ -217,18 +254,43 @@ def recommend_audio(
     # Sort descending by match score
     ranked_recommendations.sort(key=lambda x: x["match_score"], reverse=True)
 
-    # Multi-Scene Timeline Analysis (if scenes provided)
+    # Multi-Scene Timeline Analysis (default 3-act or custom scenes)
+    if scenes is None:
+        hook_end = min(3.0, round(target_duration * 0.2, 1))
+        outro_start = max(hook_end, round(target_duration - 3.0, 1))
+        scenes = [
+            {"scene_name": "Hook Scene", "start_sec": 0.0, "end_sec": hook_end, "mood": desired_mood, "description": "Hook Scene"},
+            {"scene_name": "Core Gameplay / Value Demonstration", "start_sec": hook_end, "end_sec": outro_start, "mood": desired_mood, "description": "Core Demonstration"},
+            {"scene_name": "Call to Action & Brand Outro", "start_sec": outro_start, "end_sec": target_duration, "mood": desired_mood, "description": "Outro Resolution"}
+        ]
+
     scene_plan = []
-    if scenes:
-        for idx, sc in enumerate(scenes, 1):
-            s_dur = sc.get("end_sec", 0.0) - sc.get("start_sec", 0.0)
-            s_mood = sc.get("mood", desired_mood)
-            scene_plan.append({
-                "scene_number": idx,
-                "timecode": f"{sc.get('start_sec', 0.0):.1f}s - {sc.get('end_sec', s_dur):.1f}s ({s_dur:.1f}s)",
-                "scene_mood": s_mood,
-                "recommended_audio_action": f"Apply track segment supporting '{s_mood}'. Transition at {sc.get('end_sec', s_dur):.1f}s."
-            })
+    for idx, sc in enumerate(scenes, 1):
+        s_start = sc.get("start_sec", 0.0)
+        s_end = sc.get("end_sec", target_duration)
+        s_dur = round(s_end - s_start, 2)
+        s_mood = sc.get("mood", desired_mood)
+        s_name = sc.get("scene_name", sc.get("description", f"Scene {idx}"))
+
+        # Audio editing recommendations per scene
+        if idx == 1:
+            audio_action = f"Opening audio hook: Start track at 0.0s. Volume 100% for first 1.5s, then duck to -18 dB if narration begins."
+        elif idx == len(scenes):
+            audio_action = f"Outro resolution: Maintain bed at -12 dB, then apply 0.5s exponential fade-out to complete silence at {s_end:.1f}s."
+        else:
+            audio_action = f"Mid-video bed supporting '{s_mood}': Maintain rhythmic groove. Boost +3 dB during game action / combo clears."
+
+        scene_plan.append({
+            "scene_number": idx,
+            "scene_name": s_name,
+            "start_sec": s_start,
+            "end_sec": s_end,
+            "duration_sec": s_dur,
+            "timecode": f"{s_start:.1f}s - {s_end:.1f}s ({s_dur:.1f}s)",
+            "scene_mood": s_mood,
+            "audio_action": audio_action,
+            "recommended_audio_action": audio_action
+        })
 
     return {
         "query": {
@@ -236,11 +298,15 @@ def recommend_audio(
             "category": content_category,
             "objective": objective,
             "desired_mood": desired_mood,
-            "target_duration": target_duration
+            "target_duration": target_duration,
+            "allow_unverified_licenses": allow_unverified_licenses
         },
         "total_evaluated": len(assets),
+        "total_eligible": len(ranked_recommendations),
+        "total_rejected": len(rejected_assets),
         "top_recommendations": ranked_recommendations[:5],
-        "multi_scene_plan": scene_plan
+        "multi_scene_plan": scene_plan,
+        "sample_rejected_reasons": rejected_assets[:5]
     }
 
 
@@ -251,6 +317,7 @@ if __name__ == "__main__":
     parser.add_argument("--objective", default="lifestyle_marketing", help="Video marketing objective")
     parser.add_argument("--mood", default="playful upbeat", help="Desired emotional mood tags")
     parser.add_argument("--duration", type=float, default=22.0, help="Target video duration in seconds")
+    parser.add_argument("--allow-unverified-licenses", action="store_true", help="Allow tracks with NEEDS_REVIEW / unverified licenses (preview mode)")
     parser.add_argument("--json", action="store_true", help="Output raw JSON")
     args = parser.parse_args()
 
@@ -259,7 +326,8 @@ if __name__ == "__main__":
         content_category=args.category,
         objective=args.objective,
         desired_mood=args.mood,
-        target_duration=args.duration
+        target_duration=args.duration,
+        allow_unverified_licenses=args.allow_unverified_licenses
     )
 
     if args.json:

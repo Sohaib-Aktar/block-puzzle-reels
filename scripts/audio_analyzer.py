@@ -444,21 +444,34 @@ def analyze_audio_asset(filepath: str, project_hint: Optional[str] = None) -> Di
     if project_hint and project_hint not in rec_projects:
         rec_projects.insert(0, project_hint)
 
-    # 6. Licensing Defaults (Strict audit rules)
-    # Studio-generated files or recordings
+    # 6. Licensing & Provenance Defaults (Strict audit rules)
     is_studio_internal = ("voiceovers" in abs_path or "sfx_" in abs_path or "bgm_day05" in abs_path)
+    source_type = "STUDIO_ORIGINAL" if is_studio_internal else "USER_SUPPLIED"
+    license_claim = "INTERNAL_CREATIVE_WORK" if is_studio_internal else "USER_DECLARED_NO_COPYRIGHT"
     license_status = "VERIFIED_COMMERCIAL_USE" if is_studio_internal else "NEEDS_REVIEW"
-    license_source = "Pyapiras Studio Production" if is_studio_internal else None
+    license_source = "Pyapiras Studio Production" if is_studio_internal else "User Supplied Sample Library"
+    clearance_notes = (
+        "Studio produced original asset. Cleared for all platforms."
+        if is_studio_internal
+        else "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    )
 
-    # Deterministic Asset ID from content hash
+    # True full content SHA-256 hash
+    hasher = hashlib.sha256()
     with open(abs_path, "rb") as f:
-        file_hash = hashlib.sha256(f.read(8192)).hexdigest()[:8].upper()
-    asset_id = f"AUDIO_{file_hash}"
+        for block in iter(lambda: f.read(65536), b""):
+            hasher.update(block)
+    full_sha256 = hasher.hexdigest()
+    short_hash = full_sha256[:8].upper()
+    asset_id = f"AUDIO_{short_hash}"
 
     record = {
         "asset_id": asset_id,
         "filename": os.path.basename(abs_path),
         "path": os.path.relpath(abs_path, WORKSPACE_ROOT).replace("\\", "/"),
+        "sha256": full_sha256,
+        "is_duplicate": False,
+        "duplicate_of_asset_id": None,
         "duration_seconds": stream_meta["duration_seconds"],
         "format": stream_meta["format"],
         "sample_rate": stream_meta["sample_rate"],
@@ -485,11 +498,14 @@ def analyze_audio_asset(filepath: str, project_hint: Optional[str] = None) -> Di
         "recommended_projects": rec_projects,
         "recommended_platforms": rec_platforms,
         "timeline_structure": structure,
+        "source_type": source_type,
+        "license_claim": license_claim,
         "license_status": license_status,
         "license_source": license_source,
         "commercial_use_allowed": (license_status == "VERIFIED_COMMERCIAL_USE"),
         "attribution_required": False,
-        "analysis_confidence": "high" if acoustic_meta["bpm_confidence"] != "low" else "medium",
+        "clearance_notes": clearance_notes,
+        "analysis_confidence": "medium" if acoustic_meta["bpm_confidence"] != "low" else "low",
         "analysis_status": "completed",
         "analyzed_at": datetime.now().isoformat(),
         "analyzer_version": ANALYZER_VERSION
@@ -498,12 +514,25 @@ def analyze_audio_asset(filepath: str, project_hint: Optional[str] = None) -> Di
     return record
 
 
-def update_audio_catalog(new_records: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Merge new records into data/audio_catalog.json without duplicating."""
+def update_audio_catalog(
+    new_records: Optional[List[Dict[str, Any]]] = None,
+    project_filter: Optional[str] = None,
+    rebuild: bool = True
+) -> Dict[str, Any]:
+    """
+    Merge new records into data/audio_catalog.json, maintaining duplicate tracking
+    and canonical references. If new_records is None or rebuild=True, scans source_assets/
+    and produces a clean, consistent catalog without stale legacy hash entries.
+    """
     os.makedirs(DATA_DIR, exist_ok=True)
-    catalog = {"generated_at": datetime.now().isoformat(), "total_assets": 0, "assets": {}}
+    catalog = {
+        "generated_at": datetime.now().isoformat(),
+        "total_assets": 0,
+        "duplicate_groups": 0,
+        "assets": {}
+    }
 
-    if os.path.exists(AUDIO_CATALOG_PATH):
+    if not rebuild and os.path.exists(AUDIO_CATALOG_PATH):
         try:
             with open(AUDIO_CATALOG_PATH, "r", encoding="utf-8") as f:
                 catalog = json.load(f)
@@ -511,11 +540,117 @@ def update_audio_catalog(new_records: List[Dict[str, Any]]) -> Dict[str, Any]:
             pass
 
     assets_dict = catalog.get("assets", {})
+
+    # If new_records is None, gather from source_assets/
+    if new_records is None:
+        new_records = []
+        # First check if real_audio_inspection.json exists to load pre-analyzed real samples
+        inspection_file = os.path.join(DATA_DIR, "real_audio_inspection.json")
+        inspected_map = {}
+        if os.path.exists(inspection_file):
+            try:
+                with open(inspection_file, "r", encoding="utf-8") as f:
+                    for item in json.load(f):
+                        inspected_map[item.get("filename")] = item
+            except Exception:
+                pass
+
+        source_assets_dir = os.path.join(WORKSPACE_ROOT, "source_assets")
+        if os.path.exists(source_assets_dir):
+            for root, _, files in os.walk(source_assets_dir):
+                for f in files:
+                    if f.lower().endswith(SUPPORTED_AUDIO_EXTENSIONS):
+                        p = os.path.join(root, f)
+                        rel_p = os.path.relpath(p, WORKSPACE_ROOT).replace("\\", "/")
+                        parts = rel_p.split("/")
+                        proj = parts[1] if len(parts) > 1 else None
+
+                        if project_filter and proj and proj.lower() != project_filter.lower():
+                            continue
+
+                        if f in inspected_map:
+                            insp = inspected_map[f]
+                            # Adapt inspection format to catalog record format
+                            rec = {
+                                "asset_id": insp["asset_id"],
+                                "filename": insp["filename"],
+                                "path": rel_p,
+                                "sha256": insp["sha256"],
+                                "is_duplicate": insp.get("is_duplicate", False),
+                                "duplicate_of_asset_id": insp.get("duplicate_of_asset_id"),
+                                "duration_seconds": insp["stream"]["duration_seconds"],
+                                "format": insp["stream"]["format"],
+                                "sample_rate": insp["stream"]["sample_rate"],
+                                "channels": insp["stream"]["channels"],
+                                "codec": insp["stream"]["codec"],
+                                "bitrate": insp["stream"]["bitrate"],
+                                "file_size_bytes": insp["file_size_bytes"],
+                                "integrated_lufs": insp["loudness"]["integrated_lufs"],
+                                "true_peak_dbtp": insp["loudness"]["true_peak_dbtp"],
+                                "loudness_range_lu": insp["loudness"]["loudness_range_lu"],
+                                "peak_dbfs": insp["acoustic"]["peak_dbfs"],
+                                "rms_dbfs": insp["acoustic"]["rms_dbfs"],
+                                "clipping_detected": insp["acoustic"]["clipping_detected"],
+                                "silence_ratio": insp["acoustic"]["silence_ratio"],
+                                "sound_classification": insp["acoustic"]["speech_presence"],
+                                "bpm": insp["acoustic"]["estimated_bpm"],
+                                "bpm_confidence": insp["acoustic"]["bpm_confidence"],
+                                "energy_level": insp["acoustic"]["energy_level"],
+                                "rhythm_type": insp["acoustic"]["rhythm_type"],
+                                "key": insp["musical"]["key_estimate"],
+                                "mood": insp["musical"]["predicted_moods"],
+                                "vocal_type": insp["musical"]["vocal_type"],
+                                "best_use_cases": insp["recommendations"]["use_cases"],
+                                "recommended_projects": insp["recommendations"]["suitable_projects"],
+                                "recommended_platforms": insp["recommendations"]["platforms"],
+                                "timeline_structure": insp["timeline_structure"],
+                                "source_type": insp["provenance"]["source_type"],
+                                "license_claim": insp["provenance"]["license_claim"],
+                                "license_status": insp["provenance"]["license_status"],
+                                "license_source": "User Supplied Sample Library",
+                                "commercial_use_allowed": insp["provenance"]["commercial_use_allowed"],
+                                "attribution_required": insp["provenance"]["attribution_required"],
+                                "clearance_notes": insp["provenance"]["clearance_notes"],
+                                "analysis_confidence": insp["musical"]["mood_confidence"],
+                                "analysis_status": "completed",
+                                "analyzed_at": insp["inspected_at"],
+                                "analyzer_version": ANALYZER_VERSION
+                            }
+                            new_records.append(rec)
+                        else:
+                            try:
+                                rec = analyze_audio_asset(p, proj)
+                                new_records.append(rec)
+                            except Exception as e:
+                                print(f"Warning: could not analyze {p}: {e}", file=sys.stderr)
+
+    # Track duplicates across assets
+    seen_hashes: Dict[str, str] = {}
+    dup_counts: Dict[str, int] = {}
+
     for rec in new_records:
+        h = rec.get("sha256")
+        if not h:
+            with open(os.path.join(WORKSPACE_ROOT, rec["path"]), "rb") as f:
+                h = hashlib.sha256(f.read()).hexdigest()
+            rec["sha256"] = h
+
+        if h not in seen_hashes:
+            seen_hashes[h] = rec["asset_id"]
+            rec["is_duplicate"] = False
+            rec["duplicate_of_asset_id"] = None
+        else:
+            orig_id = seen_hashes[h]
+            dup_counts[h] = dup_counts.get(h, 0) + 1
+            rec["is_duplicate"] = True
+            rec["duplicate_of_asset_id"] = orig_id
+            rec["asset_id"] = f"{orig_id}_DUP{dup_counts[h]}"
+
         assets_dict[rec["asset_id"]] = rec
 
     catalog["assets"] = assets_dict
     catalog["total_assets"] = len(assets_dict)
+    catalog["duplicate_groups"] = sum(1 for a in assets_dict.values() if a.get("is_duplicate"))
     catalog["updated_at"] = datetime.now().isoformat()
 
     with open(AUDIO_CATALOG_PATH, "w", encoding="utf-8") as f:

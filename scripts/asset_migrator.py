@@ -46,6 +46,9 @@ PROJECT_CATEGORIES = {
     "pos": [
         "screenshots", "screen-recordings", "logos", "music",
         "sound-effects", "voiceovers", "other"
+    ],
+    "shared": [
+        "music", "sound-effects", "voiceovers", "other"
     ]
 }
 
@@ -95,6 +98,21 @@ def scan_known_sources() -> List[Dict[str, Any]]:
                 "category": cat,
                 "target_filename": fname
             })
+
+    # 1b. Raw_input_files/audio/ (Shared music library)
+    raw_audio_dir = os.path.join(WORKSPACE_ROOT, "Raw_input_files", "audio")
+    if os.path.exists(raw_audio_dir):
+        for fname in os.listdir(raw_audio_dir):
+            fpath = os.path.join(raw_audio_dir, fname)
+            if not os.path.isfile(fpath):
+                continue
+            if fname.lower().endswith((".mp3", ".wav", ".aac", ".m4a", ".ogg")):
+                candidates.append({
+                    "source_path": fpath,
+                    "project": "shared",
+                    "category": "music",
+                    "target_filename": fname
+                })
 
     # 2. Files in my-video/public/
     pub_dir = os.path.join(WORKSPACE_ROOT, "my-video", "public")
@@ -177,13 +195,15 @@ def scan_known_sources() -> List[Dict[str, Any]]:
     return candidates
 
 
-def plan_migration() -> Tuple[List[Dict[str, Any]], Dict[str, List[str]]]:
+def plan_migration(project_filter: Optional[str] = None) -> Tuple[List[Dict[str, Any]], Dict[str, List[str]]]:
     """Analyze source candidates, compute hashes, and detect duplicates."""
     candidates = scan_known_sources()
     operations = []
     hash_map: Dict[str, List[str]] = {}
 
     for c in candidates:
+        if project_filter and c["project"].lower() != project_filter.lower():
+            continue
         src = c["source_path"]
         if not os.path.exists(src):
             continue
@@ -216,12 +236,12 @@ def plan_migration() -> Tuple[List[Dict[str, Any]], Dict[str, List[str]]]:
     return operations, hash_map
 
 
-def execute_migration(dry_run: bool = True) -> Dict[str, Any]:
+def execute_migration(dry_run: bool = True, project_filter: Optional[str] = None) -> Dict[str, Any]:
     """
     Executes safe asset migration.
     If dry_run=True, prints the proposed operations without touching files.
     """
-    operations, hash_map = plan_migration()
+    operations, hash_map = plan_migration(project_filter=project_filter)
     duplicates_found = {k: v for k, v in hash_map.items() if len(v) > 1}
 
     results = {
@@ -274,6 +294,19 @@ def execute_migration(dry_run: bool = True) -> Dict[str, Any]:
             json.dump(results, f, indent=2)
 
     return results
+
+
+def migrate_assets(dry_run: bool = True, project_filter: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Standard interface used by media_intake CLI and automated workflows.
+    Returns summary statistics including migrated_count, duplicates_detected, etc.
+    """
+    res = execute_migration(dry_run=dry_run, project_filter=project_filter)
+    migrated_count = sum(1 for op in res.get("operations", []) if op.get("status") in ["copied", "already_synced", "copied_with_collision_rename", "dry_run_preview"])
+    duplicates_detected = [op for op in res.get("operations", []) if op.get("is_duplicate")]
+    res["migrated_count"] = migrated_count
+    res["duplicates_detected"] = duplicates_detected
+    return res
 
 
 if __name__ == "__main__":

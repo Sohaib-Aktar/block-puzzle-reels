@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-16T17:57:32.283631",
+  "timestamp": "2026-11-17T10:13:12.114496",
   "dry_run": false,
-  "total_candidates": 27,
-  "unique_files": 22,
-  "duplicate_groups": 5,
+  "total_candidates": 50,
+  "unique_files": 44,
+  "duplicate_groups": 6,
   "operations": [
     {
       "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\icon block game.png",
@@ -15,7 +15,7 @@
       "sha256": "166fc7e07ad03f817117150dc5fdab76c64e614de62ff52ac57d0c41049cdcbb",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\logos\\icon block game.png"
     },
     {
@@ -28,7 +28,7 @@
       "sha256": "ba0a1ecad8c9568cb0036e850334a183bc3abcd250689baa09ee9192c3eebfc4",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\logos\\pyapiras games icon.png"
     },
     {
@@ -41,7 +41,7 @@
       "sha256": "2b4c0018a41e163f97126a4ade5c4ff58fe6dd56635cea7dd3d6b9ee1ead634c",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_1.mp4"
     },
     {
@@ -54,7 +54,7 @@
       "sha256": "157ca54eb3a2b24e4094b460fb7edd434cf9fae434c9ef1d65c0dc5a7c7e3702",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_2.mp4"
     },
     {
@@ -67,7 +67,7 @@
       "sha256": "f942ba448d8732005ee7e017fdc0d4beb0d2d53daeee0c476357802b3a7cb234",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_3.mp4"
     },
     {
@@ -80,7 +80,7 @@
       "sha256": "233cef4a4b5df666317d6cfb34abf97ae334b1ae31ddf13344bfd58bb71ed33a",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\screenshots\\sample_1.jpg"
     },
     {
@@ -93,7 +93,7 @@
       "sha256": "84e2acc28773a54ad3b90247c14cb12e96987fb41d26b6700c0b5b9fcd612227",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\screenshots\\sample_2.jpg"
     },
     {
@@ -106,8 +106,307 @@
       "sha256": "a5069c02b006a61be2c4c359896ba05cd03263152ba7d70f24603d0b495edd66",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\screenshots\\sample_airplane.jpg"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\absolutesound-no-copyright-background-music-559491.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\absolutesound-no-copyright-background-music-559491.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "absolutesound-no-copyright-background-music-559491.mp3",
+      "size_bytes": 5097984,
+      "sha256": "c9b3edff93f4ff489bc05f3c64fb088f54fd698b2135781e7eead2b980321364",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\absolutesound-no-copyright-background-music-559491.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\alex-morgan-no-copyright-music-578487.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\alex-morgan-no-copyright-music-578487.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "alex-morgan-no-copyright-music-578487.mp3",
+      "size_bytes": 4247040,
+      "sha256": "2e409e09b60e90b5d73ed695c8fbd3997ef03c3e4489167e59e5f3452f2127e5",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\alex-morgan-no-copyright-music-578487.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\andriih-no-copyright-music-601653.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\andriih-no-copyright-music-601653.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "andriih-no-copyright-music-601653.mp3",
+      "size_bytes": 4299128,
+      "sha256": "794d68961c45acf8910591ba5f1dbbe2d801a1717330947330f8e5349f4fa50e",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\andriih-no-copyright-music-601653.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\apalonbeats-no-copyright-music-576332.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\apalonbeats-no-copyright-music-576332.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "apalonbeats-no-copyright-music-576332.mp3",
+      "size_bytes": 2752512,
+      "sha256": "f0ca9f256037d641d7aefd6a3febb68c5680ce26f63bf73822d6e1c4780364f7",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\apalonbeats-no-copyright-music-576332.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\apalonbeats-no-copyright-music-597079.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\apalonbeats-no-copyright-music-597079.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "apalonbeats-no-copyright-music-597079.mp3",
+      "size_bytes": 3926308,
+      "sha256": "18396eb77d35a0bf853e11f146897fd3fe62c2a6fff1ef92dc76b16b735bd92a",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\apalonbeats-no-copyright-music-597079.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\leberch-no-copyright-music-594951.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\leberch-no-copyright-music-594951.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "leberch-no-copyright-music-594951.mp3",
+      "size_bytes": 4865044,
+      "sha256": "e23988cf0ad3fc3e6bfda1a8e835b9ecdf6872f0120f5870795c65c87737137d",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\leberch-no-copyright-music-594951.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\loksii-no-copyright-music-211881.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\loksii-no-copyright-music-211881.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "loksii-no-copyright-music-211881.mp3",
+      "size_bytes": 4197146,
+      "sha256": "aee77c4344b620df0d17a7019febd3aaa2c788e41d24fd2883b56cb208702282",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\loksii-no-copyright-music-211881.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\mondamusic-no-copyright-music-597183.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\mondamusic-no-copyright-music-597183.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "mondamusic-no-copyright-music-597183.mp3",
+      "size_bytes": 1946853,
+      "sha256": "771a59499e1c6a678907d5666b3e0add4f5ac444e398b0a1e18208d3d74124fb",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\mondamusic-no-copyright-music-597183.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\monume-no-copyright-music-603959.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\monume-no-copyright-music-603959.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "monume-no-copyright-music-603959.mp3",
+      "size_bytes": 3380453,
+      "sha256": "0eb2323e2b6750efcbbcef65c78fed41b81a42533929f07b547d136eaf870577",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\monume-no-copyright-music-603959.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\monume-no-copyright-music-629801.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\monume-no-copyright-music-629801.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "monume-no-copyright-music-629801.mp3",
+      "size_bytes": 4096835,
+      "sha256": "5ca9e85721d0880e24efb25874874775d20df2a7e34a6b362c0e6b953b0f3b8f",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\monume-no-copyright-music-629801.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\nastelbom-no-copyright-music-602456.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\nastelbom-no-copyright-music-602456.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "nastelbom-no-copyright-music-602456.mp3",
+      "size_bytes": 4269871,
+      "sha256": "07a901e623bef77c3a3108ca83f69b7c2dc2cd6dba9f65475c6bab6225f69060",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\nastelbom-no-copyright-music-602456.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\nastelbom-no-copyright-music-606703.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\nastelbom-no-copyright-music-606703.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "nastelbom-no-copyright-music-606703.mp3",
+      "size_bytes": 4461296,
+      "sha256": "ccb76b9c6b881b6639de3988532d26bb2492feb315976c888273c7ef594f39d5",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\nastelbom-no-copyright-music-606703.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\no-copyright-music-2026-acoustic-acoustic-music-611654.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\no-copyright-music-2026-acoustic-acoustic-music-611654.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "no-copyright-music-2026-acoustic-acoustic-music-611654.mp3",
+      "size_bytes": 5619879,
+      "sha256": "5c803a0d9417ad02f7ed989b41ebb6239e98e59ff47cb8df0b5c551c135cc5a1",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\no-copyright-music-2026-acoustic-acoustic-music-611654.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\prettyjohn1-no-copyright-music-487929.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\prettyjohn1-no-copyright-music-487929.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "prettyjohn1-no-copyright-music-487929.mp3",
+      "size_bytes": 1939330,
+      "sha256": "78bb7b59f2950bf52a9a69084432e3aa45e61a2fdac61c180ab8fd48777f39ce",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\prettyjohn1-no-copyright-music-487929.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\prettyjohn1-no-copyright-music-591301.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\prettyjohn1-no-copyright-music-591301.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "prettyjohn1-no-copyright-music-591301.mp3",
+      "size_bytes": 2111529,
+      "sha256": "0c06ee23ba3d1c5650d05f72c7c8afc20ec167048f7b7c55948bf4482493f82e",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\prettyjohn1-no-copyright-music-591301.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\sigmamusicart-no-copyright-music-537751.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-537751.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "sigmamusicart-no-copyright-music-537751.mp3",
+      "size_bytes": 3943680,
+      "sha256": "632a4576b992926f5ca934c2919561382a1ec34aea13c0e3a1f1c8a8c481b101",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-537751.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\sigmamusicart-no-copyright-music-604196.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-604196.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "sigmamusicart-no-copyright-music-604196.mp3",
+      "size_bytes": 3273216,
+      "sha256": "2e75efa8e34a789db5e773c7e2757e45a60d39987dd008d5292604bbcbc4bc48",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-604196.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\sigmamusicart-no-copyright-music-619322 (1).mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-619322 (1).mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "sigmamusicart-no-copyright-music-619322 (1).mp3",
+      "size_bytes": 3428352,
+      "sha256": "ac1f9f8298a2bfbeaae09ca6be179cb5146229a1b9476172ec04c6056648dc85",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-619322 (1).mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\sigmamusicart-no-copyright-music-619322.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-619322.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "sigmamusicart-no-copyright-music-619322.mp3",
+      "size_bytes": 3428352,
+      "sha256": "ac1f9f8298a2bfbeaae09ca6be179cb5146229a1b9476172ec04c6056648dc85",
+      "is_duplicate": true,
+      "duplicate_of": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\sigmamusicart-no-copyright-music-619322 (1).mp3",
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sigmamusicart-no-copyright-music-619322.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\studiokolomna-no-copyright-music-632665.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\studiokolomna-no-copyright-music-632665.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "studiokolomna-no-copyright-music-632665.mp3",
+      "size_bytes": 4205505,
+      "sha256": "3e566446752ae129f350d66467f48c2fa13883ed66a4342b03770b751cc19f33",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\studiokolomna-no-copyright-music-632665.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\sub_clair-no-copyright-music-instrumental-621220.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sub_clair-no-copyright-music-instrumental-621220.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "sub_clair-no-copyright-music-instrumental-621220.mp3",
+      "size_bytes": 3550464,
+      "sha256": "64253d28fec5c3d5615339ce153ceec2448605f011fef027486018b0311a45a8",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\sub_clair-no-copyright-music-instrumental-621220.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\verclub_music-no-copyright-music-550940.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\verclub_music-no-copyright-music-550940.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "verclub_music-no-copyright-music-550940.mp3",
+      "size_bytes": 1537253,
+      "sha256": "ede199ca2f861717e89ee00ec2b80825c45ff2ee854cb676ae08f88193b13cc2",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\verclub_music-no-copyright-music-550940.mp3"
+    },
+    {
+      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\audio\\vibemode-no-copyright-music-581670.mp3",
+      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\vibemode-no-copyright-music-581670.mp3",
+      "project": "shared",
+      "category": "music",
+      "filename": "vibemode-no-copyright-music-581670.mp3",
+      "size_bytes": 2602213,
+      "sha256": "afbf2b76e357e5ee955d312ea431e6bb53be382c8e57139e4aee70f90de8ff84",
+      "is_duplicate": false,
+      "duplicate_of": null,
+      "status": "copied",
+      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\shared\\music\\vibemode-no-copyright-music-581670.mp3"
     },
     {
       "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\my-video\\public\\bgm_day05.wav",
@@ -119,7 +418,7 @@
       "sha256": "b07b29923527fa5979e73b40932c0fe5799b0abe8b1e36bf4549e2d38db2ecf1",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\music\\bgm_day05_relaxing_piano.wav"
     },
     {
@@ -132,7 +431,7 @@
       "sha256": "7fcf629ec933cadc5638310739eaf2918ff4dad79820f4c9c6595f216d8c10ce",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\voiceovers\\day05_voiceover.wav"
     },
     {
@@ -145,7 +444,7 @@
       "sha256": "2b4c0018a41e163f97126a4ade5c4ff58fe6dd56635cea7dd3d6b9ee1ead634c",
       "is_duplicate": true,
       "duplicate_of": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\recording_1.mp4",
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\gameplay.mp4"
     },
     {
@@ -158,7 +457,7 @@
       "sha256": "157ca54eb3a2b24e4094b460fb7edd434cf9fae434c9ef1d65c0dc5a7c7e3702",
       "is_duplicate": true,
       "duplicate_of": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\recording_2.mp4",
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\gameplay2.mp4"
     },
     {
@@ -171,7 +470,7 @@
       "sha256": "b4ad69bf53e5d73168bab88c9675aceba3eb7d11f64974789dfac6527b96cf9e",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\gameplay_lifestyle_cfr30.mp4"
     },
     {
@@ -184,7 +483,7 @@
       "sha256": "166fc7e07ad03f817117150dc5fdab76c64e614de62ff52ac57d0c41049cdcbb",
       "is_duplicate": true,
       "duplicate_of": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\icon block game.png",
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\logos\\icon_block_game.png"
     },
     {
@@ -197,7 +496,7 @@
       "sha256": "ba0a1ecad8c9568cb0036e850334a183bc3abcd250689baa09ee9192c3eebfc4",
       "is_duplicate": true,
       "duplicate_of": "C:\\Users\\Dell\\Downloads\\video gen\\Raw_input_files\\pyapiras games icon.png",
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\logos\\pyapiras_games_icon.png"
     },
     {
@@ -223,7 +522,7 @@
       "sha256": "0dd488e3e721b4ab9512fe4eb3f18dfada1c62345ab68c12fe62a6798098f7cf",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_3_cfr30.mp4"
     },
     {
@@ -236,7 +535,7 @@
       "sha256": "0f9387599211b04421c42c8f670b425179f4999ea75dfcc1ef467e774bf209dc",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\lifestyle-footage\\scene_01_office.jpg"
     },
     {
@@ -249,7 +548,7 @@
       "sha256": "5cbee2186ede4b43b1e55649fc4e046ecb9f2fbb59d941975584088f637ec31f",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\lifestyle-footage\\scene_02_commute.jpg"
     },
     {
@@ -262,7 +561,7 @@
       "sha256": "7011bf83c11e78bcb62e7f1d09c527808bcb3cfbae21a3f29b5b67d0e65c5e34",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\lifestyle-footage\\scene_03_home_sofa.jpg"
     },
     {
@@ -275,7 +574,7 @@
       "sha256": "b2db0d9050c5c91930cf8429729ac80f5d38a671d23bb647af71dea03bc19799",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\lifestyle-footage\\scene_04_phone_unlock.jpg"
     },
     {
@@ -288,7 +587,7 @@
       "sha256": "911acb412801f87f899ba15435a5d1e4d1c03d518b795f913928dd395d2af8af",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\voiceovers\\vo_scene1.wav"
     },
     {
@@ -301,7 +600,7 @@
       "sha256": "98b575585fa3ab59553a840d46d52edcb0dfbb05b9df6bbc5faaa3a414425c91",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\voiceovers\\vo_scene2.wav"
     },
     {
@@ -314,7 +613,7 @@
       "sha256": "acdeb32fe031bf9804edca3ebbf0fd85e6f86363b1d3c95f48e69de15af074aa",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\voiceovers\\vo_scene3_4.wav"
     },
     {
@@ -327,7 +626,7 @@
       "sha256": "d37a02df2815f1644b0746aafa1bc0dc346749b5f0ac009ab4b8507eb154f7b8",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\voiceovers\\vo_scene7.wav"
     },
     {
@@ -340,7 +639,7 @@
       "sha256": "fefd2912d2f63f828d122eaee0303e8b8f111a8b39e591932a93cc8ad59dce49",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\expand-ezisales\\voiceovers\\ezisales_tut01_voiceover.wav"
     },
     {
@@ -353,7 +652,7 @@
       "sha256": "c9448825c6ac3bdcd5f9ca2961fb98fc3cce1c6e14951b65f3b3a6204973496d",
       "is_duplicate": false,
       "duplicate_of": null,
-      "status": "copied",
+      "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\expand-hr\\voiceovers\\expandhr_tut01_voiceover.wav"
     }
   ]

@@ -192,7 +192,7 @@ def inspect_video_asset(filepath: str) -> Dict[str, Any]:
     }
 
 
-def build_media_catalog(root_dir: str = SOURCE_ASSETS_DIR) -> Dict[str, Any]:
+def build_media_catalog(root_dir: str = SOURCE_ASSETS_DIR, project_filter: Optional[str] = None) -> Dict[str, Any]:
     """
     Scans source_assets/ across all projects, indexes all video and image assets,
     detects duplicates via SHA-256, and writes data/media_catalog.json.
@@ -207,7 +207,8 @@ def build_media_catalog(root_dir: str = SOURCE_ASSETS_DIR) -> Dict[str, Any]:
         "assets": {}
     }
 
-    seen_hashes: Dict[str, str] = {}  # sha256 -> first asset_id
+    seen_hashes: Dict[str, str] = {}  # sha256 -> canonical asset_id
+    dup_counts: Dict[str, int] = {}   # sha256 -> duplicate instance count
 
     # Traverse source_assets/
     for root, _, files in os.walk(root_dir):
@@ -222,17 +223,24 @@ def build_media_catalog(root_dir: str = SOURCE_ASSETS_DIR) -> Dict[str, Any]:
             project = parts[1] if len(parts) > 1 else "unknown"
             category = parts[2] if len(parts) > 2 else "other"
 
+            if project_filter and project.lower() != project_filter.lower():
+                continue
+
             file_hash = calculate_sha256(full_path)
             short_hash = file_hash[:8].upper()
 
             is_video = ext in (".mp4", ".mov", ".avi")
             prefix = "VID" if is_video else "IMG"
-            asset_id = f"{prefix}_{short_hash}"
 
             is_dup = file_hash in seen_hashes
-            orig_id = seen_hashes[file_hash] if is_dup else None
             if not is_dup:
+                asset_id = f"{prefix}_{short_hash}"
                 seen_hashes[file_hash] = asset_id
+                orig_id = None
+            else:
+                orig_id = seen_hashes[file_hash]
+                dup_counts[file_hash] = dup_counts.get(file_hash, 0) + 1
+                asset_id = f"{prefix}_{short_hash}_DUP{dup_counts[file_hash]}"
 
             if is_video:
                 meta = inspect_video_asset(full_path)

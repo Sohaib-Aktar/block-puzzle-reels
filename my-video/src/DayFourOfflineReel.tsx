@@ -193,7 +193,7 @@ export const DayFourOfflineReelContent: React.FC<DayFourOfflineReelProps> = ({
   );
 };
 
-// Opening Hook Overlay Component
+// Opening Hook Overlay Component (Central Full-Text Focal Presentation)
 const OpeningHookOverlay: React.FC<{ title: string; subtitle?: string }> = ({
   title,
   subtitle,
@@ -201,13 +201,19 @@ const OpeningHookOverlay: React.FC<{ title: string; subtitle?: string }> = ({
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
+  // Snappy professional spring entrance pop
   const scale = spring({
     frame,
     fps,
-    config: SPRING_PRESETS.pop,
+    config: {
+      damping: 14,
+      stiffness: 180,
+      mass: 0.8,
+    },
   });
 
-  const exitOpacity = interpolate(frame, [50, 60], [1, 0], {
+  // Hold completely stable until frame 48, then smooth dissolution before Scene 2 (frame 60)
+  const exitOpacity = interpolate(frame, [48, 58], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -216,56 +222,66 @@ const OpeningHookOverlay: React.FC<{ title: string; subtitle?: string }> = ({
     <div
       style={{
         position: "absolute",
-        top: 220, // Strict safe area (220px margin from top)
+        top: 700, // Central viewing area of the 1080x1920 gameplay screen (empty board zone)
         left: 0,
         right: 0,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        justifyContent: "center",
         transform: `scale(${scale})`,
         opacity: exitOpacity,
         zIndex: 50,
         pointerEvents: "none",
-        padding: "0 40px",
+        padding: "0 30px",
       }}
     >
       <div
         style={{
-          background: "linear-gradient(135deg, rgba(123, 47, 190, 0.95), rgba(45, 15, 80, 0.95))",
-          padding: "18px 46px",
-          borderRadius: 60,
-          border: `3px solid ${THEME_COLORS.goldHighlight}`,
-          boxShadow: `0 12px 45px rgba(0,0,0,0.7), 0 0 30px ${THEME_COLORS.purpleGlow}`,
+          background:
+            "linear-gradient(135deg, rgba(88, 28, 135, 0.96), rgba(30, 15, 60, 0.96))",
+          padding: "18px 50px",
+          borderRadius: 48,
+          border: `3.5px solid ${THEME_COLORS.goldHighlight}`,
+          boxShadow: `0 16px 48px rgba(0,0,0,0.85), 0 0 25px ${THEME_COLORS.purpleGlow}`,
           textAlign: "center",
-          maxWidth: 960,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <h1
+        <span
           style={{
             fontFamily: THEME_FONTS.headings,
-            fontSize: 52,
+            fontSize: 54,
             fontWeight: 900,
             color: THEME_COLORS.textPrimary,
-            margin: 0,
-            textShadow: "0 4px 14px rgba(0,0,0,0.9)",
             letterSpacing: 0.5,
+            textShadow: "0 4px 16px rgba(0,0,0,0.95), 0 2px 4px rgba(0,0,0,0.8)",
+            lineHeight: 1.15,
+            margin: 0,
+            whiteSpace: "nowrap",
           }}
         >
           {title}
-        </h1>
+        </span>
         {subtitle && (
-          <p
+          <span
             style={{
-              fontFamily: THEME_FONTS.main,
-              fontSize: 28,
-              fontWeight: 700,
+              fontFamily: THEME_FONTS.headings,
+              fontSize: 30,
+              fontWeight: 800,
               color: THEME_COLORS.goldHighlight,
-              margin: "6px 0 0 0",
+              marginTop: 8,
+              letterSpacing: 0.5,
               textShadow: "0 2px 10px rgba(0,0,0,0.9)",
+              lineHeight: 1.15,
+              whiteSpace: "nowrap",
             }}
           >
             {subtitle}
-          </p>
+          </span>
         )}
       </div>
     </div>

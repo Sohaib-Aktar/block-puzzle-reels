@@ -4,7 +4,7 @@
 **Project:** `expand-hr`  
 **Preset Evaluated:** `youtube_tutorial`  
 **File:** `software_tutorial_vertical.mp4` (1.49 MB)  
-**Date:** 2026-11-17 09:42:56  
+**Date:** 2026-11-17 11:35:22  
 
 ## 1. Automated Verification Checks
 

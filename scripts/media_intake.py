@@ -354,22 +354,27 @@ def cmd_recommend_audio(args: argparse.Namespace) -> int:
     category = getattr(args, "category", "lifestyle_reel") or "lifestyle_reel"
     mood = getattr(args, "mood", None) or "playful"
     duration = getattr(args, "duration", None) or 15.0
+    allow_unverified = getattr(args, "allow_unverified_licenses", False)
 
     res = audio_recommender.recommend_audio(
         project=project,
         content_category=category,
         desired_mood=mood,
         target_duration=duration,
-        allow_unverified_licenses=True
+        allow_unverified_licenses=allow_unverified
     )
 
     print("=" * 80)
-    print(f"Audio Recommendation Report for: {project.upper()} (Mood: {mood}, Duration: {duration}s)")
+    mode_str = "Preview Mode (All Tracks)" if allow_unverified else "Production Clearance Mode (Commercially Cleared Only)"
+    print(f"Audio Recommendation Report for: {project.upper()} [{mode_str}]")
+    print(f"Mood: {mood} | Duration: {duration}s | Evaluated: {res.get('total_evaluated')} | Eligible: {res.get('total_eligible')}")
     print("=" * 80)
 
     recs = res.get("top_recommendations", [])
     if not recs:
-        print("No eligible audio tracks found matching criteria.")
+        print("No eligible audio tracks found matching criteria in this mode.")
+        if not allow_unverified:
+            print("Tip: Add --allow-unverified-licenses to view preview recommendations from user sample tracks.")
         return 0
 
     print(f"\nTop {len(recs)} Recommended Track(s):")
@@ -435,6 +440,8 @@ def main():
                        help="Audio asset category.")
     p_rec.add_argument("--mood", "-m", help="Desired emotional mood tag (e.g., upbeat, relaxing, corporate).")
     p_rec.add_argument("--duration", "-d", type=float, help="Target reel duration in seconds.")
+    p_rec.add_argument("--allow-unverified-licenses", action="store_true",
+                       help="Allow unverified / user-supplied tracks (preview mode).")
 
     args = parser.parse_args()
 

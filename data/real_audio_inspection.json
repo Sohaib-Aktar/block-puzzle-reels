@@ -1,0 +1,2250 @@
+[
+  {
+    "asset_id": "AUDIO_C9B3EDFF",
+    "filename": "absolutesound-no-copyright-background-music-559491.mp3",
+    "path": "Raw_input_files/audio/absolutesound-no-copyright-background-music-559491.mp3",
+    "file_size_bytes": 5097984,
+    "sha256": "c9b3edff93f4ff489bc05f3c64fb088f54fd698b2135781e7eead2b980321364",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 159.312,
+      "file_size_bytes": 5097984,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -14.91,
+      "true_peak_dbtp": -2.95,
+      "loudness_range_lu": 7.1,
+      "threshold_lufs": -25.25,
+      "ebu_r128_compliant": true
+    },
+    "acoustic": {
+      "peak_dbfs": -4.1,
+      "rms_dbfs": -18.37,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.013,
+      "longest_silence_seconds": 1.87,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 133.6,
+      "bpm_confidence": "medium",
+      "energy_level": "medium",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 133.6,
+      "bpm_confidence": "medium",
+      "energy_level": "medium",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 127.45,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 127.45,
+        "end_sec": 159.312,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:09:30.982715"
+  },
+  {
+    "asset_id": "AUDIO_2E409E09",
+    "filename": "alex-morgan-no-copyright-music-578487.mp3",
+    "path": "Raw_input_files/audio/alex-morgan-no-copyright-music-578487.mp3",
+    "file_size_bytes": 4247040,
+    "sha256": "2e409e09b60e90b5d73ed695c8fbd3997ef03c3e4489167e59e5f3452f2127e5",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 132.72,
+      "file_size_bytes": 4247040,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.65,
+      "true_peak_dbtp": 0.08,
+      "loudness_range_lu": 6.2,
+      "threshold_lufs": -20.85,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.16,
+      "rms_dbfs": -14.06,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.006,
+      "longest_silence_seconds": 0.79,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 109.3,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 109.3,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 106.18,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 106.18,
+        "end_sec": 132.72,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:09:37.001737"
+  },
+  {
+    "asset_id": "AUDIO_794D6896",
+    "filename": "andriih-no-copyright-music-601653.mp3",
+    "path": "Raw_input_files/audio/andriih-no-copyright-music-601653.mp3",
+    "file_size_bytes": 4299128,
+    "sha256": "794d68961c45acf8910591ba5f1dbbe2d801a1717330947330f8e5349f4fa50e",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 134.348,
+      "file_size_bytes": 4299128,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -17.5,
+      "true_peak_dbtp": -3.17,
+      "loudness_range_lu": 2.5,
+      "threshold_lufs": -27.63,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -5.79,
+      "rms_dbfs": -22.73,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.017,
+      "longest_silence_seconds": 2.04,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 130.7,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 130.7,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 107.48,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 107.48,
+        "end_sec": 134.348,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:09:43.141596"
+  },
+  {
+    "asset_id": "AUDIO_F0CA9F25",
+    "filename": "apalonbeats-no-copyright-music-576332.mp3",
+    "path": "Raw_input_files/audio/apalonbeats-no-copyright-music-576332.mp3",
+    "file_size_bytes": 2752512,
+    "sha256": "f0ca9f256037d641d7aefd6a3febb68c5680ce26f63bf73822d6e1c4780364f7",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 86.016,
+      "file_size_bytes": 2752512,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -15.9,
+      "true_peak_dbtp": 0.07,
+      "loudness_range_lu": 7.2,
+      "threshold_lufs": -26.39,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -4.32,
+      "rms_dbfs": -20.17,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.027,
+      "longest_silence_seconds": 1.3,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 120.3,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 120.3,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 68.81,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 68.81,
+        "end_sec": 86.016,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:09:47.083359"
+  },
+  {
+    "asset_id": "AUDIO_18396EB7",
+    "filename": "apalonbeats-no-copyright-music-597079.mp3",
+    "path": "Raw_input_files/audio/apalonbeats-no-copyright-music-597079.mp3",
+    "file_size_bytes": 3926308,
+    "sha256": "18396eb77d35a0bf853e11f146897fd3fe62c2a6fff1ef92dc76b16b735bd92a",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 122.697,
+      "file_size_bytes": 3926308,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -16.47,
+      "true_peak_dbtp": -1.74,
+      "loudness_range_lu": 2.5,
+      "threshold_lufs": -26.68,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -5.16,
+      "rms_dbfs": -23.06,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.03,
+      "longest_silence_seconds": 2.36,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 182.2,
+      "bpm_confidence": "medium",
+      "energy_level": "medium",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 182.2,
+      "bpm_confidence": "medium",
+      "energy_level": "medium",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 98.16,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 98.16,
+        "end_sec": 122.697,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:09:52.648669"
+  },
+  {
+    "asset_id": "AUDIO_E23988CF",
+    "filename": "leberch-no-copyright-music-594951.mp3",
+    "path": "Raw_input_files/audio/leberch-no-copyright-music-594951.mp3",
+    "file_size_bytes": 4865044,
+    "sha256": "e23988cf0ad3fc3e6bfda1a8e835b9ecdf6872f0120f5870795c65c87737137d",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 152.033,
+      "file_size_bytes": 4865044,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -18.39,
+      "true_peak_dbtp": -2.52,
+      "loudness_range_lu": 3.9,
+      "threshold_lufs": -28.61,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -6.05,
+      "rms_dbfs": -22.61,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.017,
+      "longest_silence_seconds": 2.0,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 162.5,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 162.5,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 121.63,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 121.63,
+        "end_sec": 152.033,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:09:59.614131"
+  },
+  {
+    "asset_id": "AUDIO_AEE77C43",
+    "filename": "loksii-no-copyright-music-211881.mp3",
+    "path": "Raw_input_files/audio/loksii-no-copyright-music-211881.mp3",
+    "file_size_bytes": 4197146,
+    "sha256": "aee77c4344b620df0d17a7019febd3aaa2c788e41d24fd2883b56cb208702282",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 131.161,
+      "file_size_bytes": 4197146,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 255999,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -11.61,
+      "true_peak_dbtp": 0.02,
+      "loudness_range_lu": 2.7,
+      "threshold_lufs": -21.82,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.32,
+      "rms_dbfs": -14.11,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.016,
+      "longest_silence_seconds": 1.57,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 158.3,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 158.3,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat",
+        "playful",
+        "cheerful"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 104.93,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 104.93,
+        "end_sec": 131.161,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [
+        "block-puzzle-burst"
+      ],
+      "use_cases": [
+        "puzzle_gameplay_reel",
+        "lifestyle_advertisement",
+        "satisfying_clear_highlight"
+      ],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:05.501421"
+  },
+  {
+    "asset_id": "AUDIO_771A5949",
+    "filename": "mondamusic-no-copyright-music-597183.mp3",
+    "path": "Raw_input_files/audio/mondamusic-no-copyright-music-597183.mp3",
+    "file_size_bytes": 1946853,
+    "sha256": "771a59499e1c6a678907d5666b3e0add4f5ac444e398b0a1e18208d3d74124fb",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 60.839,
+      "file_size_bytes": 1946853,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -8.62,
+      "true_peak_dbtp": 0.8,
+      "loudness_range_lu": 1.5,
+      "threshold_lufs": -19.48,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": 0.0,
+      "rms_dbfs": -9.92,
+      "clipping_detected": true,
+      "clipping_count": 112,
+      "silence_ratio": 0.05,
+      "longest_silence_seconds": 2.04,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 100.2,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 100.2,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 48.67,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 48.67,
+        "end_sec": 60.839,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:08.373457"
+  },
+  {
+    "asset_id": "AUDIO_0EB2323E",
+    "filename": "monume-no-copyright-music-603959.mp3",
+    "path": "Raw_input_files/audio/monume-no-copyright-music-603959.mp3",
+    "file_size_bytes": 3380453,
+    "sha256": "0eb2323e2b6750efcbbcef65c78fed41b81a42533929f07b547d136eaf870577",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 105.639,
+      "file_size_bytes": 3380453,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -16.39,
+      "true_peak_dbtp": -0.23,
+      "loudness_range_lu": 4.8,
+      "threshold_lufs": -26.41,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.87,
+      "rms_dbfs": -16.89,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.0,
+      "longest_silence_seconds": 0.01,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": null,
+      "bpm_confidence": "low",
+      "energy_level": "medium",
+      "rhythm_type": "ambient"
+    },
+    "musical": {
+      "bpm": null,
+      "bpm_confidence": "low",
+      "energy_level": "medium",
+      "rhythm_type": "ambient",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "low",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 84.51,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 84.51,
+        "end_sec": 105.639,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:13.270324"
+  },
+  {
+    "asset_id": "AUDIO_5CA9E857",
+    "filename": "monume-no-copyright-music-629801.mp3",
+    "path": "Raw_input_files/audio/monume-no-copyright-music-629801.mp3",
+    "file_size_bytes": 4096835,
+    "sha256": "5ca9e85721d0880e24efb25874874775d20df2a7e34a6b362c0e6b953b0f3b8f",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 128.026,
+      "file_size_bytes": 4096835,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 255999,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -16.0,
+      "true_peak_dbtp": -1.13,
+      "loudness_range_lu": 2.9,
+      "threshold_lufs": -26.0,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -1.68,
+      "rms_dbfs": -17.67,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.0,
+      "longest_silence_seconds": 0.01,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 120.3,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 120.3,
+      "bpm_confidence": "high",
+      "energy_level": "medium",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "steady",
+        "focused"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 102.42,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 102.42,
+        "end_sec": 128.026,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:19.092019"
+  },
+  {
+    "asset_id": "AUDIO_07A901E6",
+    "filename": "nastelbom-no-copyright-music-602456.mp3",
+    "path": "Raw_input_files/audio/nastelbom-no-copyright-music-602456.mp3",
+    "file_size_bytes": 4269871,
+    "sha256": "07a901e623bef77c3a3108ca83f69b7c2dc2cd6dba9f65475c6bab6225f69060",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 133.433,
+      "file_size_bytes": 4269871,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 255999,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -13.06,
+      "true_peak_dbtp": 0.07,
+      "loudness_range_lu": 5.7,
+      "threshold_lufs": -23.31,
+      "ebu_r128_compliant": true
+    },
+    "acoustic": {
+      "peak_dbfs": -0.15,
+      "rms_dbfs": -14.04,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.031,
+      "longest_silence_seconds": 2.73,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 92.5,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 92.5,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 106.75,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 106.75,
+        "end_sec": 133.433,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:25.110026"
+  },
+  {
+    "asset_id": "AUDIO_CCB76B9C",
+    "filename": "nastelbom-no-copyright-music-606703.mp3",
+    "path": "Raw_input_files/audio/nastelbom-no-copyright-music-606703.mp3",
+    "file_size_bytes": 4461296,
+    "sha256": "ccb76b9c6b881b6639de3988532d26bb2492feb315976c888273c7ef594f39d5",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 139.416,
+      "file_size_bytes": 4461296,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -13.56,
+      "true_peak_dbtp": 0.04,
+      "loudness_range_lu": 9.2,
+      "threshold_lufs": -24.05,
+      "ebu_r128_compliant": true
+    },
+    "acoustic": {
+      "peak_dbfs": -0.06,
+      "rms_dbfs": -15.43,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.018,
+      "longest_silence_seconds": 1.62,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 115.6,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 115.6,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 111.53,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 111.53,
+        "end_sec": 139.416,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:31.585569"
+  },
+  {
+    "asset_id": "AUDIO_5C803A0D",
+    "filename": "no-copyright-music-2026-acoustic-acoustic-music-611654.mp3",
+    "path": "Raw_input_files/audio/no-copyright-music-2026-acoustic-acoustic-music-611654.mp3",
+    "file_size_bytes": 5619879,
+    "sha256": "5c803a0d9417ad02f7ed989b41ebb6239e98e59ff47cb8df0b5c551c135cc5a1",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 175.621,
+      "file_size_bytes": 5619879,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 255999,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.79,
+      "true_peak_dbtp": 1.01,
+      "loudness_range_lu": 5.9,
+      "threshold_lufs": -20.98,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.0,
+      "rms_dbfs": -13.73,
+      "clipping_detected": false,
+      "clipping_count": 1,
+      "silence_ratio": 0.019,
+      "longest_silence_seconds": 2.57,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 120.3,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 120.3,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat",
+        "playful",
+        "cheerful"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 140.5,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 140.5,
+        "end_sec": 175.621,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [
+        "block-puzzle-burst"
+      ],
+      "use_cases": [
+        "puzzle_gameplay_reel",
+        "lifestyle_advertisement",
+        "satisfying_clear_highlight"
+      ],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:39.485516"
+  },
+  {
+    "asset_id": "AUDIO_78BB7B59",
+    "filename": "prettyjohn1-no-copyright-music-487929.mp3",
+    "path": "Raw_input_files/audio/prettyjohn1-no-copyright-music-487929.mp3",
+    "file_size_bytes": 1939330,
+    "sha256": "78bb7b59f2950bf52a9a69084432e3aa45e61a2fdac61c180ab8fd48777f39ce",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 60.604,
+      "file_size_bytes": 1939330,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 255999,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -12.98,
+      "true_peak_dbtp": -0.1,
+      "loudness_range_lu": 1.5,
+      "threshold_lufs": -23.4,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.22,
+      "rms_dbfs": -15.53,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.067,
+      "longest_silence_seconds": 3.99,
+      "has_silence_issues": true,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 105.5,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 105.5,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 48.48,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 48.48,
+        "end_sec": 60.604,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:42.366209"
+  },
+  {
+    "asset_id": "AUDIO_0C06EE23",
+    "filename": "prettyjohn1-no-copyright-music-591301.mp3",
+    "path": "Raw_input_files/audio/prettyjohn1-no-copyright-music-591301.mp3",
+    "file_size_bytes": 2111529,
+    "sha256": "0c06ee23ba3d1c5650d05f72c7c8afc20ec167048f7b7c55948bf4482493f82e",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 65.985,
+      "file_size_bytes": 2111529,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -9.34,
+      "true_peak_dbtp": 0.64,
+      "loudness_range_lu": 11.3,
+      "threshold_lufs": -19.85,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": 0.0,
+      "rms_dbfs": -11.68,
+      "clipping_detected": true,
+      "clipping_count": 130,
+      "silence_ratio": 0.038,
+      "longest_silence_seconds": 1.03,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 91.1,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 91.1,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 52.79,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 52.79,
+        "end_sec": 65.985,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:45.459115"
+  },
+  {
+    "asset_id": "AUDIO_632A4576",
+    "filename": "sigmamusicart-no-copyright-music-537751.mp3",
+    "path": "Raw_input_files/audio/sigmamusicart-no-copyright-music-537751.mp3",
+    "file_size_bytes": 3943680,
+    "sha256": "632a4576b992926f5ca934c2919561382a1ec34aea13c0e3a1f1c8a8c481b101",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 123.24,
+      "file_size_bytes": 3943680,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -9.46,
+      "true_peak_dbtp": 0.79,
+      "loudness_range_lu": 2.7,
+      "threshold_lufs": -19.6,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": 0.0,
+      "rms_dbfs": -11.06,
+      "clipping_detected": true,
+      "clipping_count": 14,
+      "silence_ratio": 0.047,
+      "longest_silence_seconds": 5.74,
+      "has_silence_issues": true,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 150.3,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 150.3,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat",
+        "playful",
+        "cheerful"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 98.59,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 98.59,
+        "end_sec": 123.24,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [
+        "block-puzzle-burst"
+      ],
+      "use_cases": [
+        "puzzle_gameplay_reel",
+        "lifestyle_advertisement",
+        "satisfying_clear_highlight"
+      ],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:51.092653"
+  },
+  {
+    "asset_id": "AUDIO_2E75EFA8",
+    "filename": "sigmamusicart-no-copyright-music-604196.mp3",
+    "path": "Raw_input_files/audio/sigmamusicart-no-copyright-music-604196.mp3",
+    "file_size_bytes": 3273216,
+    "sha256": "2e75efa8e34a789db5e773c7e2757e45a60d39987dd008d5292604bbcbc4bc48",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 102.288,
+      "file_size_bytes": 3273216,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -9.15,
+      "true_peak_dbtp": -0.06,
+      "loudness_range_lu": 4.2,
+      "threshold_lufs": -19.29,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.0,
+      "rms_dbfs": -11.12,
+      "clipping_detected": false,
+      "clipping_count": 1,
+      "silence_ratio": 0.012,
+      "longest_silence_seconds": 1.08,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 154.2,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 154.2,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat",
+        "playful",
+        "cheerful"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 81.83,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 81.83,
+        "end_sec": 102.288,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [
+        "block-puzzle-burst"
+      ],
+      "use_cases": [
+        "puzzle_gameplay_reel",
+        "lifestyle_advertisement",
+        "satisfying_clear_highlight"
+      ],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:10:55.846240"
+  },
+  {
+    "asset_id": "AUDIO_AC1F9F82",
+    "filename": "sigmamusicart-no-copyright-music-619322 (1).mp3",
+    "path": "Raw_input_files/audio/sigmamusicart-no-copyright-music-619322 (1).mp3",
+    "file_size_bytes": 3428352,
+    "sha256": "ac1f9f8298a2bfbeaae09ca6be179cb5146229a1b9476172ec04c6056648dc85",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 107.136,
+      "file_size_bytes": 3428352,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.46,
+      "true_peak_dbtp": 0.29,
+      "loudness_range_lu": 4.1,
+      "threshold_lufs": -20.77,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": 0.0,
+      "rms_dbfs": -13.61,
+      "clipping_detected": false,
+      "clipping_count": 4,
+      "silence_ratio": 0.033,
+      "longest_silence_seconds": 3.57,
+      "has_silence_issues": true,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 69.9,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 69.9,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 85.71,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 85.71,
+        "end_sec": 107.136,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:11:01.149000"
+  },
+  {
+    "asset_id": "AUDIO_AC1F9F82_DUP",
+    "filename": "sigmamusicart-no-copyright-music-619322.mp3",
+    "path": "Raw_input_files/audio/sigmamusicart-no-copyright-music-619322.mp3",
+    "file_size_bytes": 3428352,
+    "sha256": "ac1f9f8298a2bfbeaae09ca6be179cb5146229a1b9476172ec04c6056648dc85",
+    "is_duplicate": true,
+    "duplicate_of_asset_id": "AUDIO_AC1F9F82",
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 107.136,
+      "file_size_bytes": 3428352,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.46,
+      "true_peak_dbtp": 0.29,
+      "loudness_range_lu": 4.1,
+      "threshold_lufs": -20.77,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": 0.0,
+      "rms_dbfs": -13.61,
+      "clipping_detected": false,
+      "clipping_count": 4,
+      "silence_ratio": 0.033,
+      "longest_silence_seconds": 3.57,
+      "has_silence_issues": true,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 69.9,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 69.9,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 85.71,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 85.71,
+        "end_sec": 107.136,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:11:06.136819"
+  },
+  {
+    "asset_id": "AUDIO_3E566446",
+    "filename": "studiokolomna-no-copyright-music-632665.mp3",
+    "path": "Raw_input_files/audio/studiokolomna-no-copyright-music-632665.mp3",
+    "file_size_bytes": 4205505,
+    "sha256": "3e566446752ae129f350d66467f48c2fa13883ed66a4342b03770b751cc19f33",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 131.422,
+      "file_size_bytes": 4205505,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -7.89,
+      "true_peak_dbtp": 0.43,
+      "loudness_range_lu": 1.8,
+      "threshold_lufs": -18.07,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": 0.0,
+      "rms_dbfs": -9.31,
+      "clipping_detected": false,
+      "clipping_count": 3,
+      "silence_ratio": 0.007,
+      "longest_silence_seconds": 0.4,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 79.1,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated"
+    },
+    "musical": {
+      "bpm": 79.1,
+      "bpm_confidence": "medium",
+      "energy_level": "high",
+      "rhythm_type": "syncopated",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 105.14,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 105.14,
+        "end_sec": 131.422,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:11:12.050912"
+  },
+  {
+    "asset_id": "AUDIO_64253D28",
+    "filename": "sub_clair-no-copyright-music-instrumental-621220.mp3",
+    "path": "Raw_input_files/audio/sub_clair-no-copyright-music-instrumental-621220.mp3",
+    "file_size_bytes": 3550464,
+    "sha256": "64253d28fec5c3d5615339ce153ceec2448605f011fef027486018b0311a45a8",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 110.952,
+      "file_size_bytes": 3550464,
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.53,
+      "true_peak_dbtp": -0.51,
+      "loudness_range_lu": 3.3,
+      "threshold_lufs": -20.71,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.46,
+      "rms_dbfs": -12.06,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.109,
+      "longest_silence_seconds": 7.9,
+      "has_silence_issues": true,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 122.7,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 122.7,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat",
+        "playful",
+        "cheerful"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 88.76,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 88.76,
+        "end_sec": 110.952,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [
+        "block-puzzle-burst"
+      ],
+      "use_cases": [
+        "puzzle_gameplay_reel",
+        "lifestyle_advertisement",
+        "satisfying_clear_highlight"
+      ],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:11:17.132938"
+  },
+  {
+    "asset_id": "AUDIO_EDE199CA",
+    "filename": "verclub_music-no-copyright-music-550940.mp3",
+    "path": "Raw_input_files/audio/verclub_music-no-copyright-music-550940.mp3",
+    "file_size_bytes": 1537253,
+    "sha256": "ede199ca2f861717e89ee00ec2b80825c45ff2ee854cb676ae08f88193b13cc2",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 48.039,
+      "file_size_bytes": 1537253,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.22,
+      "true_peak_dbtp": 1.88,
+      "loudness_range_lu": 5.0,
+      "threshold_lufs": -20.82,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.18,
+      "rms_dbfs": -16.17,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.054,
+      "longest_silence_seconds": 1.65,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 87.2,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 87.2,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 38.43,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 38.43,
+        "end_sec": 48.039,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:11:19.420718"
+  },
+  {
+    "asset_id": "AUDIO_AFBF2B76",
+    "filename": "vibemode-no-copyright-music-581670.mp3",
+    "path": "Raw_input_files/audio/vibemode-no-copyright-music-581670.mp3",
+    "file_size_bytes": 2602213,
+    "sha256": "afbf2b76e357e5ee955d312ea431e6bb53be382c8e57139e4aee70f90de8ff84",
+    "is_duplicate": false,
+    "duplicate_of_asset_id": null,
+    "can_decode": true,
+    "decode_error": null,
+    "stream": {
+      "duration_seconds": 81.319,
+      "file_size_bytes": 2602213,
+      "sample_rate": 44100,
+      "channels": 2,
+      "codec": "mp3",
+      "bitrate": 256000,
+      "format": "mp3"
+    },
+    "loudness": {
+      "integrated_lufs": -10.67,
+      "true_peak_dbtp": -0.13,
+      "loudness_range_lu": 3.3,
+      "threshold_lufs": -20.79,
+      "ebu_r128_compliant": false
+    },
+    "acoustic": {
+      "peak_dbfs": -0.52,
+      "rms_dbfs": -12.66,
+      "clipping_detected": false,
+      "clipping_count": 0,
+      "silence_ratio": 0.038,
+      "longest_silence_seconds": 0.52,
+      "has_silence_issues": false,
+      "speech_presence": "instrumental_music",
+      "estimated_bpm": 76.1,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat"
+    },
+    "musical": {
+      "bpm": 76.1,
+      "bpm_confidence": "high",
+      "energy_level": "high",
+      "rhythm_type": "steady_beat",
+      "key_estimate": null,
+      "predicted_moods": [
+        "energetic",
+        "upbeat"
+      ],
+      "mood_prediction_method": "acoustic_energy_spectral_heuristics",
+      "mood_confidence": "medium",
+      "sound_classification": "instrumental_music",
+      "vocal_type": "instrumental"
+    },
+    "timeline_structure": [
+      {
+        "section": "intro",
+        "start_sec": 0.0,
+        "end_sec": 3.0,
+        "description": "Opening hook / thematic introduction"
+      },
+      {
+        "section": "main_body",
+        "start_sec": 3.0,
+        "end_sec": 65.06,
+        "description": "Core rhythm / continuous gameplay or demo bed"
+      },
+      {
+        "section": "outro_resolve",
+        "start_sec": 65.06,
+        "end_sec": 81.319,
+        "description": "Call-to-action resolution / decay to silence"
+      }
+    ],
+    "provenance": {
+      "source_type": "USER_SUPPLIED",
+      "source_directory": "Raw_input_files/audio",
+      "license_claim": "USER_DECLARED_NO_COPYRIGHT",
+      "license_status": "NEEDS_REVIEW",
+      "commercial_use_allowed": false,
+      "attribution_required": false,
+      "clearance_notes": "User-supplied sample soundtrack. Commercial publishing restricted until provenance clearance is verified."
+    },
+    "recommendations": {
+      "suitable_projects": [],
+      "use_cases": [],
+      "platforms": [
+        "instagram_reels",
+        "facebook_reels",
+        "youtube_shorts"
+      ]
+    },
+    "analysis_status": "ANALYZED",
+    "inspected_at": "2026-11-17T10:11:23.143816"
+  }
+]

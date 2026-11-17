@@ -306,6 +306,103 @@ class TestPhase2IntakeAndAudio(unittest.TestCase):
         self.assertIn("ALL 5 STUDIO VERIFICATION TESTS PASSED SUCCESSFULLY", res.stdout)
         print("  [PASS] Test 11: Phase 1 master regression suite passed 100%.")
 
+    # -------------------------------------------------------------------------
+    # Test 12: Real 23 MP3 Discovery & Zero-Error Stream Decoding
+    # -------------------------------------------------------------------------
+    def test_12_real_mp3_discovery_and_stream_decoding(self):
+        """Verifies all 23 real MP3 files in Raw_input_files/audio/ decode cleanly."""
+        inspection_path = os.path.join(DATA_DIR, "real_audio_inspection.json")
+        self.assertTrue(os.path.isfile(inspection_path), "real_audio_inspection.json missing")
+
+        with open(inspection_path, "r", encoding="utf-8") as f:
+            real_data = json.load(f)
+
+        self.assertEqual(len(real_data), 23, f"Expected 23 MP3 files, found {len(real_data)}")
+        for rec in real_data:
+            self.assertTrue(rec["can_decode"], f"File failed to decode: {rec['filename']}")
+            self.assertIsNone(rec["decode_error"])
+            self.assertGreater(rec["stream"]["duration_seconds"], 0.0)
+            self.assertGreater(rec["stream"]["sample_rate"], 0)
+            self.assertGreater(rec["stream"]["channels"], 0)
+            self.assertEqual(rec["provenance"]["source_type"], "USER_SUPPLIED")
+            self.assertEqual(rec["provenance"]["license_status"], "NEEDS_REVIEW")
+            self.assertFalse(rec["provenance"]["commercial_use_allowed"])
+        print("  [PASS] Test 12: Real 23 MP3 discovery & clean stream decoding verified.")
+
+    # -------------------------------------------------------------------------
+    # Test 13: Duplicate Canonical Reference Integrity
+    # -------------------------------------------------------------------------
+    def test_13_duplicate_canonical_reference_integrity(self):
+        """Verifies duplicate assets reference canonical ID and do NOT self-reference."""
+        audio_cat_path = os.path.join(DATA_DIR, "audio_catalog.json")
+        with open(audio_cat_path, "r", encoding="utf-8") as f:
+            cat = json.load(f)
+
+        duplicates = [a for a in cat["assets"].values() if a.get("is_duplicate")]
+        self.assertGreaterEqual(len(duplicates), 1)
+
+        for dup in duplicates:
+            # Self-reference prevention
+            self.assertNotEqual(dup["asset_id"], dup["duplicate_of_asset_id"])
+            # Canonical asset existence
+            canonical_id = dup["duplicate_of_asset_id"]
+            self.assertIn(canonical_id, cat["assets"])
+            canonical = cat["assets"][canonical_id]
+            self.assertFalse(canonical.get("is_duplicate"))
+            self.assertIsNone(canonical.get("duplicate_of_asset_id"))
+            self.assertEqual(dup["sha256"], canonical["sha256"])
+        print("  [PASS] Test 13: Duplicate canonical reference integrity verified.")
+
+    # -------------------------------------------------------------------------
+    # Test 14: Recommendations Across All Five Projects
+    # -------------------------------------------------------------------------
+    def test_14_five_project_recommendation_matrix(self):
+        """Verifies recommendation engine executes across all 5 studio project profiles."""
+        projects = ["block-puzzle-burst", "expand-ezisales", "expand-hr", "wms", "pos"]
+        for p in projects:
+            res = audio_recommender.recommend_audio(
+                project=p,
+                target_duration=20.0,
+                allow_unverified_licenses=True
+            )
+            self.assertGreaterEqual(len(res["top_recommendations"]), 1, f"No tracks recommended for {p}")
+            top = res["top_recommendations"][0]
+            self.assertGreater(top["match_score"], 0.0)
+            self.assertIn("explanation", top)
+        print("  [PASS] Test 14: Five-project recommendation matrix verified.")
+
+    # -------------------------------------------------------------------------
+    # Test 15: BPB_DAY_05 22-Second Multi-Scene Scenario
+    # -------------------------------------------------------------------------
+    def test_15_bpb_day05_multi_scene_scenario(self):
+        """Verifies 22s multi-scene timeline breakdown for BPB_DAY_05 lifestyle reel."""
+        day05_scenes = [
+            {"scene_name": "Office Fatigue", "start_sec": 0.0, "end_sec": 8.0, "mood": "calm steady", "description": "Tiring workday at desk"},
+            {"scene_name": "Arrive Home & Sofa", "start_sec": 8.0, "end_sec": 12.0, "mood": "upbeat relaxing", "description": "Commute and collapse onto sofa"},
+            {"scene_name": "Block Puzzle Burst Gameplay", "start_sec": 12.0, "end_sec": 20.0, "mood": "playful cheerful satisfying", "description": "Interactive puzzle break"},
+            {"scene_name": "Studio Outro Card", "start_sec": 20.0, "end_sec": 22.0, "mood": "satisfying outro", "description": "Pyapiras Games logo & call to action"}
+        ]
+
+        res = audio_recommender.recommend_audio(
+            project="block-puzzle-burst",
+            content_category="lifestyle_reel",
+            objective="lifestyle_marketing",
+            desired_mood="playful relaxing upbeat",
+            target_duration=22.0,
+            scenes=day05_scenes,
+            allow_unverified_licenses=True
+        )
+
+        plan = res.get("multi_scene_plan", [])
+        self.assertEqual(len(plan), 4)
+        self.assertEqual(plan[0]["scene_name"], "Office Fatigue")
+        self.assertEqual(plan[0]["start_sec"], 0.0)
+        self.assertEqual(plan[0]["end_sec"], 8.0)
+        self.assertEqual(plan[3]["start_sec"], 20.0)
+        self.assertEqual(plan[3]["end_sec"], 22.0)
+        self.assertIn("fade-out", plan[3]["audio_action"])
+        print("  [PASS] Test 15: BPB_DAY_05 22-second multi-scene scenario verified.")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

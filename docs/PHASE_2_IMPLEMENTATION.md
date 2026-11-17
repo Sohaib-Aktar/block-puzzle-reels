@@ -149,11 +149,12 @@ source_assets/
   "video_codec": "h264",
   "audio_codec": "aac",
   "sha256": "2b4c0018a41e163f97126a4ade5c4ff58fe6dd56635cea7dd3d6b9ee1ead634c",
-  "is_duplicate": true,
-  "duplicate_of_asset_id": "VID_2B4C0018",
+  "is_duplicate": false,
+  "duplicate_of_asset_id": null,
   "verified_moments": [ ... ]
 }
 ```
+*Note on Duplicate Records:* Duplicate file instances receive unique IDs (e.g. `VID_2B4C0018_DUP1`) with `is_duplicate: true` and `duplicate_of_asset_id: "VID_2B4C0018"` referencing the canonical asset. Self-referencing is strictly prevented.
 
 ### 5.2 Audio Intelligence Catalog (`data/audio_catalog.json`)
 ```json
@@ -191,4 +192,5 @@ source_assets/
 
 - **Phase 1 Protection:** All existing scripts (`scripts/run_test_a_day4.py` through `scripts/run_test_e_lifecycle.py`), FFmpeg pipelines, and SQLite records (`data/campaign_tracker.sqlite`) remain fully functional.
 - **Remotion Stability:** Assets referenced in `my-video/public/` were not deleted or moved; instead, duplicate entries are logged and cross-referenced to ensure zero build errors in Remotion.
-- **Separate Task Resolution:** `SolveItReel` compliance re-render has been completed: Remotion re-render performed, dual Technical and Creative QC (80/90) passed, campaign tracker advanced to `READY_TO_PUBLISH`, and deliverable synced to Google Drive.
+- **Separate Task Status:** `SolveItReel` compliance re-render remains marked `⏳ PENDING` per explicit user instruction. Do not mark this separate task complete during Phase 2.
+- **Real Audio Integration:** All 23 user-supplied MP3 files from `Raw_input_files/audio/` are mapped to `source_assets/shared/music/`, analyzed for EBU R128 loudness and autocorrelation BPM, and cataloged with provenance tracking.

@@ -131,12 +131,12 @@ Never burn non-English text into a video file.
 Remote: `https://github.com/Sohaib-Aktar/block-puzzle-reels.git`  
 Branch: `main`
 
-## Status (2026-11-16)
+## Status (2026-11-17)
 | Phase | Status |
 |---|---|
 | Phase 1 — Foundation (config, projects, outputs structure) | ✅ DONE |
-| Phase 2 — Media intake (source_assets re-organisation) | 🔲 Planned |
-| Phase 3 — FFmpeg pipeline test | 🔲 Planned |
-| Phase 4 — Multi-platform exports | 🔲 Planned |
-| Phase 5 — QC automation | 🔲 Planned |
-| SolveItReel compliance re-render | ✅ Re-rendered, dual QC passed (80/90), READY_TO_PUBLISH |
+| Phase 2 — Media intake & Audio Intelligence (source_assets, catalogs, DSP analysis) | ✅ COMPLETED & FULLY VERIFIED (15/15 Tests Passed) |
+| Phase 3 — FFmpeg pipeline test | 🔲 Planned / Not Started |
+| Phase 4 — Multi-platform exports | 🔲 Planned / Not Started |
+| Phase 5 — QC automation | 🔲 Planned / Not Started |
+| SolveItReel compliance re-render | ✅ COMPLETED & READY_TO_PUBLISH (Dual QC passed 80/90; confirmed solved by user) |

@@ -27,17 +27,33 @@ CONFIG_DIR = os.path.join(WORKSPACE_ROOT, "config", "platform_presets")
 
 
 def get_ffmpeg_cmd() -> List[str]:
-    """Find system ffmpeg or fallback to Remotion's bundled ffmpeg."""
+    """Find system ffmpeg or fallback to Remotion's bundled ffmpeg binary."""
     if shutil.which("ffmpeg"):
         return ["ffmpeg"]
+    # Direct bundled binary check (orders of magnitude faster than npx subprocess)
+    remotion_dir = os.path.join(MY_VIDEO_DIR, "node_modules", "@remotion")
+    if os.path.exists(remotion_dir):
+        for entry in os.listdir(remotion_dir):
+            if entry.startswith("compositor-"):
+                candidate = os.path.join(remotion_dir, entry, "ffmpeg.exe" if os.name == "nt" else "ffmpeg")
+                if os.path.exists(candidate):
+                    return [candidate]
     # Fallback to npx remotion ffmpeg inside my-video
     return ["cmd", "/c", "npx", "--prefix", MY_VIDEO_DIR, "remotion", "ffmpeg"]
 
 
 def get_ffprobe_cmd() -> List[str]:
-    """Find system ffprobe or fallback to Remotion's bundled ffprobe."""
+    """Find system ffprobe or fallback to Remotion's bundled ffprobe binary."""
     if shutil.which("ffprobe"):
         return ["ffprobe"]
+    # Direct bundled binary check (orders of magnitude faster than npx subprocess)
+    remotion_dir = os.path.join(MY_VIDEO_DIR, "node_modules", "@remotion")
+    if os.path.exists(remotion_dir):
+        for entry in os.listdir(remotion_dir):
+            if entry.startswith("compositor-"):
+                candidate = os.path.join(remotion_dir, entry, "ffprobe.exe" if os.name == "nt" else "ffprobe")
+                if os.path.exists(candidate):
+                    return [candidate]
     # Fallback to npx remotion ffprobe inside my-video
     return ["cmd", "/c", "npx", "--prefix", MY_VIDEO_DIR, "remotion", "ffprobe"]
 

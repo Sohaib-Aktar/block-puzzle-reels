@@ -26,13 +26,24 @@ def sync_to_drive(
         raise FileNotFoundError("Google Drive for Desktop is not detected at G:\\My Drive.")
 
     if not source_dir:
-        # Default source mappings
-        candidates = [
-            os.path.join(WORKSPACE_ROOT, "outputs", project_id, "30-day-challenge", "day-05-puzzle-break"),
-            os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "day-04"),
+        cid_lower = content_id.lower().replace("_", "-")
+        candidates = []
+        if "day-04" in cid_lower or "day04" in cid_lower:
+            candidates.extend([
+                os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "day-04"),
+                os.path.join(WORKSPACE_ROOT, "outputs", project_id, "30-day-challenge", "day-04-offline-proof"),
+            ])
+        elif "day-05" in cid_lower or "day05" in cid_lower:
+            candidates.extend([
+                os.path.join(WORKSPACE_ROOT, "outputs", project_id, "30-day-challenge", "day-05-puzzle-break"),
+                os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "day-05"),
+            ])
+        candidates.extend([
             os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, content_id),
             os.path.join(WORKSPACE_ROOT, "outputs", project_id, content_id),
-        ]
+            os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, cid_lower),
+            os.path.join(WORKSPACE_ROOT, "outputs", project_id, cid_lower),
+        ])
         for c in candidates:
             if os.path.exists(c):
                 source_dir = c
@@ -48,7 +59,7 @@ def sync_to_drive(
     for item in os.listdir(source_dir):
         src_item = os.path.join(source_dir, item)
         dst_item = os.path.join(dest_folder, item)
-        if os.path.isfile(src_item) and item.endswith((".mp4", ".txt", ".md", ".json")):
+        if os.path.isfile(src_item) and item.endswith((".mp4", ".txt", ".md", ".json", ".png", ".jpg")):
             shutil.copy2(src_item, dst_item)
             synced_files.append(item)
         elif os.path.isdir(src_item):

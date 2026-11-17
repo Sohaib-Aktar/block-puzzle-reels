@@ -1,12 +1,157 @@
 {
-  "generated_at": "2026-11-16T18:05:21.505545",
-  "total_assets": 14,
+  "generated_at": "2026-11-17T10:22:24.602534",
+  "total_assets": 18,
   "total_videos": 7,
   "total_images": 11,
   "duplicate_groups": 4,
   "assets": {
     "VID_2B4C0018": {
       "asset_id": "VID_2B4C0018",
+      "original_filename": "gameplay.mp4",
+      "file_location": "source_assets/block-puzzle-burst/gameplay/gameplay.mp4",
+      "project": "block-puzzle-burst",
+      "media_category": "gameplay",
+      "file_type": "video",
+      "file_size_bytes": 30385860,
+      "duration_seconds": 169.51575,
+      "resolution": "720x1600",
+      "width": 720,
+      "height": 1600,
+      "fps": 60.0,
+      "aspect_ratio": "9:16",
+      "orientation": "portrait",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "sha256": "2b4c0018a41e163f97126a4ade5c4ff58fe6dd56635cea7dd3d6b9ee1ead634c",
+      "is_duplicate": false,
+      "duplicate_of_asset_id": null,
+      "possible_use_cases": [
+        "gameplay",
+        "lifestyle_storytelling",
+        "product_advertisement",
+        "demonstration"
+      ],
+      "verified_moments": [
+        {
+          "name": "Early Board Setup",
+          "start_sec": 0.0,
+          "end_sec": 30.0,
+          "type": "board_filling"
+        },
+        {
+          "name": "High Density Board",
+          "start_sec": 30.0,
+          "end_sec": 45.0,
+          "type": "dense_board"
+        },
+        {
+          "name": "Combo Clear Burst (Double Line)",
+          "start_sec": 30.0,
+          "end_sec": 38.0,
+          "type": "combo_burst"
+        },
+        {
+          "name": "Late Game High Tension",
+          "start_sec": 120.0,
+          "end_sec": 160.0,
+          "type": "high_score_climb"
+        }
+      ],
+      "import_date": "2026-11-17T10:22:24.819343",
+      "analysis_status": "analyzed"
+    },
+    "VID_157CA54E": {
+      "asset_id": "VID_157CA54E",
+      "original_filename": "gameplay2.mp4",
+      "file_location": "source_assets/block-puzzle-burst/gameplay/gameplay2.mp4",
+      "project": "block-puzzle-burst",
+      "media_category": "gameplay",
+      "file_type": "video",
+      "file_size_bytes": 34249641,
+      "duration_seconds": 201.280396,
+      "resolution": "720x1600",
+      "width": 720,
+      "height": 1600,
+      "fps": 90000.0,
+      "aspect_ratio": "9:16",
+      "orientation": "portrait",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "sha256": "157ca54eb3a2b24e4094b460fb7edd434cf9fae434c9ef1d65c0dc5a7c7e3702",
+      "is_duplicate": false,
+      "duplicate_of_asset_id": null,
+      "possible_use_cases": [
+        "gameplay",
+        "puzzle_challenge",
+        "promotional_content"
+      ],
+      "verified_moments": [
+        {
+          "name": "Fast Opening Pace",
+          "start_sec": 0.0,
+          "end_sec": 40.0,
+          "type": "fast_clears"
+        },
+        {
+          "name": "Dense Challenge Freeze State",
+          "start_sec": 87.0,
+          "end_sec": 95.0,
+          "type": "puzzle_freeze"
+        },
+        {
+          "name": "Cascading Particle Burst",
+          "start_sec": 96.0,
+          "end_sec": 120.0,
+          "type": "burst_particles"
+        }
+      ],
+      "import_date": "2026-11-17T10:22:25.058436",
+      "analysis_status": "analyzed"
+    },
+    "VID_B4AD69BF": {
+      "asset_id": "VID_B4AD69BF",
+      "original_filename": "gameplay_lifestyle_cfr30.mp4",
+      "file_location": "source_assets/block-puzzle-burst/gameplay/gameplay_lifestyle_cfr30.mp4",
+      "project": "block-puzzle-burst",
+      "media_category": "gameplay",
+      "file_type": "video",
+      "file_size_bytes": 1023048,
+      "duration_seconds": 12.066667,
+      "resolution": "720x1600",
+      "width": 720,
+      "height": 1600,
+      "fps": 30.0,
+      "aspect_ratio": "9:16",
+      "orientation": "portrait",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "sha256": "b4ad69bf53e5d73168bab88c9675aceba3eb7d11f64974789dfac6527b96cf9e",
+      "is_duplicate": false,
+      "duplicate_of_asset_id": null,
+      "possible_use_cases": [
+        "lifestyle_storytelling",
+        "gameplay",
+        "product_advertisement"
+      ],
+      "verified_moments": [
+        {
+          "name": "Clean Board Entry",
+          "start_sec": 0.0,
+          "end_sec": 3.0,
+          "type": "board_entry"
+        },
+        {
+          "name": "Double Line Combo Clear (Score 160)",
+          "start_sec": 3.0,
+          "end_sec": 8.0,
+          "type": "combo_clear"
+        }
+      ],
+      "import_date": "2026-11-17T10:22:25.111651",
+      "analysis_status": "analyzed"
+    },
+    "VID_2B4C0018_DUP1": {
+      "asset_id": "VID_2B4C0018_DUP1",
       "original_filename": "recording_1.mp4",
       "file_location": "source_assets/block-puzzle-burst/gameplay/recording_1.mp4",
       "project": "block-puzzle-burst",
@@ -57,11 +202,11 @@
           "type": "high_score_climb"
         }
       ],
-      "import_date": "2026-11-16T18:05:35.019532",
+      "import_date": "2026-11-17T10:22:25.337338",
       "analysis_status": "analyzed"
     },
-    "VID_157CA54E": {
-      "asset_id": "VID_157CA54E",
+    "VID_157CA54E_DUP1": {
+      "asset_id": "VID_157CA54E_DUP1",
       "original_filename": "recording_2.mp4",
       "file_location": "source_assets/block-puzzle-burst/gameplay/recording_2.mp4",
       "project": "block-puzzle-burst",
@@ -105,49 +250,7 @@
           "type": "burst_particles"
         }
       ],
-      "import_date": "2026-11-16T18:05:38.393990",
-      "analysis_status": "analyzed"
-    },
-    "VID_B4AD69BF": {
-      "asset_id": "VID_B4AD69BF",
-      "original_filename": "gameplay_lifestyle_cfr30.mp4",
-      "file_location": "source_assets/block-puzzle-burst/gameplay/gameplay_lifestyle_cfr30.mp4",
-      "project": "block-puzzle-burst",
-      "media_category": "gameplay",
-      "file_type": "video",
-      "file_size_bytes": 1023048,
-      "duration_seconds": 12.066667,
-      "resolution": "720x1600",
-      "width": 720,
-      "height": 1600,
-      "fps": 30.0,
-      "aspect_ratio": "9:16",
-      "orientation": "portrait",
-      "video_codec": "h264",
-      "audio_codec": "aac",
-      "sha256": "b4ad69bf53e5d73168bab88c9675aceba3eb7d11f64974789dfac6527b96cf9e",
-      "is_duplicate": false,
-      "duplicate_of_asset_id": null,
-      "possible_use_cases": [
-        "lifestyle_storytelling",
-        "gameplay",
-        "product_advertisement"
-      ],
-      "verified_moments": [
-        {
-          "name": "Clean Board Entry",
-          "start_sec": 0.0,
-          "end_sec": 3.0,
-          "type": "board_entry"
-        },
-        {
-          "name": "Double Line Combo Clear (Score 160)",
-          "start_sec": 3.0,
-          "end_sec": 8.0,
-          "type": "combo_clear"
-        }
-      ],
-      "import_date": "2026-11-16T18:05:31.674502",
+      "import_date": "2026-11-17T10:22:25.577101",
       "analysis_status": "analyzed"
     },
     "VID_F942BA44": {
@@ -189,7 +292,7 @@
           "type": "offline_gameplay"
         }
       ],
-      "import_date": "2026-11-16T18:05:41.662545",
+      "import_date": "2026-11-17T10:22:25.666254",
       "analysis_status": "analyzed"
     },
     "VID_0DD488E3": {
@@ -231,7 +334,7 @@
           "type": "offline_gameplay"
         }
       ],
-      "import_date": "2026-11-16T18:05:44.825374",
+      "import_date": "2026-11-17T10:22:25.727978",
       "analysis_status": "analyzed"
     },
     "IMG_0F938759": {
@@ -260,7 +363,7 @@
         "opening_hook",
         "emotional_context"
       ],
-      "import_date": "2026-11-16T18:05:44.848544",
+      "import_date": "2026-11-17T10:22:25.766394",
       "analysis_status": "analyzed"
     },
     "IMG_5CBEE218": {
@@ -289,7 +392,7 @@
         "opening_hook",
         "emotional_context"
       ],
-      "import_date": "2026-11-16T18:05:44.857868",
+      "import_date": "2026-11-17T10:22:25.770138",
       "analysis_status": "analyzed"
     },
     "IMG_7011BF83": {
@@ -318,7 +421,7 @@
         "opening_hook",
         "emotional_context"
       ],
-      "import_date": "2026-11-16T18:05:44.868023",
+      "import_date": "2026-11-17T10:22:25.774217",
       "analysis_status": "analyzed"
     },
     "IMG_B2DB0D90": {
@@ -347,11 +450,40 @@
         "opening_hook",
         "emotional_context"
       ],
-      "import_date": "2026-11-16T18:05:44.877444",
+      "import_date": "2026-11-17T10:22:25.778746",
       "analysis_status": "analyzed"
     },
     "IMG_166FC7E0": {
       "asset_id": "IMG_166FC7E0",
+      "original_filename": "icon block game.png",
+      "file_location": "source_assets/block-puzzle-burst/logos/icon block game.png",
+      "project": "block-puzzle-burst",
+      "media_category": "logos",
+      "file_type": "image",
+      "file_size_bytes": 661855,
+      "duration_seconds": null,
+      "resolution": "1080x1080",
+      "width": 1080,
+      "height": 1080,
+      "aspect_ratio": "1:1",
+      "orientation": "square",
+      "format": "png",
+      "color_mode": "RGBA",
+      "has_transparency": true,
+      "image_category": "logo_badge",
+      "sha256": "166fc7e07ad03f817117150dc5fdab76c64e614de62ff52ac57d0c41049cdcbb",
+      "is_duplicate": false,
+      "duplicate_of_asset_id": null,
+      "possible_use_cases": [
+        "brand_watermark",
+        "outro_card",
+        "app_icon_splash"
+      ],
+      "import_date": "2026-11-17T10:22:25.798963",
+      "analysis_status": "analyzed"
+    },
+    "IMG_166FC7E0_DUP1": {
+      "asset_id": "IMG_166FC7E0_DUP1",
       "original_filename": "icon_block_game.png",
       "file_location": "source_assets/block-puzzle-burst/logos/icon_block_game.png",
       "project": "block-puzzle-burst",
@@ -376,11 +508,40 @@
         "outro_card",
         "app_icon_splash"
       ],
-      "import_date": "2026-11-16T18:05:44.905386",
+      "import_date": "2026-11-17T10:22:25.802659",
       "analysis_status": "analyzed"
     },
     "IMG_BA0A1ECA": {
       "asset_id": "IMG_BA0A1ECA",
+      "original_filename": "pyapiras games icon.png",
+      "file_location": "source_assets/block-puzzle-burst/logos/pyapiras games icon.png",
+      "project": "block-puzzle-burst",
+      "media_category": "logos",
+      "file_type": "image",
+      "file_size_bytes": 1737943,
+      "duration_seconds": null,
+      "resolution": "1254x1254",
+      "width": 1254,
+      "height": 1254,
+      "aspect_ratio": "1:1",
+      "orientation": "square",
+      "format": "png",
+      "color_mode": "RGB",
+      "has_transparency": false,
+      "image_category": "logo_badge",
+      "sha256": "ba0a1ecad8c9568cb0036e850334a183bc3abcd250689baa09ee9192c3eebfc4",
+      "is_duplicate": false,
+      "duplicate_of_asset_id": null,
+      "possible_use_cases": [
+        "brand_watermark",
+        "outro_card",
+        "app_icon_splash"
+      ],
+      "import_date": "2026-11-17T10:22:25.812408",
+      "analysis_status": "analyzed"
+    },
+    "IMG_BA0A1ECA_DUP1": {
+      "asset_id": "IMG_BA0A1ECA_DUP1",
       "original_filename": "pyapiras_games_icon.png",
       "file_location": "source_assets/block-puzzle-burst/logos/pyapiras_games_icon.png",
       "project": "block-puzzle-burst",
@@ -405,7 +566,7 @@
         "outro_card",
         "app_icon_splash"
       ],
-      "import_date": "2026-11-16T18:05:44.928629",
+      "import_date": "2026-11-17T10:22:25.821270",
       "analysis_status": "analyzed"
     },
     "IMG_233CEF4A": {
@@ -434,7 +595,7 @@
         "freeze_board",
         "social_carousel"
       ],
-      "import_date": "2026-11-16T18:05:44.941964",
+      "import_date": "2026-11-17T10:22:25.829904",
       "analysis_status": "analyzed"
     },
     "IMG_84E2ACC2": {
@@ -463,7 +624,7 @@
         "freeze_board",
         "social_carousel"
       ],
-      "import_date": "2026-11-16T18:05:44.950239",
+      "import_date": "2026-11-17T10:22:25.832724",
       "analysis_status": "analyzed"
     },
     "IMG_A5069C02": {
@@ -491,7 +652,7 @@
         "offline_proof",
         "feature_evidence"
       ],
-      "import_date": "2026-11-16T18:05:44.958481",
+      "import_date": "2026-11-17T10:22:25.835012",
       "analysis_status": "analyzed"
     }
   }
