@@ -8,8 +8,9 @@
 **Remotion composition:** `SolveItReel`  
 **Source file:** `generated_outputs/videos/SolveItReel_Puzzle_Challenge.mp4`
 
-> [!WARNING]
-> The original render (`SolveItReel_Puzzle_Challenge.mp4`) contains Bengali and Hindi on-screen text in Scene 1 (HookScene) and Scene 4 (InteractionScene). This violates the English-only rule from MASTER_SOCIAL_VIDEO_STUDIO_PROMPT §4. A compliance re-render is required. See `my-video/src/SolveItReel.tsx`.
+> [!NOTE]
+> **COMPLIANCE RE-RENDER COMPLETE & VERIFIED:**
+> The original render contained Bengali and Hindi on-screen text violating the English-only rule. `my-video/src/SolveItReel.tsx` was updated to strict English-only on-screen text (relocating multilingual translations to social captions). The composition has been successfully re-rendered, passed dual Technical & Creative QC (80/90), and synced to `outputs/block-puzzle-burst/30-day-challenge/solve-it-reel/final/instagram_reel.mp4`, `generated_outputs/videos/SolveItReel_Puzzle_Challenge.mp4`, and Google Drive.
 
 ## Concept
 Viral 5-scene brain-challenge format. 20 seconds. The most polished reel in the series. No answer revealed — answer coming in Part 2. Designed for maximum comments (A/B/C) and shares.
@@ -29,13 +30,16 @@ Viral 5-scene brain-challenge format. 20 seconds. The most polished reel in the 
 | 4 — CTA | 360–480 | 12–16s | Big A/B/C cards, "Which one would you choose? Comment A, B or C!" |
 | 5 — Promo | 480–600 | 16–20s | "Block Puzzle Burst", "PLAY NOW 🎮", "Link in Bio!" |
 
-## Compliance fix needed
-In `SolveItReel.tsx`:
-- Remove Bengali `মাত্র এক চালে সমাধান করুন!` from HookScene (lines ~152)
-- Remove Hindi `सिर्फ़ एक चाल में हल करो!` from HookScene (lines ~164)
-- Remove Bengali `আপনার উত্তর কী? A, B নাকি C? কমেন্ট করুন!` from InteractionScene (lines ~733)
-- Remove Hindi `आपका जवाब क्या है? A, B या C? कमेंट करें!` from InteractionScene (lines ~742)
-- Keep English CTA: "Which one would you choose? Comment A, B or C!"
+## Compliance Status
+- [x] Removed Bengali `মাত্র এক চালে সমাধান করুন!` from HookScene.
+- [x] Removed Hindi `सिर्फ़ एक चाल में हल करो!` from HookScene.
+- [x] Removed Bengali `আপনার উত্তর কী? A, B নাকি C? কমেন্ট করুন!` from InteractionScene.
+- [x] Removed Hindi `आपका जवाब क्या है? A, B या C? कमेंट करें!` from InteractionScene.
+- [x] Verified high-contrast English lines (`🧩 Think. Place. Clear.` and `Drop your answer below! 👇`).
+- [x] Re-rendered video deliverable via Remotion (20.01s @ 30fps).
+- [x] Technical QC: PASSED (1080x1920, 20.01s, H.264/AAC, safe zones compliant).
+- [x] Creative QC: PASSED (80/90 score, APPROVED).
+- [x] Campaign tracker state: `READY_TO_PUBLISH`.
 
 ## Captions
 

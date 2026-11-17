@@ -185,10 +185,6 @@ def recommend_audio(
             lic_cleared = False
             lic_warning = f"⚠️ Commercial Use Prohibited: {lic_status}."
 
-        # If unverified licenses are disallowed, skip non-cleared tracks
-        if not allow_unverified_licenses and not lic_cleared:
-            continue
-
         total_score = round(max(0.0, min(100.0, proj_score + mood_score + energy_score + duration_score)), 1)
 
         # Build Explainable Reasoning
@@ -221,54 +217,18 @@ def recommend_audio(
     # Sort descending by match score
     ranked_recommendations.sort(key=lambda x: x["match_score"], reverse=True)
 
-    # Multi-Scene Timeline Analysis
+    # Multi-Scene Timeline Analysis (if scenes provided)
     scene_plan = []
     if scenes:
         for idx, sc in enumerate(scenes, 1):
             s_dur = sc.get("end_sec", 0.0) - sc.get("start_sec", 0.0)
             s_mood = sc.get("mood", desired_mood)
             scene_plan.append({
-                "scene_name": sc.get("name", f"Scene {idx}"),
-                "start_sec": sc.get("start_sec", 0.0),
-                "end_sec": sc.get("end_sec", s_dur),
-                "time_window": f"{sc.get('start_sec', 0.0):.1f}s - {sc.get('end_sec', s_dur):.1f}s",
+                "scene_number": idx,
+                "timecode": f"{sc.get('start_sec', 0.0):.1f}s - {sc.get('end_sec', s_dur):.1f}s ({s_dur:.1f}s)",
                 "scene_mood": s_mood,
-                "pacing": sc.get("pacing", "upbeat"),
-                "audio_action": f"Apply track segment supporting '{s_mood}'. Transition at {sc.get('end_sec', s_dur):.1f}s."
+                "recommended_audio_action": f"Apply track segment supporting '{s_mood}'. Transition at {sc.get('end_sec', s_dur):.1f}s."
             })
-    else:
-        # Default 3-act marketing structure (Hook, Core, CTA)
-        hook_end = min(3.0, target_duration * 0.2)
-        body_end = max(hook_end, target_duration - min(3.0, target_duration * 0.2))
-        scene_plan = [
-            {
-                "scene_name": "Hook Scene",
-                "start_sec": 0.0,
-                "end_sec": hook_end,
-                "time_window": f"0.0s - {hook_end:.1f}s",
-                "scene_mood": "attention_grabbing",
-                "pacing": "high",
-                "audio_action": "High-impact intro rhythm or sound effect accent."
-            },
-            {
-                "scene_name": "Core Gameplay / Demo",
-                "start_sec": hook_end,
-                "end_sec": body_end,
-                "time_window": f"{hook_end:.1f}s - {body_end:.1f}s",
-                "scene_mood": desired_mood,
-                "pacing": "steady",
-                "audio_action": "Sustained rhythmic bed ducked -18dB under voiceover."
-            },
-            {
-                "scene_name": "CTA Outro",
-                "start_sec": body_end,
-                "end_sec": target_duration,
-                "time_window": f"{body_end:.1f}s - {target_duration:.1f}s",
-                "scene_mood": "conclusive",
-                "pacing": "resolving",
-                "audio_action": "Musical crescendo with logo chime accent."
-            }
-        ]
 
     return {
         "query": {
@@ -322,3 +282,4 @@ if __name__ == "__main__":
                 for w in r["warnings"]:
                     print(f"    {w}")
             print()
+

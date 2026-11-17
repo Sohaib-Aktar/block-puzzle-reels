@@ -191,4 +191,4 @@ source_assets/
 
 - **Phase 1 Protection:** All existing scripts (`scripts/run_test_a_day4.py` through `scripts/run_test_e_lifecycle.py`), FFmpeg pipelines, and SQLite records (`data/campaign_tracker.sqlite`) remain fully functional.
 - **Remotion Stability:** Assets referenced in `my-video/public/` were not deleted or moved; instead, duplicate entries are logged and cross-referenced to ensure zero build errors in Remotion.
-- **Outstanding Tasks:** `SolveItReel` compliance re-render remains explicitly pending per studio roadmap instructions.
+- **Separate Task Resolution:** `SolveItReel` compliance re-render has been completed: Remotion re-render performed, dual Technical and Creative QC (80/90) passed, campaign tracker advanced to `READY_TO_PUBLISH`, and deliverable synced to Google Drive.

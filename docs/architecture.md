@@ -139,4 +139,4 @@ Branch: `main`
 | Phase 3 — FFmpeg pipeline test | 🔲 Planned |
 | Phase 4 — Multi-platform exports | 🔲 Planned |
 | Phase 5 — QC automation | 🔲 Planned |
-| SolveItReel compliance re-render | ⚠️ Source fixed, re-render needed |
+| SolveItReel compliance re-render | ✅ Re-rendered, dual QC passed (80/90), READY_TO_PUBLISH |
