@@ -1,0 +1,10 @@
+[tool.pyrefly]
+search-path = [
+    ".",
+    "scripts",
+]
+
+[tool.pyright]
+extraPaths = [
+    "scripts",
+]
