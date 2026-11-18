@@ -1,8 +1,8 @@
 # [PROJECT_NAME] — Project Profile
 
 ## Studio
-AI Social Media Content Studio  
-Root workspace: `c:\Users\Dell\Downloads\video gen`
+Social Media Video Production Studio  
+Root workspace: `Social Media Video Production Studio`
 
 ## Product / Game Overview
 - **Product Name:** [e.g. Apex ERP / Block Puzzle Burst / TaskFlow SaaS]

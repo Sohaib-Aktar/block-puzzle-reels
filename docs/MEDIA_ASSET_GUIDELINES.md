@@ -1,9 +1,9 @@
 # Media Asset Guidelines & Production Standards
 
-**Studio:** Pyapiras Games  
+**Studio:** Social Media Video Production Studio  
 **Date:** 2026-11-16  
 **Status:** Active Production Standard  
-**Workspace Root:** `C:\Users\Dell\Downloads\video gen`
+**Workspace Root:** `Social Media Video Production Studio`
 
 ---
 

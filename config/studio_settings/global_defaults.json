@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "studio_name": "AI Social Media Content Studio",
+  "studio_name": "Social Media Video Production Studio",
   "default_language": "en",
   "on_screen_text_language": "en",
   "multilingual_note": "BN and HI translations go in caption files only. Never burn non-English text into video renders.",

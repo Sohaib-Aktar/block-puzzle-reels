@@ -1,6 +1,6 @@
-# AI Social Media Content Studio
+# Social Media Video Production Studio
 
-Multi-project video content studio for Instagram, Facebook, YouTube Shorts and YouTube longform.
+Multi-project video production, multi-platform export, and automated QC studio for Instagram Reels, Facebook Reels, YouTube Shorts, and YouTube longform.
 
 ## Quick start
 
@@ -35,6 +35,7 @@ python scripts/inspect_footage.py Raw_input_files/recording_1.mp4
 
 ## Active projects
 - **Block Puzzle Burst** — 30-day Instagram launch campaign (`projects/block-puzzle-burst/`)
+- **Expand eziSales** — Field sales automation product tutorials (`projects/expand-ezisales/`)
 
 ## Key rules (always follow)
 1. **English on-screen text only.** BN/HI go in caption files only.
@@ -47,5 +48,5 @@ python scripts/inspect_footage.py Raw_input_files/recording_1.mp4
 See [`docs/architecture.md`](docs/architecture.md).
 
 ## GitHub
-Repository: https://github.com/Sohaib-Aktar/block-puzzle-reels  
+Target Repository: https://github.com/Sohaib-Aktar/social-media-video-production-studio *(currently hosted at `Sohaib-Aktar/block-puzzle-reels` pending manual GitHub rename — see `docs/audit/STUDIO_RENAMING_REPORT.md`)*  
 Branch: `main`

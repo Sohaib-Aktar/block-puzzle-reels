@@ -1,6 +1,6 @@
 {
   "system": {
-    "engine_name": "Pyapiras Production Pipeline",
+    "engine_name": "Social Media Video Production Studio Pipeline",
     "version": "3.0.0",
     "default_renderer": "ffmpeg",
     "keep_intermediate": false,

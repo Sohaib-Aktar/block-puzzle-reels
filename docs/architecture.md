@@ -1,11 +1,11 @@
-# Architecture — AI Social Media Content Studio
+# Architecture — Social Media Video Production Studio
 
 **Version:** 1.0  
-**Updated:** 2026-11-16  
-**Workspace:** `c:\Users\Dell\Downloads\video gen`
+**Updated:** 2026-11-18  
+**Workspace:** `Social Media Video Production Studio`
 
 ## Purpose
-Multi-project AI Social Media Content Studio. Supports all games, apps, ERP/software, tutorials, and brands across Instagram Reels, Facebook Reels, YouTube Shorts, and YouTube longform.
+Multi-project Social Media Video Production Studio. Supports games, apps, ERP/software, tutorials, and brands across Instagram Reels, Facebook Reels, YouTube Shorts, and YouTube longform.
 
 ## Folder structure
 
@@ -128,7 +128,7 @@ Bengali and Hindi belong in:
 Never burn non-English text into a video file.
 
 ## Git repository
-Remote: `https://github.com/Sohaib-Aktar/block-puzzle-reels.git`  
+Target Remote: `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` *(currently `block-puzzle-reels.git` pending manual GitHub rename)*  
 Branch: `main`
 
 ## Status (2026-11-17)

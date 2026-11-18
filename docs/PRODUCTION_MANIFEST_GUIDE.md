@@ -1,5 +1,5 @@
 # Production Manifest Authoring Guide
-**Pyapiras Games Social Media Video Production Studio**  
+**Social Media Video Production Studio**  
 **Document:** `docs/PRODUCTION_MANIFEST_GUIDE.md`  
 **Date:** 2026-11-17  
 **Version:** 3.0.0  

@@ -292,7 +292,7 @@ When modifying this workspace:
 Use this as a target structure, not as permission to move or delete existing files without inspection:
 
 ```text
-video_gen/
+Social Media Video Production Studio/
 ├── .agents/                         # Antigravity agent rules/skills, if configured
 ├── MASTER_SOCIAL_VIDEO_STUDIO_PROMPT.md
 ├── MASTER_REEL_RULES.md              # Global short-form rules, if retained

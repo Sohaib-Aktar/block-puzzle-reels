@@ -1,6 +1,6 @@
 # Human Approval & Override Workflow
 
-**Studio:** Pyapiras Games — AI Marketing & Creative Content Production Studio  
+**Studio:** Social Media Video Production Studio  
 **Audit Log:** `data/qc_approval_audit.jsonl`  
 **Job State Store:** `data/qc_jobs/`
 

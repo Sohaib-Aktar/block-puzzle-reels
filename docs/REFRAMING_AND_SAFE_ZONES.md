@@ -1,5 +1,5 @@
 # Intelligent Reframing & Platform Safe Zones Guide
-**Studio:** Pyapiras Games  
+**Studio:** Social Media Video Production Studio  
 **Document:** `docs/REFRAMING_AND_SAFE_ZONES.md`  
 **Config Sources:** `scripts/reframing_engine.py`, `config/production/safe_zones.json`  
 **Date:** 2026-11-18  

@@ -1,6 +1,6 @@
 # Automated QC Operations Guide
 
-**Studio:** Pyapiras Games — AI Marketing & Creative Content Production Studio  
+**Studio:** Social Media Video Production Studio  
 **CLI Entry Point:** `scripts/qc_orchestrator.py`  
 **Calibration Harness:** `scripts/qc_calibration.py`
 

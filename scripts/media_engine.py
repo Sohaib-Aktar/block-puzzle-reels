@@ -1,5 +1,5 @@
 """
-media_engine.py — Core Media Processing Engine for AI Social Media Content Studio
+media_engine.py — Core Media Processing Engine for Social Media Video Production Studio
 Deterministic video editing using FFmpeg (System or Remotion bundled) and Python.
 
 Capabilities:

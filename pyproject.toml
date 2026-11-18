@@ -1,3 +1,8 @@
+[project]
+name = "social-media-video-production-studio"
+version = "5.0.0"
+description = "Social Media Video Production Studio — Multi-project automated video production, export, and QC studio"
+
 [tool.pyrefly]
 search-path = [
     ".",

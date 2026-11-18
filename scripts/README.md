@@ -1,6 +1,6 @@
 # Scripts
 
-Utility scripts for the AI Social Media Content Studio.
+Utility scripts for the Social Media Video Production Studio.
 
 ## Available scripts
 

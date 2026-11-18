@@ -1,7 +1,7 @@
 {
-  "name": "block-puzzle-reels",
+  "name": "social-media-video-production-studio",
   "version": "1.0.0",
-  "description": "Deterministic Instagram Reels generation for Block Puzzle game using Remotion",
+  "description": "Social Media Video Production Studio — Multi-project automated video production, multi-platform export, and QC studio",
   "private": true,
   "scripts": {
     "dev": "npm --prefix my-video run dev",

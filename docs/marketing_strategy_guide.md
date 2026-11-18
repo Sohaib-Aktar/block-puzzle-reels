@@ -1,5 +1,5 @@
 # Social Media Marketing Strategy & Creative Guidelines
-**AI Social Media Content Studio — Standard Operating Marketing Playbook**
+**Social Media Video Production Studio — Standard Operating Marketing Playbook**
 
 ---
 

@@ -1,6 +1,6 @@
 # QC Result Model & Severity Classification Guide
 
-**Studio:** Pyapiras Games — AI Marketing & Creative Content Production Studio  
+**Studio:** Social Media Video Production Studio  
 **Implementation:** `scripts/qc_report_builder.py`
 
 ---

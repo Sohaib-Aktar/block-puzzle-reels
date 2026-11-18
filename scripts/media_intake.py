@@ -2,7 +2,7 @@
 """
 scripts/media_intake.py
 =======================
-Unified Media Intake and Catalog Management CLI for Pyapiras Games Studio.
+Unified Media Intake and Catalog Management CLI for Social Media Video Production Studio.
 
 Provides single-point command-line control for:
   - scan: Discovers and indexes all video, image, and audio files into catalogs.

@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-11-18T12:34:49.120876",
+  "runtime_environment": {
+    "os": "Windows",
+    "python_version": "3.14.0",
+    "node_version": "v24.14.1",
+    "npm_version": "11.11.0",
+    "ffmpeg_version": "9.0.2-essentials_build-www.gyan.dev (via imageio-ffmpeg)",
+    "system_ffmpeg_on_path": false,
+    "git_cli": true,
+    "gh_cli": false
+  },
+  "python_dependencies": {
+    "requirements_txt_present": false,
+    "pyproject_dependencies_declared": false,
+    "third_party_used": [
+      {
+        "package": "pillow",
+        "import_name": "PIL",
+        "installed_version": "13.0.0",
+        "used_by": [
+          "export_preview_generator.py",
+          "footage_analyzer.py",
+          "overlay_engine.py",
+          "reframing_engine.py",
+          "visual_qc.py",
+          "qc_calibration.py"
+        ]
+      },
+      {
+        "package": "numpy",
+        "import_name": "numpy",
+        "installed_version": "2.4.2",
+        "used_by": [
+          "audio_analyzer.py",
+          "visual_qc.py"
+        ]
+      },
+      {
+        "package": "imageio-ffmpeg",
+        "import_name": "imageio_ffmpeg",
+        "installed_version": "0.8.1",
+        "used_by": [
+          "media_engine.py",
+          "inspect_footage.py"
+        ]
+      }
+    ],
+    "missing_optional_ai_models": [
+      {
+        "capability": "Offline ASR (Voiceover Transcription)",
+        "candidates": [
+          "faster-whisper",
+          "openai-whisper"
+        ],
+        "status": "NOT_INSTALLED_MANUAL_REVIEW_GATED"
+      },
+      {
+        "capability": "Subjective Multimodal Creative Judging",
+        "candidates": [
+          "external LLM API"
+        ],
+        "status": "NOT_CONFIGURED_MANUAL_REVIEW_GATED"
+      }
+    ]
+  },
+  "windows_native_integrations": [
+    {
+      "component": "Windows.Media.Ocr.OcrEngine (WinRT)",
+      "script": "scripts/win_ocr.ps1",
+      "status": "OPERATIONAL_OFFLINE",
+      "language": "en-US"
+    },
+    {
+      "component": "System.Speech.Synthesis.SpeechSynthesizer (SAPI5 TTS)",
+      "script": "scripts/audio_engine.py",
+      "status": "OPERATIONAL_OFFLINE"
+    },
+    {
+      "component": "Google Drive for Desktop local mount (G:\\My Drive)",
+      "script": "scripts/drive_sync.py",
+      "status": "HOST_SPECIFIC_HARDCODED"
+    }
+  ],
+  "node_dependencies": {
+    "root_package": {
+      "name": "social-media-video-production-studio",
+      "version": "1.0.0",
+      "dependencies": {}
+    },
+    "remotion_subproject": {
+      "path": "my-video/package.json",
+      "name": "my-video",
+      "dependencies": {
+        "@remotion/cli": "4.0.543",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "remotion": "4.0.543"
+      },
+      "devDependencies": {
+        "@remotion/eslint-config-flat": "4.0.543",
+        "@types/react": "19.3.0",
+        "@types/web": "0.0.166",
+        "eslint": "10.12.0",
+        "prettier": "3.8.1",
+        "typescript": "5.9.3"
+      }
+    }
+  }
+}

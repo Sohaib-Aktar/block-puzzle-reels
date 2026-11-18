@@ -73,7 +73,7 @@ def evaluate_creative_quality(
             "dimension": "Brand Consistency",
             "score": 9,
             "max": 10,
-            "observation": "Respects Pyapiras Games studio brand standards and verified color palette."
+            "observation": "Respects Social Media Video Production Studio brand standards and verified project palette."
         },
         {
             "dimension": "Text Readability & Safe Areas",

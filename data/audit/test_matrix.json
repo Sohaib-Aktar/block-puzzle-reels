@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-11-18T12:34:49.122780",
+  "execution_summary": {
+    "total_automated_tests_executed": 69,
+    "total_passed": 69,
+    "total_failed": 0,
+    "total_skipped": 0,
+    "total_runtime_seconds": 59.25,
+    "labeled_qc_benchmark_cases": 22,
+    "labeled_qc_benchmark_accuracy": "22/22 (Precision=1.000, Recall=1.000, CriticalFalsePass=0.000)"
+  },
+  "suites": [
+    {
+      "suite": "scripts/test_studio_suite.py",
+      "phase": "Phase 1 \u2014 Foundation (Post-Removal Active Suite)",
+      "tests_collected": 4,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "runtime_seconds": 9.95,
+      "isolates_production_state": false,
+      "notes": "Mutates live outputs/ and live data/campaign_tracker.sqlite (Test E creates/publishes test-lifecycle-01). Formerly 5 tests prior to authorized Expand HR Test C removal."
+    },
+    {
+      "suite": "tests/test_phase2_intake_audio.py",
+      "phase": "Phase 2 \u2014 Media Intake & Audio Intelligence",
+      "tests_collected": 15,
+      "passed": 15,
+      "failed": 0,
+      "skipped": 0,
+      "runtime_seconds": 11.54,
+      "isolates_production_state": false,
+      "notes": "Test 11 invokes Phase 1 test_studio_suite.py (indirectly mutating live DB/outputs); other tests are read-only or use temp files."
+    },
+    {
+      "suite": "tests/test_phase3_production_pipeline.py",
+      "phase": "Phase 3 \u2014 Production Pipeline",
+      "tests_collected": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0,
+      "runtime_seconds": 2.6,
+      "isolates_production_state": true,
+      "notes": "Uses isolated temp dirs for synthetic tests and read-only checks on Pilot 1 & Pilot 2 outputs."
+    },
+    {
+      "suite": "tests/test_phase4_multi_platform_export.py",
+      "phase": "Phase 4 \u2014 Multi-Platform Export & Shared-Artifact Optimization",
+      "tests_collected": 24,
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0,
+      "runtime_seconds": 33.5,
+      "isolates_production_state": true,
+      "notes": "24 collected methods numbered test_01..test_26 (test_15 and test_18 merged). Uses tempfile.TemporaryDirectory() for synthetic exports."
+    },
+    {
+      "suite": "tests/test_phase5_automated_qc.py",
+      "phase": "Phase 5 \u2014 Automated QC System",
+      "tests_collected": 13,
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0,
+      "runtime_seconds": 1.66,
+      "isolates_production_state": false,
+      "notes": "test_11_human_approval_gate_and_override_audit appends synthetic test override records to live data/qc_approval_audit.jsonl and data/qc_jobs/."
+    }
+  ],
+  "scripts_without_direct_unit_tests": [
+    "scripts/drive_sync.py",
+    "scripts/content_workflow.py",
+    "scripts/marketing_director.py",
+    "scripts/inspect_footage.py",
+    "scripts/inspect_real_audio.py",
+    "scripts/qc_verifier.py",
+    "scripts/creative_qc.py",
+    "scripts/footage_analyzer.py",
+    "scripts/audio_mixer.py",
+    "scripts/render_manager.py",
+    "scripts/win_ocr.ps1"
+  ],
+  "qc_calibration_metrics": {
+    "overall": {
+      "total": 22,
+      "tp": 17,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "critical_false_pass_rate": 0.0,
+      "false_failure_rate": 0.0
+    },
+    "calibration_split": {
+      "total": 9,
+      "tp": 7,
+      "fp": 0,
+      "tn": 2,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "critical_false_pass_rate": 0.0,
+      "false_failure_rate": 0.0
+    },
+    "held_out_split": {
+      "total": 13,
+      "tp": 10,
+      "fp": 0,
+      "tn": 3,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "critical_false_pass_rate": 0.0,
+      "false_failure_rate": 0.0
+    },
+    "deterministic_only": {
+      "total": 14,
+      "tp": 12,
+      "fp": 0,
+      "tn": 2,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "critical_false_pass_rate": 0.0,
+      "false_failure_rate": 0.0
+    },
+    "ocr_only": {
+      "total": 5,
+      "tp": 3,
+      "fp": 0,
+      "tn": 2,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "critical_false_pass_rate": 0.0,
+      "false_failure_rate": 0.0
+    },
+    "real_studio_only": {
+      "total": 3,
+      "tp": 2,
+      "fp": 0,
+      "tn": 1,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "critical_false_pass_rate": 0.0,
+      "false_failure_rate": 0.0
+    }
+  }
+}

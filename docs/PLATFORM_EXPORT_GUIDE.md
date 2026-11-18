@@ -1,5 +1,5 @@
 # Platform Export Configuration Guide
-**Studio:** Pyapiras Games  
+**Studio:** Social Media Video Production Studio  
 **Document:** `docs/PLATFORM_EXPORT_GUIDE.md`  
 **Config Source:** `config/production/export_profiles.json`  
 **Date:** 2026-11-18  

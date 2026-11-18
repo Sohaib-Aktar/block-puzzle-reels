@@ -1,8 +1,8 @@
 # Expand eziSales — Project Profile
 
 ## Studio
-AI Social Media Content Studio  
-Root workspace: `c:\Users\Dell\Downloads\video gen`
+Social Media Video Production Studio  
+Root workspace: `Social Media Video Production Studio`
 
 ## Product Overview
 - **Product Name:** Expand eziSales
