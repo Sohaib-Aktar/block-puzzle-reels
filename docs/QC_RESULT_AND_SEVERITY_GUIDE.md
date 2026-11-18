@@ -38,7 +38,7 @@ Aggregation precedence in `scripts/qc_report_builder.py`:
 - **Technical (`TECH_*`):** Missing/empty file, ffprobe read failure, decode error, resolution/aspect/FPS/codec mismatch against platform profile, SAR distortion, frame corruption, opening/ending truncation.
 - **Audio (`AUD_001`–`AUD_006`):** Missing audio stream, `A/V sync delta > 0.35s`, digital clipping (`max_volume >= -0.05 dB` or `true_peak > -0.1 dBTP`), effectively silent track (`integrated_lufs <= -55 LUFS`), excessive silence (`silence_ratio >= 65%` or `max_gap >= 8.0s`).
 - **Visual & OCR (`VIS_*`, `OCR_*`):** Unexpected black frames (`>= 0.5s`), unintended freeze frames (`>= 4.0s`), blank/solid sampled frames, missing expected overlay text, frame-edge clipped text (`x <= 4px` or `x+w >= W-4px`), overlay text intruding into platform UI danger zones.
-- **Content & Brand (`BRD_001`, `CNT_001`, `CRV_001`):** Cross-project brand contamination (e.g., Expand HR terms in a Block Puzzle Burst video), non-ERP/placeholder UI footage when ERP screen recordings are absent, missing closing CTA when required.
+- **Content & Brand (`BRD_001`, `CNT_001`, `CRV_001`):** Cross-project brand contamination (e.g., Expand eziSales terms in a Block Puzzle Burst video), non-ERP/placeholder UI footage when ERP screen recordings are absent, missing closing CTA when required.
 - **Licensing (`LIC_001`, `LIC_003`):** Missing/tampered SHA-256 media provenance, audio asset marked `RESTRICTED` or `UNKNOWN` commercial license status.
 
 ### `VERIFICATION_REQUIRED` / `REVIEW` (Forces `REVIEW_REQUIRED` if no `CRITICAL` present)

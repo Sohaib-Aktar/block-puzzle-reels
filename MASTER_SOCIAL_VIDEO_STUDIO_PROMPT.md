@@ -16,7 +16,7 @@ Support multiple independent projects, including but not limited to:
 
 - Mobile games and gameplay marketing.
 - Mobile applications and product feature promotions.
-- ERP, CRM, HR, WMS, POS, and business software demonstrations.
+- ERP, CRM, and business software demonstrations.
 - App walkthroughs, onboarding, and step-by-step tutorials.
 - Feature launches, release announcements, and update explainers.
 - Problem/solution videos and use-case demonstrations.
@@ -313,8 +313,6 @@ video_gen/
 │   │           ├── content_calendar.md
 │   │           └── briefs/
 │   ├── expand-ezisales/
-│   │   └── PROJECT_PROFILE.md
-│   ├── expand-hr/
 │   │   └── PROJECT_PROFILE.md
 │   └── <another-project>/
 │       └── PROJECT_PROFILE.md

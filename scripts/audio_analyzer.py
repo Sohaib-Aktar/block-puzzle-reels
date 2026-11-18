@@ -325,7 +325,7 @@ def determine_mood_and_structure(
         moods.append("functional_sfx")
     elif sound_type == "voiceover_speech":
         moods.append("narrative")
-        if "ezisales" in path_lower or "expand-hr" in path_lower:
+        if "ezisales" in path_lower:
             moods.extend(["professional", "instructional", "clear"])
         else:
             moods.extend(["relatable", "conversational"])
@@ -340,14 +340,12 @@ def determine_mood_and_structure(
         else:
             moods.extend(["relaxing", "calm", "ambient"])
 
-        if "corporate" in path_lower or "ezisales" in path_lower or "wms" in path_lower:
+        if "corporate" in path_lower or "ezisales" in path_lower:
             moods.extend(["corporate", "technology", "modern", "professional"])
-        if "trust" in path_lower or "hr" in path_lower:
+        if "trust" in path_lower:
             moods.extend(["trustworthy", "corporate", "calm", "positive"])
         if "puzzle" in path_lower or "burst" in path_lower:
             moods.extend(["playful", "cheerful", "casual_gaming", "satisfying"])
-        if "retail" in path_lower or "pos" in path_lower:
-            moods.extend(["retail_friendly", "modern", "upbeat"])
         if "piano" in path_lower or "relax" in path_lower:
             moods.extend(["relaxing", "calm", "peaceful"])
 
@@ -380,7 +378,7 @@ def map_project_and_platforms(path: str, sound_type: str, moods: List[str]) -> T
 
     # Project recommendation
     recommended_projects = []
-    for proj in ["block-puzzle-burst", "expand-ezisales", "expand-hr", "wms", "pos"]:
+    for proj in ["block-puzzle-burst", "expand-ezisales"]:
         if proj in path_norm:
             recommended_projects.append(proj)
     if not recommended_projects:
@@ -388,11 +386,7 @@ def map_project_and_platforms(path: str, sound_type: str, moods: List[str]) -> T
         if any(m in ["playful", "cheerful", "casual_gaming"] for m in moods):
             recommended_projects.append("block-puzzle-burst")
         if any(m in ["corporate", "technology"] for m in moods):
-            recommended_projects.extend(["expand-ezisales", "wms"])
-        if any(m in ["trustworthy", "calm"] for m in moods):
-            recommended_projects.append("expand-hr")
-        if "retail_friendly" in moods:
-            recommended_projects.append("pos")
+            recommended_projects.append("expand-ezisales")
 
     # Use cases
     best_use_cases = []

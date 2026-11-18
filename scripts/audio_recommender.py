@@ -35,27 +35,6 @@ PROJECT_AUDIO_PROFILES = {
         "target_bpm_range": (110, 125),
         "instrumentation": ["clean electric guitar", "tech arpeggio", "steady electronic beat"],
         "banned_moods": ["silly", "chaotic", "melodramatic"]
-    },
-    "expand-hr": {
-        "primary_moods": ["trustworthy", "corporate", "calm", "positive", "peaceful", "professional"],
-        "preferred_energy": ["low", "medium"],
-        "target_bpm_range": (85, 110),
-        "instrumentation": ["warm acoustic piano", "gentle strings", "soft percussion"],
-        "banned_moods": ["frantic", "suspenseful", "aggressive"]
-    },
-    "wms": {
-        "primary_moods": ["modern", "technology", "focused", "operational", "energetic"],
-        "preferred_energy": ["medium", "high"],
-        "target_bpm_range": (115, 130),
-        "instrumentation": ["forward-moving synth", "rhythmic tech drums", "clean pulses"],
-        "banned_moods": ["whimsical", "sad"]
-    },
-    "pos": {
-        "primary_moods": ["retail_friendly", "modern", "upbeat", "energetic", "cheerful"],
-        "preferred_energy": ["medium", "high"],
-        "target_bpm_range": (115, 128),
-        "instrumentation": ["bright groove", "bouncy bass", "retail pop beat"],
-        "banned_moods": ["dark", "sluggish"]
     }
 }
 

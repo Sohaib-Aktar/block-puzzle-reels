@@ -34,7 +34,7 @@ class ReframeStrategy(str, Enum):
     MANUAL_FOCAL_POINT = "MANUAL_FOCAL_POINT"
 
 
-ERP_PROJECTS = {"expand-ezisales", "expand-hr", "wms", "pos"}
+ERP_PROJECTS = {"expand-ezisales"}
 GAMEPLAY_PROJECTS = {"block-puzzle-burst"}
 
 
@@ -45,9 +45,6 @@ class ReframingEngine:
         self.project_bg_colors = project_bg_colors or {
             "block-puzzle-burst": "#070B14",
             "expand-ezisales": "#0A1428",
-            "expand-hr": "#0B192C",
-            "wms": "#0F172A",
-            "pos": "#111827",
             "default": "#0A0F1A",
         }
 

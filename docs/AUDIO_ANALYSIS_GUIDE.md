@@ -90,9 +90,6 @@ npx remotion ffmpeg -i input.wav -af "loudnorm=I=-14:LRA=11:TP=-1.5" -c:a pcm_s1
 |---|---|---|---|---|
 | `block-puzzle-burst` | Vibrant, satisfying, casual mobile gaming | 110–135 BPM | `energetic`, `playful`, `cheerful`, `casual_gaming`, `satisfying`, `relaxing` | `somber`, `dramatic`, `aggressive`, `melancholy` |
 | `expand-ezisales` | Professional, efficient, modern B2B SaaS | 100–125 BPM | `modern`, `corporate`, `tech`, `confident`, `efficient` | `cartoonish`, `chaotic`, `somber` |
-| `expand-hr` | Trustworthy, calm, enterprise HR & payroll | 90–115 BPM | `calm`, `corporate`, `trustworthy`, `professional`, `clean` | `frantic`, `heavy_bass`, `aggressive` |
-| `wms` | Organized, swift, logistics and supply chain | 115–130 BPM | `operational`, `focused`, `dynamic`, `structured` | `whimsical`, `sleepy` |
-| `pos` | Upbeat, active, retail storefront groove | 115–130 BPM | `retail`, `groove`, `upbeat`, `friendly` | `mournful`, `dark` |
 
 ---
 

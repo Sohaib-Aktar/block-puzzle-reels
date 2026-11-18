@@ -35,18 +35,6 @@ PROJECT_CATEGORIES = {
         "screenshots", "screen-recordings", "logos", "music",
         "sound-effects", "voiceovers", "other"
     ],
-    "expand-hr": [
-        "screenshots", "screen-recordings", "logos", "music",
-        "sound-effects", "voiceovers", "other"
-    ],
-    "wms": [
-        "screenshots", "screen-recordings", "logos", "music",
-        "sound-effects", "voiceovers", "other"
-    ],
-    "pos": [
-        "screenshots", "screen-recordings", "logos", "music",
-        "sound-effects", "voiceovers", "other"
-    ],
     "shared": [
         "music", "sound-effects", "voiceovers", "other"
     ]
@@ -180,16 +168,6 @@ def scan_known_sources() -> List[Dict[str, Any]]:
             "project": "expand-ezisales",
             "category": "voiceovers",
             "target_filename": "ezisales_tut01_voiceover.wav"
-        })
-
-    expandhr_vo = os.path.join(WORKSPACE_ROOT, "outputs", "expand-hr", "payroll-quick-guides",
-                               "expandhr-tut-01-one-click-payroll", "voiceover.wav")
-    if os.path.exists(expandhr_vo):
-        candidates.append({
-            "source_path": expandhr_vo,
-            "project": "expand-hr",
-            "category": "voiceovers",
-            "target_filename": "expandhr_tut01_voiceover.wav"
         })
 
     return candidates

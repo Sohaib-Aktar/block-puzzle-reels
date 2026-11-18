@@ -299,11 +299,11 @@ class TestPhase2IntakeAndAudio(unittest.TestCase):
     # Test 11: Phase 1 Master Regression Verification
     # -------------------------------------------------------------------------
     def test_11_phase1_regression_suite(self):
-        """Verifies that all 5 Phase 1 tests pass without regression."""
+        """Verifies that all active Phase 1 tests pass without regression."""
         cmd = [sys.executable, os.path.join(SCRIPTS_DIR, "test_studio_suite.py")]
         res = subprocess.run(cmd, cwd=WORKSPACE_ROOT, capture_output=True, text=True)
         self.assertEqual(res.returncode, 0, f"Phase 1 regression failed:\n{res.stdout}\n{res.stderr}")
-        self.assertIn("ALL 5 STUDIO VERIFICATION TESTS PASSED SUCCESSFULLY", res.stdout)
+        self.assertIn("ALL 4 STUDIO VERIFICATION TESTS PASSED SUCCESSFULLY", res.stdout)
         print("  [PASS] Test 11: Phase 1 master regression suite passed 100%.")
 
     # -------------------------------------------------------------------------
@@ -354,11 +354,11 @@ class TestPhase2IntakeAndAudio(unittest.TestCase):
         print("  [PASS] Test 13: Duplicate canonical reference integrity verified.")
 
     # -------------------------------------------------------------------------
-    # Test 14: Recommendations Across All Five Projects
+    # Test 14: Recommendations Across All Active Studio Projects
     # -------------------------------------------------------------------------
-    def test_14_five_project_recommendation_matrix(self):
-        """Verifies recommendation engine executes across all 5 studio project profiles."""
-        projects = ["block-puzzle-burst", "expand-ezisales", "expand-hr", "wms", "pos"]
+    def test_14_active_project_recommendation_matrix(self):
+        """Verifies recommendation engine executes across all active studio project profiles."""
+        projects = ["block-puzzle-burst", "expand-ezisales"]
         for p in projects:
             res = audio_recommender.recommend_audio(
                 project=p,
@@ -369,7 +369,7 @@ class TestPhase2IntakeAndAudio(unittest.TestCase):
             top = res["top_recommendations"][0]
             self.assertGreater(top["match_score"], 0.0)
             self.assertIn("explanation", top)
-        print("  [PASS] Test 14: Five-project recommendation matrix verified.")
+        print("  [PASS] Test 14: Active project recommendation matrix verified.")
 
     # -------------------------------------------------------------------------
     # Test 15: BPB_DAY_05 22-Second Multi-Scene Scenario

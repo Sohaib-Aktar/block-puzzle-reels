@@ -27,9 +27,6 @@ source_assets/
 ### Supported Project Slugs:
 - `block-puzzle-burst` (Mobile casual puzzle game)
 - `expand-ezisales` (B2B mobile sales order booking application)
-- `expand-hr` (Enterprise human resources and payroll automation)
-- `wms` (Warehouse management and inventory tracking system)
-- `pos` (Retail point-of-sale management suite)
 
 ---
 

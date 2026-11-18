@@ -85,7 +85,7 @@ The **Creative Editing Manifest** (`manifest.json`) is the configuration-driven 
 ### Top-Level Fields
 | Field | Type | Required | Description |
 |---|---|---|---|
-| `project` | string | **Yes** | Target studio project: `block-puzzle-burst`, `expand-ezisales`, `expand-hr`, `wms`, `pos`. |
+| `project` | string | **Yes** | Target studio project: `block-puzzle-burst`, `expand-ezisales`. |
 | `campaign` | string | **Yes** | Marketing campaign name (e.g. `30-day-challenge`, `quick-start-tutorials`). |
 | `content_id` | string | **Yes** | Unique identifier (e.g. `BPB_DAY_04`, `ezisales-tut-01`). |
 | `output_profile` | string | **Yes** | Video profile: `instagram_reel`, `youtube_short`, `facebook_reel`, `software_tutorial_vertical`, `product_demo_horizontal`. |

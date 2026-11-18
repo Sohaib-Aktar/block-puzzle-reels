@@ -1,0 +1,345 @@
+{
+  "manifest_version": "1.0.0",
+  "executed_at": "2026-11-18T12:23:00+05:30",
+  "workspace_root": "C:/Users/Dell/Downloads/video gen",
+  "authorization": "Explicit user authorization for removal of Expand HR, POS, and WMS within the studio workspace only.",
+  "removed_projects": [
+    {
+      "name": "Expand HR",
+      "slug": "expand-hr",
+      "aliases_audited": ["ExpandHR", "expandhr", "expand_hr", "payroll", "one-click-payroll", "hrms"]
+    },
+    {
+      "name": "POS",
+      "slug": "pos",
+      "aliases_audited": ["POS", "point-of-sale", "point of sale", "retail pos"]
+    },
+    {
+      "name": "WMS",
+      "slug": "wms",
+      "aliases_audited": ["WMS", "warehouse management", "barcode picking", "rfid warehouse"]
+    }
+  ],
+  "retained_active_projects": [
+    "block-puzzle-burst",
+    "expand-ezisales"
+  ],
+  "replacement_project_created": false,
+  "deleted_directories": [
+    {
+      "path": "projects/expand-hr",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 3,
+      "files": [
+        "projects/expand-hr/PROJECT_PROFILE.md",
+        "projects/expand-hr/knowledge/missing_information.md",
+        "projects/expand-hr/knowledge/verified_features.md"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    },
+    {
+      "path": "projects/pos",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 3,
+      "files": [
+        "projects/pos/PROJECT_PROFILE.md",
+        "projects/pos/knowledge/missing_information.md",
+        "projects/pos/knowledge/verified_features.md"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    },
+    {
+      "path": "projects/wms",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 3,
+      "files": [
+        "projects/wms/PROJECT_PROFILE.md",
+        "projects/wms/knowledge/missing_information.md",
+        "projects/wms/knowledge/verified_features.md"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    },
+    {
+      "path": "source_assets/expand-hr",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 2,
+      "files": [
+        "source_assets/expand-hr/music/bgm_calm_corporate_trust.wav",
+        "source_assets/expand-hr/voiceovers/expandhr_tut01_voiceover.wav"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    },
+    {
+      "path": "source_assets/pos",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 1,
+      "files": [
+        "source_assets/pos/music/bgm_retail_energetic_groove.wav"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    },
+    {
+      "path": "source_assets/wms",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 1,
+      "files": [
+        "source_assets/wms/music/bgm_operational_efficiency.wav"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    },
+    {
+      "path": "outputs/expand-hr",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_DIRECTORY_RECURSIVE",
+      "file_count": 11,
+      "files": [
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/approval_record.md",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/brief.md",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/captions/instagram.txt",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/captions/youtube.txt",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/creative_qc_report.md",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/final/software_tutorial_vertical.mp4",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/manifest.json",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/qc_report.md",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/script.md",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/timeline.md",
+        "outputs/expand-hr/payroll-quick-guides/expandhr-tut-01-one-click-payroll/voiceover.wav"
+      ],
+      "verification_status": "VERIFIED_ABSENT"
+    }
+  ],
+  "deleted_files": [
+    {
+      "path": "scripts/run_test_c_expandhr.py",
+      "classification": "PROJECT_SPECIFIC_DELETE",
+      "operation": "DELETED_FILE",
+      "verification_status": "VERIFIED_ABSENT"
+    }
+  ],
+  "database_records_removed": [
+    {
+      "database": "data/campaign_tracker.sqlite",
+      "table": "content_items",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "SQL_DELETE_ROWS",
+      "removed_records": [
+        {
+          "content_id": "expandhr-tut-01-one-click-payroll",
+          "project": "expand-hr",
+          "campaign": "payroll-quick-guides",
+          "topic": "One-Click Monthly Payroll Processing"
+        }
+      ],
+      "remaining_row_count": 9,
+      "verification_status": "VERIFIED_CLEAN"
+    }
+  ],
+  "catalog_and_log_entries_removed": [
+    {
+      "path": "data/audio_catalog.json",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_JSON_ENTRIES",
+      "removed_ids": [
+        "AUDIO_AFFF9768",
+        "AUDIO_C9448825",
+        "AUDIO_2FC1BA18",
+        "AUDIO_AB63D87A"
+      ],
+      "remaining_entry_count": 38,
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "data/migration_log.json",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_JSON_ENTRIES",
+      "removed_entries": [
+        "expandhr_tut01_voiceover.wav"
+      ],
+      "remaining_entry_count": 49,
+      "verification_status": "VERIFIED_CLEAN"
+    }
+  ],
+  "modified_shared_files": [
+    {
+      "path": "config/production/audio_profiles.json",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_KEYS",
+      "keys_removed": ["expand-hr", "wms", "pos"],
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "config/production/export_profiles.json",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_KEYS",
+      "keys_removed": ["expand-hr", "wms", "pos"],
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/asset_migrator.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_REFERENCES",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/audio_analyzer.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_REFERENCES",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/audio_recommender.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_REFERENCES",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/content_qc.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_REFERENCES",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/marketing_director.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_REFERENCES",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/reframing_engine.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_REFERENCES",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "scripts/test_studio_suite.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_EXPANDHR_TEST_C",
+      "verification_status": "VERIFIED_PASSING"
+    },
+    {
+      "path": "tests/test_phase2_intake_audio.py",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "UPDATED_ACTIVE_PROJECT_ASSERTIONS",
+      "verification_status": "VERIFIED_PASSING"
+    },
+    {
+      "path": "MASTER_SOCIAL_VIDEO_STUDIO_PROMPT.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_ACTIVE_PROJECT_LISTINGS",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/AUDIO_ANALYSIS_GUIDE.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_ROWS",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/AUTOMATED_QC_OPERATIONS_GUIDE.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "UPDATED_ACTIVE_PROJECT_SLUGS",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/MEDIA_ASSET_GUIDELINES.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "REMOVED_PROJECT_SLUGS",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/PRODUCTION_MANIFEST_GUIDE.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "UPDATED_ACTIVE_PROJECT_SLUGS",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/REFRAMING_AND_SAFE_ZONES.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "UPDATED_ERP_PROJECT_LIST",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/QC_RESULT_AND_SEVERITY_GUIDE.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "UPDATED_EXAMPLE_REFERENCE",
+      "verification_status": "VERIFIED_CLEAN"
+    },
+    {
+      "path": "docs/marketing_strategy_guide.md",
+      "classification": "MIXED_CONTENT_REVIEW",
+      "operation": "UPDATED_HOOK_EXAMPLES",
+      "verification_status": "VERIFIED_CLEAN"
+    }
+  ],
+  "deliberately_retained_references": [
+    {
+      "path": "projects/expand-ezisales/knowledge/verified_features.md",
+      "classification": "SHARED_INFRASTRUCTURE_KEEP",
+      "reason": "Generic ERP back-office warehouse/billing sync capability belonging to retained project expand-ezisales, not the removed WMS project."
+    },
+    {
+      "path": "scripts/overlay_engine.py",
+      "classification": "SHARED_INFRASTRUCTURE_KEEP",
+      "reason": "False-positive regex match on pixel coordinate variables pos, pos_x, pos_y."
+    },
+    {
+      "path": "my-video/build/*.bundle.js",
+      "classification": "SHARED_INFRASTRUCTURE_KEEP",
+      "reason": "False-positive regex match on compiled JS buffer/character offset variable pos."
+    },
+    {
+      "path": "docs/PHASE_2_*.md, docs/PHASE_3_*.md, docs/PHASE_4_*.md, docs/PHASE_5_*.md, docs/QC_CALIBRATION_REPORT.md, docs/audit_report_recent_changes.md",
+      "classification": "SHARED_INFRASTRUCTURE_KEEP",
+      "reason": "Immutable point-in-time historical phase audit and test reports from completed Phases 2-5 prior to project removal."
+    }
+  ],
+  "uncertain_items_skipped": [],
+  "regression_verification": {
+    "status": "PASS",
+    "total_tests_passed": 69,
+    "total_tests_failed": 0,
+    "suites": [
+      {
+        "suite": "scripts/test_studio_suite.py",
+        "passed": 4,
+        "failed": 0,
+        "elapsed_seconds": 9.95,
+        "status": "PASS"
+      },
+      {
+        "suite": "tests/test_phase2_intake_audio.py",
+        "passed": 15,
+        "failed": 0,
+        "elapsed_seconds": 11.54,
+        "status": "PASS"
+      },
+      {
+        "suite": "tests/test_phase3_production_pipeline.py",
+        "passed": 13,
+        "failed": 0,
+        "elapsed_seconds": 2.60,
+        "status": "PASS"
+      },
+      {
+        "suite": "tests/test_phase4_multi_platform_export.py",
+        "passed": 24,
+        "failed": 0,
+        "elapsed_seconds": 33.50,
+        "status": "PASS"
+      },
+      {
+        "suite": "tests/test_phase5_automated_qc.py",
+        "passed": 13,
+        "failed": 0,
+        "elapsed_seconds": 1.66,
+        "status": "PASS"
+      }
+    ]
+  }
+}

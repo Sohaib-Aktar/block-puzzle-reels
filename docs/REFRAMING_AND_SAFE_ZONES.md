@@ -13,7 +13,7 @@ The Phase 4 reframing engine (`scripts/reframing_engine.py`) provides six config
 | Strategy | Behavior | Crop Loss | Best Use Case | Manual Review Flag |
 |---|---|---|---|---|
 | `BLURRED_BACKGROUND` | Preserves 100% of original subject centered over a darkened, softly blurred (`boxblur=24:4`) full-bleed ambient copy of the video. | **0%** | **Block Puzzle Burst** 9:16 → 16:9 (preserves complete 10×10 board, score header, piece tray, and text with zero black bars). | No |
-| `FIT_WITH_BACKGROUND` | Preserves 100% of original subject centered over a clean project-branded background color (`#070B14`, `#0A1428`, etc.). | **0%** | Same-aspect exports (9:16 → 9:16) and **ERP tutorials** (EziSales, Expand HR, WMS, POS) 9:16 → 16:9 where crisp readability around text/UI is critical. | No (same orientation / vertical→horizontal); Yes (horizontal→vertical) |
+| `FIT_WITH_BACKGROUND` | Preserves 100% of original subject centered over a clean project-branded background color (`#070B14`, `#0A1428`, etc.). | **0%** | Same-aspect exports (9:16 → 9:16) and **ERP tutorials** (`expand-ezisales`) 9:16 → 16:9 where crisp readability around text/UI is critical. | No (same orientation / vertical→horizontal); Yes (horizontal→vertical) |
 | `CENTER_CROP` | Scales to fill canvas and center-crops excess edges. | Variable | Only when edge content is confirmed expendable. | **Yes** when crop loss > 15% |
 | `SMART_CROP` | Samples master video frame to compute active visual bounding box & saliency centroid, anchoring the crop around primary activity. | Variable | Wide lifestyle/camera footage where subject is off-center. | **Yes** when crop loss > 15% |
 | `MANUAL_FOCAL_POINT` | Anchors crop around explicit normalized coordinates `--focal-point x,y` (`0.0` to `1.0`). | Variable | Director-guided crops targeting a specific screen region. | **Yes** when crop loss > 15% |
@@ -24,7 +24,7 @@ The Phase 4 reframing engine (`scripts/reframing_engine.py`) provides six config
 ## 2. Project-Specific Content Protection Rules
 
 - **Block Puzzle Burst (`block-puzzle-burst`):** Never crops the 10×10 grid, score/streak bar, or piece tray. Default 16:9 strategy is `BLURRED_BACKGROUND`.
-- **ERP Projects (`expand-ezisales`, `expand-hr`, `wms`, `pos`):** Never aggressively crops forms, tables, or navigation buttons. Default 16:9 strategy is `FIT_WITH_BACKGROUND` with corporate dark navy backdrop for maximum screen legibility.
+- **ERP Projects (`expand-ezisales`):** Never aggressively crops forms, tables, or navigation buttons. Default 16:9 strategy is `FIT_WITH_BACKGROUND` with corporate dark navy backdrop for maximum screen legibility.
 
 ---
 

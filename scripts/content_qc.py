@@ -27,9 +27,6 @@ REAL_AUDIO_PATH = os.path.join(WORKSPACE_ROOT, "data", "real_audio_inspection.js
 PROJECT_SIGNATURES = {
     "block-puzzle-burst": ["block puzzle burst", "pyapiras games", "block puzzle", "10x10 puzzle"],
     "expand-ezisales": ["ezisales", "expand ezisales", "field sales automation", "secondary sales sfa"],
-    "expand-hr": ["expand hr", "one-click payroll", "statutory payroll", "cloud hrms"],
-    "wms": ["warehouse management system", "barcode picking", "rfid warehouse"],
-    "pos": ["point of sale", "cash drawer reconciliation", "retail pos checkout"],
 }
 
 # Patterns that indicate quantitative / performance / guarantee marketing claims requiring knowledge verification
@@ -412,7 +409,7 @@ class ContentAndComplianceQC:
                     "actual": "On-screen text conforms to English-only rule",
                     "expected": "English-only on-screen text",
                 })
-        elif project_slug in ("expand-ezisales", "expand-hr", "wms", "pos"):
+        elif project_slug in ("expand-ezisales",):
             # Verify real ERP screen recordings exist and OCR isn't showing Android quick settings / game placeholder
             sr_dir = os.path.join(WORKSPACE_ROOT, "source_assets", project_slug, "screen-recordings")
             has_real_recordings = os.path.exists(sr_dir) and any(

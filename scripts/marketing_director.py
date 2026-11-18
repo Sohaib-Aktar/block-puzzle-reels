@@ -96,12 +96,6 @@ def strategize_content_piece(
         vo_script = "Stop taking retail orders on paper. With Expand eziSales, select your retailer, add SKUs with active schemes, and sync directly with your backend ERP in seconds."
         cta_text = "Schedule a Free Demo 🔗"
         caption = "Ditch paper order pads. Boost secondary field sales order booking speed with Expand eziSales SFA. Connect with our team via link in bio! 🚀\n\n#FieldSales #SFA #B2BSaaS #DistributionERP"
-    elif project_slug == "expand-hr":
-        title = "Expand HR — Automated Payroll Walkthrough"
-        on_screen_hook = "Payroll in One Click 💼"
-        vo_script = "Calculate monthly payroll, tax deductions, and statutory compliances in just one click with Expand HR."
-        cta_text = "Simplify HR Today 🔗"
-        caption = "Save 5 days every month on payroll calculations. Compliant, accurate, and automated with Expand HR. Link in bio! 📊\n\n#HRMS #PayrollAutomation #CloudHR"
     else:
         title = f"{project_slug} Spotlight"
         on_screen_hook = hook_text

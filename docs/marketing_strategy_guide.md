@@ -16,10 +16,10 @@ To prevent audience boredom and algorithm penalties:
 - Never repeat the same opening hook phrasing across consecutive posts.
 - Rotate through 5 hook archetypes:
   - **Curiosity / Challenge:** *"Solve it in ONE move!"*
-  - **Relatable Frustration:** *"Tired of Excel payroll breaking every month?"*
-  - **Speed / Satisfaction:** *"Watch 10 retail items scanned in 12 seconds."*
+  - **Relatable Frustration:** *"Tired of losing field sales orders on paper pads?"*
+  - **Speed / Satisfaction:** *"Clear an 8X combo without a single lag spike."*
   - **Story / Transparency:** *"I built an offline game alone in West Bengal."*
-  - **Educational / Counter-Intuitive:** *"Why 90% of warehouse pick errors happen at the bin."*
+  - **Educational / Counter-Intuitive:** *"Why most mobile puzzle players lose on the third move."*
 
 ### C. The Two-Part Engagement Loop (Gamification)
 For games and puzzle challenges:

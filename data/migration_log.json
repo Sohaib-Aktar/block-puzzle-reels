@@ -1,8 +1,8 @@
 {
   "timestamp": "2026-11-17T10:13:12.114496",
   "dry_run": false,
-  "total_candidates": 50,
-  "unique_files": 44,
+  "total_candidates": 49,
+  "unique_files": 43,
   "duplicate_groups": 6,
   "operations": [
     {
@@ -641,19 +641,6 @@
       "duplicate_of": null,
       "status": "already_synced",
       "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\expand-ezisales\\voiceovers\\ezisales_tut01_voiceover.wav"
-    },
-    {
-      "source_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-hr\\payroll-quick-guides\\expandhr-tut-01-one-click-payroll\\voiceover.wav",
-      "target_path": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\expand-hr\\voiceovers\\expandhr_tut01_voiceover.wav",
-      "project": "expand-hr",
-      "category": "voiceovers",
-      "filename": "expandhr_tut01_voiceover.wav",
-      "size_bytes": 625254,
-      "sha256": "c9448825c6ac3bdcd5f9ca2961fb98fc3cce1c6e14951b65f3b3a6204973496d",
-      "is_duplicate": false,
-      "duplicate_of": null,
-      "status": "already_synced",
-      "actual_destination": "C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\expand-hr\\voiceovers\\expandhr_tut01_voiceover.wav"
     }
   ]
 }
