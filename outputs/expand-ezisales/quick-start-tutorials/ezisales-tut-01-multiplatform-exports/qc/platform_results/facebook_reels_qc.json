@@ -1,0 +1,605 @@
+{
+  "qc_job_id": "QC_PACK_EXPAND-EZISALES_ezisales-tut-01-multiplatform-exports_20261118_114749_A86FC5_facebook_reels",
+  "content_id": "ezisales-tut-01-multiplatform-exports",
+  "project_id": "expand-ezisales",
+  "master_video_hash": "66e47cab0af76eeb705fab13eb1196e0116398d08278d6f21021b4a2171af5dd",
+  "export_artifact_hash": "47c47471232053b305a42a1ea61b16f71d4d3c29df1ab4526ae7def1ed59d2c2",
+  "production_manifest_ref": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_ezisales_tut01_pilot.json",
+  "rendering_profile": "VERTICAL_1080_1920",
+  "platform_destination": "facebook_reels",
+  "tool_versions": {
+    "qc_engine": "5.0.0",
+    "ffmpeg": "9.0.2-static",
+    "ocr_engine": "Windows.Media.Ocr.OcrEngine (en-US)",
+    "asr_engine": "NOT_INSTALLED (PENDING)",
+    "subjective_ai_judge": "NOT_CONFIGURED (HUMAN_REQUIRED)"
+  },
+  "overall_result": "FAIL",
+  "blocks_progression": true,
+  "requires_human_approval": true,
+  "summary_counts": {
+    "total_checks": 36,
+    "pass": 31,
+    "pass_with_warnings": 1,
+    "review_required": 2,
+    "fail": 2,
+    "blocked": 0
+  },
+  "automated_creative_score": {
+    "score": 46,
+    "max_automated": 70,
+    "subjective_dimensions_pending_human": 3,
+    "note": "Critical technical/brand/licensing failures always override any positive score."
+  },
+  "checks": [
+    {
+      "name": "tech_file_exists_non_empty",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "Existing file > 0 bytes",
+      "actual": "1557506 bytes"
+    },
+    {
+      "name": "tech_ffprobe_readable",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "Valid FFprobe metadata",
+      "actual": "Readable JSON streams"
+    },
+    {
+      "name": "tech_full_video_decode",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "Exit code 0, zero decode errors",
+      "actual": "Clean full decode"
+    },
+    {
+      "name": "tech_resolution_match",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "1080x1920",
+      "actual": "1080x1920"
+    },
+    {
+      "name": "tech_aspect_ratio_match",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "9:16 (0.5625)",
+      "actual": "0.5625"
+    },
+    {
+      "name": "tech_frame_rate_match",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "30.00 fps",
+      "actual": "30.00 fps"
+    },
+    {
+      "name": "tech_codec_and_container_match",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "h264 / mp4 / yuv420p",
+      "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuv420p"
+    },
+    {
+      "name": "tech_audio_stream_present",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "Audio stream required",
+      "actual": "Present (aac)"
+    },
+    {
+      "name": "tech_audio_sample_rate_and_channels",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "aac / 48000 Hz / 2ch",
+      "actual": "aac / 48000 Hz / 2ch"
+    },
+    {
+      "name": "tech_duration_consistent_with_master",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "15.53s (\u00b10.45s) & <= 90s platform max",
+      "actual": "15.53s (delta=0.000s)"
+    },
+    {
+      "name": "tech_no_accidental_stretching",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "Square pixels (SAR 1:1)",
+      "actual": "SAR=1:1"
+    },
+    {
+      "name": "tech_no_missing_or_corrupted_frames",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "~466 frames, 0 decode errors",
+      "actual": "464 frames (diff=2)"
+    },
+    {
+      "name": "tech_no_unexpected_watermark",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "Zero unauthorized watermark filters applied",
+      "actual": "Clean filtergraph (manual visual confirmation recommended)"
+    },
+    {
+      "name": "tech_no_opening_or_ending_truncation",
+      "category": "technical",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "expected": "start_time ~0.0s and full duration preserved",
+      "actual": "start_time=0.000s, duration=15.53s"
+    },
+    {
+      "name": "platform_safe_zone_facebook_reels",
+      "category": "platform",
+      "method": "ocr",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "All matched overlays within facebook_reels provisional safe zone",
+      "expected": "Overlays inside facebook_reels safe content box"
+    },
+    {
+      "name": "audio_stream_presence",
+      "category": "audio",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "aac 2ch @ 48000Hz",
+      "expected": "Valid audio stream"
+    },
+    {
+      "name": "audio_video_sync",
+      "category": "audio",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "delta=0.065s",
+      "expected": "<= 0.35s"
+    },
+    {
+      "name": "audio_clipping_and_true_peak",
+      "category": "audio",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "max_vol=-1.3 dB, true_peak=-1.3 dBTP",
+      "expected": "true_peak <= 0.0 dBTP (target -1.5 dBTP)"
+    },
+    {
+      "name": "integrated_loudness_ebur128",
+      "category": "audio",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "-14.1 LUFS (LRA=2.8 LU, mean=-17.6 dB)",
+      "expected": "-14.0 LUFS (\u00b15.0 LU)"
+    },
+    {
+      "name": "silence_and_audio_gaps",
+      "category": "audio",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "silence_ratio=0.0%, max_gap=0.00s",
+      "expected": "ratio < 75%, gap < 4.5s"
+    },
+    {
+      "name": "audio_ending_fade_check",
+      "category": "audio",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "tail_mean=-91.0 dB",
+      "expected": "No abrupt loud ending spike"
+    },
+    {
+      "name": "voiceover_transcript_alignment",
+      "category": "audio",
+      "method": "asr_pending",
+      "status": "REVIEW_REQUIRED",
+      "severity": "REVIEW",
+      "confidence": 0.0,
+      "actual": "Local ASR engine not installed (Whisper/SAPI ASR unavailable); human audio listen-through required.",
+      "expected": "Verify spoken script matches: \"Book field sales orders in under thirty seconds. Select your retailer, add SKU i...\""
+    },
+    {
+      "name": "unexpected_black_frames",
+      "category": "visual",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "max_black=0.00s",
+      "expected": "<= 0.80s"
+    },
+    {
+      "name": "freeze_frame_detection",
+      "category": "visual",
+      "method": "deterministic",
+      "status": "PASS_WITH_WARNINGS",
+      "severity": "WARNING",
+      "actual": "max_freeze=2.07s (1 event(s))",
+      "expected": "< 3.5s"
+    },
+    {
+      "name": "multi_frame_blank_check",
+      "category": "visual",
+      "method": "image_analysis",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "3/3 frames contain active visual content",
+      "expected": "0 blank frames"
+    },
+    {
+      "name": "scene_timeline_structure",
+      "category": "visual",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "Sampled 3 timeline checkpoints; detected 0 visual cut(s)",
+      "expected": "Expected timeline scenes verified across opening, body, and closing"
+    },
+    {
+      "name": "ocr_expected_text_presence",
+      "category": "visual_ocr",
+      "method": "ocr",
+      "engine": "Windows.Media.Ocr.OcrEngine",
+      "status": "PASS",
+      "severity": "INFO",
+      "confidence": 0.982,
+      "actual": "3/3 overlays verified (avg conf=0.982)",
+      "expected": "All approved manifest text overlays readable via OCR"
+    },
+    {
+      "name": "ocr_text_edge_clipping",
+      "category": "visual_ocr",
+      "method": "ocr",
+      "status": "PASS",
+      "severity": "INFO",
+      "confidence": 0.92,
+      "actual": "Zero edge-clipped text boxes detected",
+      "expected": "No truncated text"
+    },
+    {
+      "name": "ocr_safe_zone_placement",
+      "category": "visual_ocr",
+      "method": "ocr",
+      "status": "PASS",
+      "severity": "INFO",
+      "confidence": 0.9,
+      "actual": "All detected overlay text within configured safe bounds",
+      "expected": "Safe-zone compliance"
+    },
+    {
+      "name": "project_knowledge_availability",
+      "category": "content",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "Loaded 3 docs (project_profile, verified_features, missing_information)",
+      "expected": "Isolated project knowledge loaded"
+    },
+    {
+      "name": "brand_isolation_compliance",
+      "category": "brand",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "Zero cross-project brand leaks detected for 'expand-ezisales'",
+      "expected": "Strict project branding isolation"
+    },
+    {
+      "name": "erp_authentic_screen_verification",
+      "category": "content",
+      "method": "ocr",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "actual": "Authentic ERP recordings missing (dir_has_mp4=False, placeholder_ui_hits=['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime'])",
+      "expected": "Genuine expand-ezisales application screens verified in footage"
+    },
+    {
+      "name": "marketing_claims_verification",
+      "category": "content",
+      "method": "deterministic",
+      "status": "REVIEW_REQUIRED",
+      "severity": "VERIFICATION_REQUIRED",
+      "actual": "2 unverified claim(s): ['Under 30s', 'Under 30s']",
+      "expected": "All factual/numeric marketing claims supported by approved project knowledge"
+    },
+    {
+      "name": "cta_presence_check",
+      "category": "creative",
+      "method": "deterministic",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "actual": "No recognizable CTA detected in manifest overlays, VO script, or OCR text",
+      "expected": "Clear single CTA present (e.g. Play Free Today, Schedule Demo, Comment)"
+    },
+    {
+      "name": "source_media_provenance",
+      "category": "licensing",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "3 media reference(s) verified intact",
+      "expected": "All source media verified against disk & catalog"
+    },
+    {
+      "name": "audio_documentary_licensing",
+      "category": "licensing",
+      "method": "deterministic",
+      "status": "PASS",
+      "severity": "INFO",
+      "actual": "cleared=3, review_required=0, blocked=0",
+      "expected": "Zero restricted/unknown assets; documentary proof for commercial use"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.53s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy."
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "0.067s-2.133s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 2.07s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional."
+    },
+    {
+      "issue_id": "CNT_001",
+      "severity": "CRITICAL",
+      "type": "placeholder_or_non_erp_footage",
+      "timestamp": "0.0s",
+      "expected": "Authentic expand-ezisales application interface footage",
+      "actual": "Detected non-ERP UI elements (['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime']) and empty screen-recordings folder",
+      "confidence": 0.95,
+      "recommendation": "Supply genuine screen recordings in source_assets/expand-ezisales/screen-recordings/ and re-render."
+    },
+    {
+      "issue_id": "CLM_001",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "11.0s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in manifest_overlay:scene_03_cloud_sync: \"Booked in Under 30s \u26a1\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim."
+    },
+    {
+      "issue_id": "CLM_002",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "13.1s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in ocr:scene_03_cloud_sync: \"Booked in Under 30s\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim."
+    },
+    {
+      "issue_id": "CRV_001",
+      "severity": "CRITICAL",
+      "type": "missing_cta",
+      "timestamp": "closing",
+      "expected": "Single clear CTA in closing scene",
+      "actual": "No CTA keywords detected in closing overlays or OCR",
+      "confidence": 0.92,
+      "recommendation": "Add approved closing CTA overlay matching the creative brief."
+    }
+  ],
+  "creative_rubric": [
+    {
+      "dimension": "1. Hook Strength (0-2s)",
+      "method": "hybrid_automated_plus_human",
+      "automated_status": "PASS",
+      "score": 8,
+      "max": 10,
+      "evidence": "Opening hook text detected within first 2.5s",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "2. Story Clarity",
+      "method": "human_subjective_review",
+      "automated_status": "REVIEW_REQUIRED",
+      "score": null,
+      "max": 10,
+      "evidence": "Timeline checkpoints sampled: 3; narrative clarity requires human editorial sign-off.",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "3. Audience Relevance",
+      "method": "human_subjective_review",
+      "automated_status": "REVIEW_REQUIRED",
+      "score": null,
+      "max": 10,
+      "evidence": "Emotional appeal and audience resonance cannot be verified deterministically.",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "4. Product Accuracy & Ground Truth",
+      "method": "automated_evidence",
+      "automated_status": "FAIL",
+      "score": 2,
+      "max": 10,
+      "evidence": "Verified against project knowledge repository & screen OCR.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "5. Brand Consistency",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Zero foreign project branding detected.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "6. Text Readability & Safe Areas",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Local OCR extracted 34 text lines with bounding-box safe-zone verification.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "7. Pacing & Momentum",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "max_freeze=2.067s, max_black=0.0s",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "8. CTA Singularity",
+      "method": "automated_evidence",
+      "automated_status": "FAIL",
+      "score": 0,
+      "max": 10,
+      "evidence": "Missing closing CTA.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "9. Platform Suitability",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Matches platform profile resolution, fps, duration, and codecs.",
+      "subjective_review_required": false
+    }
+  ],
+  "warnings": [
+    "[voiceover_transcript_alignment] Local ASR engine not installed (Whisper/SAPI ASR unavailable); human audio listen-through required.",
+    "[freeze_frame_detection] max_freeze=2.07s (1 event(s))",
+    "[marketing_claims_verification] 2 unverified claim(s): ['Under 30s', 'Under 30s']"
+  ],
+  "failure_explanations": [
+    "[erp_authentic_screen_verification] Expected: Genuine expand-ezisales application screens verified in footage | Actual: Authentic ERP recordings missing (dir_has_mp4=False, placeholder_ui_hits=['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime'])",
+    "[cta_presence_check] Expected: Clear single CTA present (e.g. Play Free Today, Schedule Demo, Comment) | Actual: No recognizable CTA detected in manifest overlays, VO script, or OCR text"
+  ],
+  "audio_metrics": {
+    "has_audio": true,
+    "codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "video_duration": 15.466667,
+    "audio_duration": 15.531313,
+    "av_sync_delta_sec": 0.0646,
+    "integrated_lufs": -14.1,
+    "loudness_range_lu": 2.8,
+    "true_peak_dbtp": -1.3,
+    "mean_volume_db": -17.6,
+    "max_volume_db": -1.3,
+    "tail_volume_db": -91.0,
+    "silence_ratio": 0.0,
+    "max_silence_gap_sec": 0.0,
+    "silence_events": [],
+    "asr_available": false
+  },
+  "visual_metrics": {
+    "black_events": [],
+    "max_black_sec": 0.0,
+    "freeze_events": [
+      {
+        "start": 0.067,
+        "end": 2.133,
+        "duration": 2.067
+      }
+    ],
+    "max_freeze_sec": 2.067,
+    "scene_cuts_sec": [],
+    "sampled_frames_count": 3,
+    "blank_frames_count": 0,
+    "ocr_available": true,
+    "ocr_lines_detected": 34,
+    "ocr_full_text_combined": "09: Mon, 1 KB7s LT Expand eziSaIes SFA Step 1: Select Retailer Ith: 42.43 GB Wi-Fi Ring Location Power sa lb Mobile data Bluetooth \u2022 Aeroplane r Bedtime mc On at 00:00 Torch Auto-rotate 'ine 01 Personal hc Dark mode ect MUI | 09:27 STREAK 26 0 KB7s SCORE Fast SKU & Quantity Entry Active Schemes Auto-Applied | 09:27 STREAK SCORE BEST: 18,090 Booked in Under 30s Direct Sync to Expand Cloud ERP",
+    "expected_overlay_results": [
+      {
+        "expected_text": "Expand eziSales SFA",
+        "timestamp": 1.4,
+        "confidence": 0.947,
+        "status": "PASS",
+        "matched_box": {
+          "text": "Expand eziSaIes SFA",
+          "x": 299,
+          "y": 248,
+          "width": 481,
+          "height": 46,
+          "word_count": 3
+        }
+      },
+      {
+        "expected_text": "Fast SKU & Quantity Entry",
+        "timestamp": 5.0,
+        "confidence": 1.0,
+        "status": "PASS",
+        "matched_box": {
+          "text": "Fast SKU & Quantity Entry",
+          "x": 238,
+          "y": 248,
+          "width": 601,
+          "height": 46,
+          "word_count": 5
+        }
+      },
+      {
+        "expected_text": "Booked in Under 30s \u26a1",
+        "timestamp": 13.1,
+        "confidence": 1.0,
+        "status": "PASS",
+        "matched_box": {
+          "text": "Booked in Under 30s",
+          "x": 279,
+          "y": 744,
+          "width": 472,
+          "height": 36,
+          "word_count": 4
+        }
+      }
+    ],
+    "annotated_evidence": [
+      "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\visual_evidence\\VERTICAL_1080_1920\\annotated_scene_01_retailer_selection.png"
+    ]
+  },
+  "timestamp": "2026-11-18T11:48:08.937037",
+  "physical_analysis_reused_from": null
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "4.0.0",
+  "status": "PROVISIONAL",
+  "documentation_note": "Safe-zone pixel boundaries are provisional studio engineering estimates based on standard mobile/desktop player chrome layouts. Update independently in this JSON file if platform UI geometry changes.",
+  "profiles": {
+    "instagram_reels": {
+      "canvas": {"width": 1080, "height": 1920},
+      "status": "PROVISIONAL",
+      "source_assumption": "Aligned with existing config/platform_presets/instagram_reel.json and conservative mobile Reels chrome estimates (top camera/status bar, right engagement rail, bottom account/caption/audio bar).",
+      "margins_px": {
+        "top": 220,
+        "bottom": 340,
+        "left": 60,
+        "right": 150
+      },
+      "safe_content_box": {"x": 60, "y": 220, "width": 870, "height": 1360},
+      "cta_safe_box": {"x": 80, "y": 1220, "width": 820, "height": 280},
+      "logo_safe_box": {"x": 60, "y": 230, "width": 300, "height": 160},
+      "ui_occlusion_zones": [
+        {"name": "Top Status / Reels Header", "x": 0, "y": 0, "width": 1080, "height": 220, "severity": "high"},
+        {"name": "Right Controls (Like/Comment/Share/Audio)", "x": 930, "y": 980, "width": 150, "height": 600, "severity": "high"},
+        {"name": "Bottom Account / Caption / Nav Bar", "x": 0, "y": 1580, "width": 1080, "height": 340, "severity": "high"}
+      ]
+    },
+    "youtube_shorts": {
+      "canvas": {"width": 1080, "height": 1920},
+      "status": "PROVISIONAL",
+      "source_assumption": "Aligned with config/platform_presets/youtube_short.json and conservative Shorts player estimates (top search/more chrome, right action buttons, bottom channel/subscribe/caption/scrubber).",
+      "margins_px": {
+        "top": 180,
+        "bottom": 380,
+        "left": 60,
+        "right": 160
+      },
+      "safe_content_box": {"x": 60, "y": 180, "width": 860, "height": 1360},
+      "cta_safe_box": {"x": 80, "y": 1180, "width": 800, "height": 280},
+      "logo_safe_box": {"x": 60, "y": 190, "width": 300, "height": 160},
+      "ui_occlusion_zones": [
+        {"name": "Top Search / Menu Chrome", "x": 0, "y": 0, "width": 1080, "height": 180, "severity": "high"},
+        {"name": "Right Action Stack (Like/Dislike/Comment/Share)", "x": 920, "y": 880, "width": 160, "height": 660, "severity": "high"},
+        {"name": "Bottom Channel / Title / Subscribe / Nav", "x": 0, "y": 1540, "width": 1080, "height": 380, "severity": "high"}
+      ]
+    },
+    "facebook_reels": {
+      "canvas": {"width": 1080, "height": 1920},
+      "status": "PROVISIONAL",
+      "source_assumption": "Aligned with config/platform_presets/facebook_reel.json and conservative Facebook Reels chrome estimates (top Reels/search bar, right reactions stack, bottom page name/caption/CTA bar).",
+      "margins_px": {
+        "top": 200,
+        "bottom": 360,
+        "left": 60,
+        "right": 150
+      },
+      "safe_content_box": {"x": 60, "y": 200, "width": 870, "height": 1360},
+      "cta_safe_box": {"x": 80, "y": 1200, "width": 820, "height": 280},
+      "logo_safe_box": {"x": 60, "y": 210, "width": 300, "height": 160},
+      "ui_occlusion_zones": [
+        {"name": "Top Header / Search Overlay", "x": 0, "y": 0, "width": 1080, "height": 200, "severity": "high"},
+        {"name": "Right Engagement Rail (Like/Comment/Share)", "x": 930, "y": 940, "width": 150, "height": 620, "severity": "high"},
+        {"name": "Bottom Profile / Caption / Audio Ticker", "x": 0, "y": 1560, "width": 1080, "height": 360, "severity": "high"}
+      ]
+    },
+    "youtube_standard": {
+      "canvas": {"width": 1920, "height": 1080},
+      "status": "PROVISIONAL",
+      "source_assumption": "Standard 16:9 YouTube player safe margins accounting for top title hover bar, bottom scrubber/CC/controls bar, and corner end-screen cards / channel watermark.",
+      "margins_px": {
+        "top": 70,
+        "bottom": 130,
+        "left": 90,
+        "right": 90
+      },
+      "safe_content_box": {"x": 90, "y": 70, "width": 1740, "height": 880},
+      "cta_safe_box": {"x": 200, "y": 760, "width": 1520, "height": 160},
+      "logo_safe_box": {"x": 90, "y": 70, "width": 320, "height": 140},
+      "ui_occlusion_zones": [
+        {"name": "Top Title / Info Card Bar", "x": 0, "y": 0, "width": 1920, "height": 70, "severity": "medium"},
+        {"name": "Bottom Player Scrubber / Subtitles / Controls", "x": 0, "y": 950, "width": 1920, "height": 130, "severity": "high"},
+        {"name": "Bottom-Right Channel Watermark Zone", "x": 1750, "y": 830, "width": 170, "height": 120, "severity": "medium"}
+      ]
+    }
+  }
+}

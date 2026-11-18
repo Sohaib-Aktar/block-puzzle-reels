@@ -1,0 +1,222 @@
+{
+  "job_id": "JOB_BLOCK-PUZZLE-BURST_day-04-no-wifi-revision_20261117_161105_514927",
+  "status": "AWAITING_HUMAN_APPROVAL",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "content_id": "day-04-no-wifi-revision",
+  "output_profile": "instagram_reel",
+  "created_at": "2026-11-17T16:11:05.784281",
+  "updated_at": "2026-11-17T16:11:17.365795",
+  "output_file": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\final\\Day_04_Final_Revised_Center_Text.mp4",
+  "error_message": null,
+  "metrics": {
+    "render_seconds": 10.12,
+    "intermediate_files_count": 0,
+    "final_file_size_bytes": 1327339
+  },
+  "manifest_path": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_bpb_day04_revision.json",
+  "manifest": {
+    "project": "block-puzzle-burst",
+    "campaign": "30-day-challenge",
+    "content_id": "day-04-no-wifi-revision",
+    "output_profile": "instagram_reel",
+    "renderer": "ffmpeg",
+    "allow_review_audio": false,
+    "canvas": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_seconds": 15.0
+    },
+    "timeline": [
+      {
+        "scene_id": "scene_01_hook",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 0.0,
+        "source_out": 2.0,
+        "duration": 2.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "No WiFi? No problem.",
+            "subtitle": "100% Offline Gameplay",
+            "position": "center",
+            "position_y": 700,
+            "start_time": 0.0,
+            "end_time": 1.9,
+            "style": "purple_gold_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_02_airplane_toggle",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 6.5,
+        "source_out": 8.5,
+        "duration": 2.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "pill",
+            "title": "Airplane Mode: ON \u2708\ufe0f",
+            "position": "top",
+            "position_y": 220,
+            "start_time": 0.0,
+            "end_time": 2.0,
+            "style": "pill_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_03_return_to_game",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 8.5,
+        "source_out": 9.5,
+        "duration": 1.0,
+        "fit_mode": "contain",
+        "overlays": []
+      },
+      {
+        "scene_id": "scene_04_offline_gameplay",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 9.5,
+        "source_out": 17.5,
+        "duration": 8.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "pill",
+            "title": "Zero Data \u2022 Zero Lag \u26a1",
+            "position": "top",
+            "position_y": 220,
+            "start_time": 0.0,
+            "end_time": 3.0,
+            "style": "pill_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_05_closing_cta",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 17.5,
+        "source_out": 19.5,
+        "duration": 2.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "Play Free Today \ud83e\udde9",
+            "subtitle": "Pyapiras Games",
+            "position": "center",
+            "position_y": 700,
+            "start_time": 0.0,
+            "end_time": 2.0,
+            "style": "purple_gold_badge"
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "music": {
+        "asset_id": "AUDIO_753DE70D",
+        "volume": 0.25,
+        "start_time": 0.0,
+        "fade_in": 0.4,
+        "fade_out": 0.6
+      },
+      "voiceover": {
+        "text": "No Wi-Fi? No problem! Play Block Puzzle Burst anywhere offline. Zero data, zero lag. Try it free today!",
+        "volume": 1.0,
+        "ducking": true,
+        "duck_level_db": -18.0,
+        "rate": 0
+      },
+      "sound_effects": [
+        {
+          "asset_id": "AUDIO_92744730",
+          "timeline_start": 5.5,
+          "volume": 0.8
+        },
+        {
+          "asset_id": "AUDIO_1C511C81",
+          "timeline_start": 10.0,
+          "volume": 0.85
+        }
+      ],
+      "master_loudness_target": -14.0
+    }
+  },
+  "execution_log": [
+    {
+      "timestamp": "2026-11-17T16:11:05.789000",
+      "status": "VALIDATING",
+      "message": "Beginning preflight manifest validation..."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:05.790574",
+      "status": "VALIDATING",
+      "message": "Preflight passed. Resolved 5 scenes and audio tracks."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:05.791341",
+      "status": "READY_TO_RENDER",
+      "message": "Manifest validated and ready for rendering."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:05.792074",
+      "status": "RENDERING",
+      "message": "Rendering to C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\final\\Day_04_Final_Revised_Center_Text.mp4 using engine: ffmpeg..."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:05.792924",
+      "status": "RENDERING",
+      "message": "Normalizing scenes and assembling visual timeline..."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:13.571106",
+      "status": "RENDERING",
+      "message": "Mixing audio stems (BGM, VO, SFX) with EBU R128 loudness normalization..."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:15.911355",
+      "status": "RENDERED",
+      "message": "Rendering completed in 10.12s."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:15.912350",
+      "status": "TECHNICAL_VALIDATION",
+      "message": "Validating render codecs, decodability and duration..."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:16.792697",
+      "status": "TECHNICAL_VALIDATION",
+      "message": "Technical validation passed (6/6 checks)."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:16.793941",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Running studio Technical & Creative QC..."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:17.357686",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Studio Technical QC verification passed: True"
+    },
+    {
+      "timestamp": "2026-11-17T16:11:17.360420",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Creative QC score: 80 / 90"
+    },
+    {
+      "timestamp": "2026-11-17T16:11:17.364828",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Cleaned up 9 intermediate artifacts."
+    },
+    {
+      "timestamp": "2026-11-17T16:11:17.365795",
+      "status": "AWAITING_HUMAN_APPROVAL",
+      "message": "Production job complete! Deliverable ready at: C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\final\\Day_04_Final_Revised_Center_Text.mp4"
+    }
+  ]
+}

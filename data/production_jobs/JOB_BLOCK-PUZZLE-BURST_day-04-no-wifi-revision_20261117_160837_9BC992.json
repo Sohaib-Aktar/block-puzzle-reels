@@ -1,0 +1,187 @@
+{
+  "job_id": "JOB_BLOCK-PUZZLE-BURST_day-04-no-wifi-revision_20261117_160837_9BC992",
+  "status": "RENDER_FAILED",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "content_id": "day-04-no-wifi-revision",
+  "output_profile": "instagram_reel",
+  "created_at": "2026-11-17T16:08:37.874403",
+  "updated_at": "2026-11-17T16:08:38.391083",
+  "output_file": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\final\\Day_04_Final_Revised_Center_Text.mp4",
+  "error_message": "Job failed: RuntimeError: Command failed with exit code 4294967274:\nC:\\Users\\Dell\\Downloads\\video gen\\my-video\\node_modules\\@remotion\\compositor-win32-x64-msvc\\ffmpeg.exe -y -ss 0.0 -i C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_3_cfr30.mp4 -t 2.0 -i C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\intermediate\\overlay_badge_0_0.0.png -filter_complex [0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0] -map [v_ov_0] -map 0:a:0? -c:v libx264 -crf 22 -preset fast -c:a aac -b:a 160k -ar 48000 -ac 2 -t 2.0 -movflags +faststart C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\intermediate\\scene_00_norm.mp4\n\nStderr:\nffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 10-win32 (GCC) 20220113\n  configuration: --prefix=remotion --target-os=mingw32 --arch=x86_64 --cross-prefix=x86_64-w64-mingw32- --disable-w32threads --disable-os2threads --extra-cflags='-Iremotion/include -Iremotion/include/opus -Iremotion/include/lame -Iremotion/include/vpx' --extra-ldflags=-Lremotion/lib --enable-small --enable-shared --enable-libdav1d --enable-libaom --enable-libzimg --enable-libfdk-aac --disable-static --disable-ffplay --disable-postproc --disable-filters --disable-libxcb --enable-filter=aformat --enable-filter=atrim --enable-filter=acopy --enable-filter=adelay --enable-filter=anullsrc --enable-filter=atempo --enable-filter=apad --enable-filter=amerge --enable-filter=amix --enable-filter=asetrate --enable-filter=asetpts --enable-filter=aresample --enable-filter=concat --enable-filter=loudnorm --enable-filter=colorspace --enable-filter=tinterlace --enable-filter=fieldorder --enable-filter=pan --enable-filter=volume --enable-filter=scale --enable-filter=sine --enable-filter=split --enable-filter=nullsrc --enable-filter=silencedetect --enable-filter=palettegen --enable-filter=paletteuse --enable-filter=zscale --enable-filter=tonemap --enable-filter=copy --disable-doc --disable-debug --enable-gpl --disable-encoders --enable-encoder=opus --enable-encoder=aac --enable-encoder=libfdk_aac --enable-encoder=png --enable-encoder=mjpeg --enable-encoder=pcm_s16le --enable-encoder=pcm_s24le --enable-encoder=libx264 --enable-encoder=libx265 --enable-encoder=libaom_av1 --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-encoder=gif --enable-encoder=libmp3lame --enable-encoder=libopus --enable-encoder=prores_ks --enable-encoder=rawvideo --enable-encoder=h264_nvenc --enable-encoder=hevc_nvenc --disable-muxers --enable-muxer='webm,opus,mp4,wav,mp3,mov,matroska,hevc,h264,gif,image2,image2pipe,adts,m4a,mpegts,null,avi' --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-zlib --enable-libopus --disable-demuxers --disable-sdl2 --disable-xlib --enable-demuxer='aac,av1,avi,caf,concat,flac,flv,h264,hevc,image2,image2pipe,matroska,mov,mp3,ogg,pcm_f32le,pcm_f32be,pcm_f64le,pcm_f64be,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_u16be,pcm_u16le,pcm_u24le,pcm_u24be,pcm_u32be,pcm_u32le,wav,gif,hls,m4a,mpeg2_videotoolbox,mpeg4_videotoolbox' --disable-decoders --enable-decoder='aac,ac3,flac,h264,hevc,libvpx_vp8,libvpx_vp9,vp8,vp9,mp3,mpeg4,opus,pcm_u8,pcm_f16le,pcm_f24le,pcm_f32le,pcm_f32be,pcm_f64le,pcm_f64be,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_s64be,pcm_s64le,pcm_u16be,pcm_u16le,pcm_u24le,pcm_u24be,pcm_u32be,pcm_u32le,prores,theora,vorbis,vp9,mjpeg,gif,png,libdav1d,hls,m4a,rawvideo'\n  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n[AVFilterGraph @ 000001db7eba7c40] No option name near '1080:1920:(ow-iw)/2:(oh-ih)/2:color=black'\n[AVFilterGraph @ 000001db7eba7c40] Error parsing a filter description around: ,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]\n[AVFilterGraph @ 000001db7eba7c40] Error parsing filterchain '[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]' around: ,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]\nFailed to set value '[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]' for option 'filter_complex': Invalid argument\nError parsing global options: Invalid argument\n",
+  "metrics": {
+    "render_seconds": 0.0,
+    "intermediate_files_count": 0,
+    "final_file_size_bytes": 0
+  },
+  "manifest_path": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_bpb_day04_revision.json",
+  "manifest": {
+    "project": "block-puzzle-burst",
+    "campaign": "30-day-challenge",
+    "content_id": "day-04-no-wifi-revision",
+    "output_profile": "instagram_reel",
+    "renderer": "ffmpeg",
+    "allow_review_audio": false,
+    "canvas": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_seconds": 15.0
+    },
+    "timeline": [
+      {
+        "scene_id": "scene_01_hook",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 0.0,
+        "source_out": 2.0,
+        "duration": 2.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "No WiFi? No problem.",
+            "subtitle": "100% Offline Gameplay",
+            "position": "center",
+            "position_y": 700,
+            "start_time": 0.0,
+            "end_time": 1.9,
+            "style": "purple_gold_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_02_airplane_toggle",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 6.5,
+        "source_out": 8.5,
+        "duration": 2.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "pill",
+            "title": "Airplane Mode: ON \u2708\ufe0f",
+            "position": "top",
+            "position_y": 220,
+            "start_time": 0.0,
+            "end_time": 2.0,
+            "style": "pill_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_03_return_to_game",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 8.5,
+        "source_out": 9.5,
+        "duration": 1.0,
+        "fit_mode": "contain",
+        "overlays": []
+      },
+      {
+        "scene_id": "scene_04_offline_gameplay",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 9.5,
+        "source_out": 17.5,
+        "duration": 8.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "pill",
+            "title": "Zero Data \u2022 Zero Lag \u26a1",
+            "position": "top",
+            "position_y": 220,
+            "start_time": 0.0,
+            "end_time": 3.0,
+            "style": "pill_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_05_closing_cta",
+        "asset_id": "VID_0DD488E3",
+        "source_in": 17.5,
+        "source_out": 19.5,
+        "duration": 2.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "Play Free Today \ud83e\udde9",
+            "subtitle": "Pyapiras Games",
+            "position": "center",
+            "position_y": 700,
+            "start_time": 0.0,
+            "end_time": 2.0,
+            "style": "purple_gold_badge"
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "music": {
+        "asset_id": "AUDIO_753DE70D",
+        "volume": 0.25,
+        "start_time": 0.0,
+        "fade_in": 0.4,
+        "fade_out": 0.6
+      },
+      "voiceover": {
+        "text": "No Wi-Fi? No problem! Play Block Puzzle Burst anywhere offline. Zero data, zero lag. Try it free today!",
+        "volume": 1.0,
+        "ducking": true,
+        "duck_level_db": -18.0,
+        "rate": 0
+      },
+      "sound_effects": [
+        {
+          "asset_id": "AUDIO_92744730",
+          "timeline_start": 5.5,
+          "volume": 0.8
+        },
+        {
+          "asset_id": "AUDIO_1C511C81",
+          "timeline_start": 10.0,
+          "volume": 0.85
+        }
+      ],
+      "master_loudness_target": -14.0
+    }
+  },
+  "execution_log": [
+    {
+      "timestamp": "2026-11-17T16:08:37.879146",
+      "status": "VALIDATING",
+      "message": "Beginning preflight manifest validation..."
+    },
+    {
+      "timestamp": "2026-11-17T16:08:37.880537",
+      "status": "VALIDATING",
+      "message": "Preflight passed. Resolved 5 scenes and audio tracks."
+    },
+    {
+      "timestamp": "2026-11-17T16:08:37.881445",
+      "status": "READY_TO_RENDER",
+      "message": "Manifest validated and ready for rendering."
+    },
+    {
+      "timestamp": "2026-11-17T16:08:37.882257",
+      "status": "RENDERING",
+      "message": "Rendering to C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\final\\Day_04_Final_Revised_Center_Text.mp4 using engine: ffmpeg..."
+    },
+    {
+      "timestamp": "2026-11-17T16:08:37.883246",
+      "status": "RENDERING",
+      "message": "Normalizing scenes and assembling visual timeline..."
+    },
+    {
+      "timestamp": "2026-11-17T16:08:38.391083",
+      "status": "RENDER_FAILED",
+      "message": "Job failed: RuntimeError: Command failed with exit code 4294967274:\nC:\\Users\\Dell\\Downloads\\video gen\\my-video\\node_modules\\@remotion\\compositor-win32-x64-msvc\\ffmpeg.exe -y -ss 0.0 -i C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_3_cfr30.mp4 -t 2.0 -i C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\intermediate\\overlay_badge_0_0.0.png -filter_complex [0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0] -map [v_ov_0] -map 0:a:0? -c:v libx264 -crf 22 -preset fast -c:a aac -b:a 160k -ar 48000 -ac 2 -t 2.0 -movflags +faststart C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\intermediate\\scene_00_norm.mp4\n\nStderr:\nffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 10-win32 (GCC) 20220113\n  configuration: --prefix=remotion --target-os=mingw32 --arch=x86_64 --cross-prefix=x86_64-w64-mingw32- --disable-w32threads --disable-os2threads --extra-cflags='-Iremotion/include -Iremotion/include/opus -Iremotion/include/lame -Iremotion/include/vpx' --extra-ldflags=-Lremotion/lib --enable-small --enable-shared --enable-libdav1d --enable-libaom --enable-libzimg --enable-libfdk-aac --disable-static --disable-ffplay --disable-postproc --disable-filters --disable-libxcb --enable-filter=aformat --enable-filter=atrim --enable-filter=acopy --enable-filter=adelay --enable-filter=anullsrc --enable-filter=atempo --enable-filter=apad --enable-filter=amerge --enable-filter=amix --enable-filter=asetrate --enable-filter=asetpts --enable-filter=aresample --enable-filter=concat --enable-filter=loudnorm --enable-filter=colorspace --enable-filter=tinterlace --enable-filter=fieldorder --enable-filter=pan --enable-filter=volume --enable-filter=scale --enable-filter=sine --enable-filter=split --enable-filter=nullsrc --enable-filter=silencedetect --enable-filter=palettegen --enable-filter=paletteuse --enable-filter=zscale --enable-filter=tonemap --enable-filter=copy --disable-doc --disable-debug --enable-gpl --disable-encoders --enable-encoder=opus --enable-encoder=aac --enable-encoder=libfdk_aac --enable-encoder=png --enable-encoder=mjpeg --enable-encoder=pcm_s16le --enable-encoder=pcm_s24le --enable-encoder=libx264 --enable-encoder=libx265 --enable-encoder=libaom_av1 --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-encoder=gif --enable-encoder=libmp3lame --enable-encoder=libopus --enable-encoder=prores_ks --enable-encoder=rawvideo --enable-encoder=h264_nvenc --enable-encoder=hevc_nvenc --disable-muxers --enable-muxer='webm,opus,mp4,wav,mp3,mov,matroska,hevc,h264,gif,image2,image2pipe,adts,m4a,mpegts,null,avi' --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-zlib --enable-libopus --disable-demuxers --disable-sdl2 --disable-xlib --enable-demuxer='aac,av1,avi,caf,concat,flac,flv,h264,hevc,image2,image2pipe,matroska,mov,mp3,ogg,pcm_f32le,pcm_f32be,pcm_f64le,pcm_f64be,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_u16be,pcm_u16le,pcm_u24le,pcm_u24be,pcm_u32be,pcm_u32le,wav,gif,hls,m4a,mpeg2_videotoolbox,mpeg4_videotoolbox' --disable-decoders --enable-decoder='aac,ac3,flac,h264,hevc,libvpx_vp8,libvpx_vp9,vp8,vp9,mp3,mpeg4,opus,pcm_u8,pcm_f16le,pcm_f24le,pcm_f32le,pcm_f32be,pcm_f64le,pcm_f64be,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_s64be,pcm_s64le,pcm_u16be,pcm_u16le,pcm_u24le,pcm_u24be,pcm_u32be,pcm_u32le,prores,theora,vorbis,vp9,mjpeg,gif,png,libdav1d,hls,m4a,rawvideo'\n  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n[AVFilterGraph @ 000001db7eba7c40] No option name near '1080:1920:(ow-iw)/2:(oh-ih)/2:color=black'\n[AVFilterGraph @ 000001db7eba7c40] Error parsing a filter description around: ,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]\n[AVFilterGraph @ 000001db7eba7c40] Error parsing filterchain '[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]' around: ,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]\nFailed to set value '[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]' for option 'filter_complex': Invalid argument\nError parsing global options: Invalid argument\n"
+    },
+    {
+      "timestamp": "2026-11-17T16:08:38.392129",
+      "status": "RENDER_FAILED",
+      "message": "Stack trace:\nTraceback (most recent call last):\n  File \"C:\\Users\\Dell\\Downloads\\video gen\\scripts\\render_manager.py\", line 83, in execute_job\n    processor.assemble_timeline(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        scenes=plan[\"scenes\"],\n        ^^^^^^^^^^^^^^^^^^^^^^\n        output_path=intermediate_video,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        intermediate_dir=job.intermediate_dir\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\Dell\\Downloads\\video gen\\scripts\\video_processor.py\", line 159, in assemble_timeline\n    self.normalize_and_trim_scene(scene, scene_out, intermediate_dir)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Dell\\Downloads\\video gen\\scripts\\video_processor.py\", line 137, in normalize_and_trim_scene\n    run_command(cmd)\n    ~~~~~~~~~~~^^^^^\n  File \"C:\\Users\\Dell\\Downloads\\video gen\\scripts\\media_engine.py\", line 65, in run_command\n    raise RuntimeError(f\"Command failed with exit code {res.returncode}:\\n{' '.join(cmd)}\\n\\nStderr:\\n{res.stderr}\")\nRuntimeError: Command failed with exit code 4294967274:\nC:\\Users\\Dell\\Downloads\\video gen\\my-video\\node_modules\\@remotion\\compositor-win32-x64-msvc\\ffmpeg.exe -y -ss 0.0 -i C:\\Users\\Dell\\Downloads\\video gen\\source_assets\\block-puzzle-burst\\gameplay\\recording_3_cfr30.mp4 -t 2.0 -i C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\intermediate\\overlay_badge_0_0.0.png -filter_complex [0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0] -map [v_ov_0] -map 0:a:0? -c:v libx264 -crf 22 -preset fast -c:a aac -b:a 160k -ar 48000 -ac 2 -t 2.0 -movflags +faststart C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\intermediate\\scene_00_norm.mp4\n\nStderr:\nffmpeg version n7.1 Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 10-win32 (GCC) 20220113\n  configuration: --prefix=remotion --target-os=mingw32 --arch=x86_64 --cross-prefix=x86_64-w64-mingw32- --disable-w32threads --disable-os2threads --extra-cflags='-Iremotion/include -Iremotion/include/opus -Iremotion/include/lame -Iremotion/include/vpx' --extra-ldflags=-Lremotion/lib --enable-small --enable-shared --enable-libdav1d --enable-libaom --enable-libzimg --enable-libfdk-aac --disable-static --disable-ffplay --disable-postproc --disable-filters --disable-libxcb --enable-filter=aformat --enable-filter=atrim --enable-filter=acopy --enable-filter=adelay --enable-filter=anullsrc --enable-filter=atempo --enable-filter=apad --enable-filter=amerge --enable-filter=amix --enable-filter=asetrate --enable-filter=asetpts --enable-filter=aresample --enable-filter=concat --enable-filter=loudnorm --enable-filter=colorspace --enable-filter=tinterlace --enable-filter=fieldorder --enable-filter=pan --enable-filter=volume --enable-filter=scale --enable-filter=sine --enable-filter=split --enable-filter=nullsrc --enable-filter=silencedetect --enable-filter=palettegen --enable-filter=paletteuse --enable-filter=zscale --enable-filter=tonemap --enable-filter=copy --disable-doc --disable-debug --enable-gpl --disable-encoders --enable-encoder=opus --enable-encoder=aac --enable-encoder=libfdk_aac --enable-encoder=png --enable-encoder=mjpeg --enable-encoder=pcm_s16le --enable-encoder=pcm_s24le --enable-encoder=libx264 --enable-encoder=libx265 --enable-encoder=libaom_av1 --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-encoder=gif --enable-encoder=libmp3lame --enable-encoder=libopus --enable-encoder=prores_ks --enable-encoder=rawvideo --enable-encoder=h264_nvenc --enable-encoder=hevc_nvenc --disable-muxers --enable-muxer='webm,opus,mp4,wav,mp3,mov,matroska,hevc,h264,gif,image2,image2pipe,adts,m4a,mpegts,null,avi' --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-zlib --enable-libopus --disable-demuxers --disable-sdl2 --disable-xlib --enable-demuxer='aac,av1,avi,caf,concat,flac,flv,h264,hevc,image2,image2pipe,matroska,mov,mp3,ogg,pcm_f32le,pcm_f32be,pcm_f64le,pcm_f64be,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_u16be,pcm_u16le,pcm_u24le,pcm_u24be,pcm_u32be,pcm_u32le,wav,gif,hls,m4a,mpeg2_videotoolbox,mpeg4_videotoolbox' --disable-decoders --enable-decoder='aac,ac3,flac,h264,hevc,libvpx_vp8,libvpx_vp9,vp8,vp9,mp3,mpeg4,opus,pcm_u8,pcm_f16le,pcm_f24le,pcm_f32le,pcm_f32be,pcm_f64le,pcm_f64be,pcm_s16be,pcm_s16le,pcm_s24be,pcm_s24le,pcm_s32be,pcm_s32le,pcm_s64be,pcm_s64le,pcm_u16be,pcm_u16le,pcm_u24le,pcm_u24be,pcm_u32be,pcm_u32le,prores,theora,vorbis,vp9,mjpeg,gif,png,libdav1d,hls,m4a,rawvideo'\n  libavutil      59. 39.100 / 59. 39.100\n  libavcodec     61. 19.100 / 61. 19.100\n  libavformat    61.  7.100 / 61.  7.100\n  libavdevice    61.  3.100 / 61.  3.100\n  libavfilter    10.  4.100 / 10.  4.100\n  libswscale      8.  3.100 /  8.  3.100\n  libswresample   5.  3.100 /  5.  3.100\n[AVFilterGraph @ 000001db7eba7c40] No option name near '1080:1920:(ow-iw)/2:(oh-ih)/2:color=black'\n[AVFilterGraph @ 000001db7eba7c40] Error parsing a filter description around: ,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]\n[AVFilterGraph @ 000001db7eba7c40] Error parsing filterchain '[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]' around: ,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]\nFailed to set value '[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fps=fps=30.0,format=yuv420p[base];[1:v]format=rgba[ov0];[base][ov0]overlay=195:700:enable='between(t,0.0,1.9)'[v_ov_0]' for option 'filter_complex': Invalid argument\nError parsing global options: Invalid argument\n\n"
+    }
+  ]
+}

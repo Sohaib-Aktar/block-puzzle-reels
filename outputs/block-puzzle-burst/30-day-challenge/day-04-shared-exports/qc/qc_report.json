@@ -1,0 +1,338 @@
+{
+  "qc_job_id": "QC_PACK_BLOCK-PUZZLE-BURST_day-04-shared-exports_20261118_114642_760CDC",
+  "content_id": "day-04-shared-exports",
+  "project_id": "block-puzzle-burst",
+  "master_video_hash": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+  "export_artifact_hash": null,
+  "production_manifest_ref": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_bpb_day04_revision.json",
+  "rendering_profile": "2 unique physical artifact(s)",
+  "platform_destination": "instagram_reels, youtube_shorts, facebook_reels, youtube_standard",
+  "tool_versions": {
+    "qc_engine": "5.0.0",
+    "ffmpeg": "9.0.2-static",
+    "ocr_engine": "Windows.Media.Ocr.OcrEngine (en-US)",
+    "asr_engine": "NOT_INSTALLED (PENDING)",
+    "subjective_ai_judge": "NOT_CONFIGURED (HUMAN_REQUIRED)"
+  },
+  "overall_result": "FAIL",
+  "blocks_progression": true,
+  "requires_human_approval": true,
+  "summary_counts": {
+    "total_checks": 4,
+    "pass": 0,
+    "pass_with_warnings": 0,
+    "review_required": 0,
+    "fail": 4,
+    "blocked": 0
+  },
+  "automated_creative_score": {
+    "score": 63,
+    "max_automated": 70,
+    "subjective_dimensions_pending_human": 3,
+    "note": "Critical technical/brand/licensing failures always override any positive score."
+  },
+  "checks": [
+    {
+      "name": "platform_qc_instagram_reels",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform instagram_reels passes automated QC",
+      "actual": "FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)"
+    },
+    {
+      "name": "platform_qc_youtube_shorts",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform youtube_shorts passes automated QC",
+      "actual": "FAIL (artifact=VERTICAL_1080_1920, reused_scan=True)"
+    },
+    {
+      "name": "platform_qc_facebook_reels",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform facebook_reels passes automated QC",
+      "actual": "FAIL (artifact=VERTICAL_1080_1920, reused_scan=True)"
+    },
+    {
+      "name": "platform_qc_youtube_standard",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform youtube_standard passes automated QC",
+      "actual": "FAIL (artifact=HORIZONTAL_1920_1080, reused_scan=False)"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "5.2s-8.433s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 3.23s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional.",
+      "platform": "youtube_standard"
+    }
+  ],
+  "creative_rubric": [
+    {
+      "dimension": "1. Hook Strength (0-2s)",
+      "method": "hybrid_automated_plus_human",
+      "automated_status": "PASS",
+      "score": 8,
+      "max": 10,
+      "evidence": "Opening hook text detected within first 2.5s",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "2. Story Clarity",
+      "method": "human_subjective_review",
+      "automated_status": "REVIEW_REQUIRED",
+      "score": null,
+      "max": 10,
+      "evidence": "Timeline checkpoints sampled: 5; narrative clarity requires human editorial sign-off.",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "3. Audience Relevance",
+      "method": "human_subjective_review",
+      "automated_status": "REVIEW_REQUIRED",
+      "score": null,
+      "max": 10,
+      "evidence": "Emotional appeal and audience resonance cannot be verified deterministically.",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "4. Product Accuracy & Ground Truth",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 10,
+      "max": 10,
+      "evidence": "Verified against project knowledge repository & screen OCR.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "5. Brand Consistency",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Zero foreign project branding detected.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "6. Text Readability & Safe Areas",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Local OCR extracted 56 text lines with bounding-box safe-zone verification.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "7. Pacing & Momentum",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "max_freeze=0.0s, max_black=0.0s",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "8. CTA Singularity",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Approved closing CTA verified.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "9. Platform Suitability",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Matches platform profile resolution, fps, duration, and codecs.",
+      "subjective_review_required": false
+    }
+  ],
+  "warnings": [],
+  "failure_explanations": [
+    "[platform_qc_instagram_reels] Expected: Platform instagram_reels passes automated QC | Actual: FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)",
+    "[platform_qc_youtube_shorts] Expected: Platform youtube_shorts passes automated QC | Actual: FAIL (artifact=VERTICAL_1080_1920, reused_scan=True)",
+    "[platform_qc_facebook_reels] Expected: Platform facebook_reels passes automated QC | Actual: FAIL (artifact=VERTICAL_1080_1920, reused_scan=True)",
+    "[platform_qc_youtube_standard] Expected: Platform youtube_standard passes automated QC | Actual: FAIL (artifact=HORIZONTAL_1920_1080, reused_scan=False)"
+  ],
+  "audio_metrics": {},
+  "visual_metrics": {},
+  "timestamp": "2026-11-18T11:47:00.194185",
+  "unique_physical_artifacts_analyzed": 2,
+  "platforms_validated_independently": 4,
+  "platform_summaries": {
+    "instagram_reels": {
+      "overall_result": "FAIL",
+      "render_profile": "VERTICAL_1080_1920",
+      "physical_analysis_reused_from": null,
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\platform_results\\instagram_reels_qc.json"
+    },
+    "youtube_shorts": {
+      "overall_result": "FAIL",
+      "render_profile": "VERTICAL_1080_1920",
+      "physical_analysis_reused_from": "instagram_reels",
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\platform_results\\youtube_shorts_qc.json"
+    },
+    "facebook_reels": {
+      "overall_result": "FAIL",
+      "render_profile": "VERTICAL_1080_1920",
+      "physical_analysis_reused_from": "instagram_reels",
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\platform_results\\facebook_reels_qc.json"
+    },
+    "youtube_standard": {
+      "overall_result": "FAIL",
+      "render_profile": "HORIZONTAL_1920_1080",
+      "physical_analysis_reused_from": null,
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\platform_results\\youtube_standard_qc.json"
+    }
+  }
+}

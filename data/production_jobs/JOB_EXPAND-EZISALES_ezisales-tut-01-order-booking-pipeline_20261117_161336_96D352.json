@@ -1,0 +1,195 @@
+{
+  "job_id": "JOB_EXPAND-EZISALES_ezisales-tut-01-order-booking-pipeline_20261117_161336_96D352",
+  "status": "AWAITING_HUMAN_APPROVAL",
+  "project": "expand-ezisales",
+  "campaign": "quick-start-tutorials",
+  "content_id": "ezisales-tut-01-order-booking-pipeline",
+  "output_profile": "software_tutorial_vertical",
+  "created_at": "2026-11-17T16:13:36.370324",
+  "updated_at": "2026-11-17T16:13:46.855993",
+  "output_file": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-order-booking-pipeline\\final\\software_tutorial_vertical.mp4",
+  "error_message": null,
+  "metrics": {
+    "render_seconds": 9.45,
+    "intermediate_files_count": 0,
+    "final_file_size_bytes": 1380433
+  },
+  "manifest_path": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_ezisales_tut01_pilot.json",
+  "manifest": {
+    "project": "expand-ezisales",
+    "campaign": "quick-start-tutorials",
+    "content_id": "ezisales-tut-01-order-booking-pipeline",
+    "output_profile": "software_tutorial_vertical",
+    "renderer": "ffmpeg",
+    "allow_review_audio": false,
+    "canvas": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "duration_seconds": 14.0
+    },
+    "timeline": [
+      {
+        "scene_id": "scene_01_retailer_selection",
+        "source_file": "outputs/expand-ezisales/quick-start-tutorials/ezisales-tut-01-order-booking/final/software_tutorial_vertical.mp4",
+        "source_in": 0.0,
+        "source_out": 3.0,
+        "duration": 3.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "Expand eziSales SFA",
+            "subtitle": "Step 1: Select Retailer",
+            "position": "top",
+            "position_y": 200,
+            "start_time": 0.0,
+            "end_time": 2.8,
+            "style": "corporate_blue_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_02_sku_entry",
+        "source_file": "outputs/expand-ezisales/quick-start-tutorials/ezisales-tut-01-order-booking/final/software_tutorial_vertical.mp4",
+        "source_in": 3.0,
+        "source_out": 10.0,
+        "duration": 7.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "Fast SKU & Quantity Entry",
+            "subtitle": "Active Schemes Auto-Applied",
+            "position": "top",
+            "position_y": 200,
+            "start_time": 0.0,
+            "end_time": 4.0,
+            "style": "corporate_blue_badge"
+          }
+        ]
+      },
+      {
+        "scene_id": "scene_03_cloud_sync",
+        "source_file": "outputs/expand-ezisales/quick-start-tutorials/ezisales-tut-01-order-booking/final/software_tutorial_vertical.mp4",
+        "source_in": 10.0,
+        "source_out": 14.0,
+        "duration": 4.0,
+        "fit_mode": "contain",
+        "overlays": [
+          {
+            "type": "badge",
+            "title": "Booked in Under 30s \u26a1",
+            "subtitle": "Direct Sync to Expand Cloud ERP",
+            "position": "center",
+            "position_y": 700,
+            "start_time": 0.0,
+            "end_time": 3.8,
+            "style": "corporate_blue_badge"
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "music": {
+        "asset_id": "AUDIO_80A69D7B",
+        "volume": 0.18,
+        "start_time": 0.0,
+        "fade_in": 0.5,
+        "fade_out": 0.8
+      },
+      "voiceover": {
+        "text": "Book field sales orders in under thirty seconds. Select your retailer, add SKU items with active trade schemes, and sync directly with Expand Cloud ERP.",
+        "volume": 1.0,
+        "ducking": true,
+        "duck_level_db": -18.0,
+        "rate": 0
+      },
+      "sound_effects": [
+        {
+          "asset_id": "AUDIO_9B676924",
+          "timeline_start": 1.0,
+          "volume": 0.7
+        },
+        {
+          "asset_id": "AUDIO_E21CA98B",
+          "timeline_start": 10.5,
+          "volume": 0.75
+        }
+      ],
+      "master_loudness_target": -14.0
+    }
+  },
+  "execution_log": [
+    {
+      "timestamp": "2026-11-17T16:13:36.375023",
+      "status": "VALIDATING",
+      "message": "Beginning preflight manifest validation..."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:36.567185",
+      "status": "VALIDATING",
+      "message": "Preflight passed. Resolved 3 scenes and audio tracks."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:36.568257",
+      "status": "READY_TO_RENDER",
+      "message": "Manifest validated and ready for rendering."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:36.569242",
+      "status": "RENDERING",
+      "message": "Rendering to C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-order-booking-pipeline\\final\\software_tutorial_vertical.mp4 using engine: ffmpeg..."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:36.570358",
+      "status": "RENDERING",
+      "message": "Normalizing scenes and assembling visual timeline..."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:43.920208",
+      "status": "RENDERING",
+      "message": "Mixing audio stems (BGM, VO, SFX) with EBU R128 loudness normalization..."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:45.820697",
+      "status": "RENDERED",
+      "message": "Rendering completed in 9.45s."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:45.822070",
+      "status": "TECHNICAL_VALIDATION",
+      "message": "Validating render codecs, decodability and duration..."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:46.246347",
+      "status": "TECHNICAL_VALIDATION",
+      "message": "Technical validation passed (6/6 checks)."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:46.247354",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Running studio Technical & Creative QC..."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:46.846654",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Studio Technical QC verification passed: False"
+    },
+    {
+      "timestamp": "2026-11-17T16:13:46.849651",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Creative QC score: 80 / 90"
+    },
+    {
+      "timestamp": "2026-11-17T16:13:46.854687",
+      "status": "AWAITING_CREATIVE_QC",
+      "message": "Cleaned up 7 intermediate artifacts."
+    },
+    {
+      "timestamp": "2026-11-17T16:13:46.855993",
+      "status": "AWAITING_HUMAN_APPROVAL",
+      "message": "Production job complete! Deliverable ready at: C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-order-booking-pipeline\\final\\software_tutorial_vertical.mp4"
+    }
+  ]
+}

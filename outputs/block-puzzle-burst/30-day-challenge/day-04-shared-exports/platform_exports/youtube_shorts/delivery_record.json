@@ -1,0 +1,50 @@
+{
+  "platform_id": "youtube_shorts",
+  "platform_name": "YouTube Shorts (9:16 Vertical)",
+  "platform": "youtube",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "content_id": "day-04-shared-exports",
+  "render_profile_id": "VERTICAL_1080_1920",
+  "artifact_fingerprint": "4c05550bfb33e739d5d0",
+  "fingerprint_components": {
+    "master_sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+    "manifest_sha256": "a7e3b5b7ed82eb915693d6003848b3875b8ee162eca225936b8fe788d2e60d5f",
+    "render_profile_hash": "d8cacbc1b2f50d69",
+    "source_asset_hash": "f982305c6fdeac2c",
+    "overlay_audio_reframe_hash": "943dd3779ab7ffec"
+  },
+  "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+  "artifact_sha256": "77fe309f49dae6b4b8274eedcdebca05db70516261cffb28316f6fdf42034d86",
+  "artifact_size_bytes": 1855867,
+  "shared_artifact": true,
+  "shared_with_platforms": [
+    "instagram_reels",
+    "facebook_reels"
+  ],
+  "validation": {
+    "passed": true,
+    "score": "18/18",
+    "warnings": [],
+    "validation_report_ref": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\platform_validation.json"
+  },
+  "safe_zone_validation": {
+    "safe_zone_profile": "youtube_shorts",
+    "status": "PASS",
+    "details": "Within configured safe bounds (provisional)",
+    "safe_zone_preview_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\youtube_shorts_safe_zone.png"
+  },
+  "caption_and_hashtags": {
+    "caption": null,
+    "hashtags": [
+      "#Shorts",
+      "#PyapirasGames"
+    ],
+    "status": "AWAITING_PLATFORM_COPY_REVIEW"
+  },
+  "delivery_status": "STAGED_FOR_HUMAN_REVIEW",
+  "publishing_reference": null,
+  "platform_notes": "Shares VERTICAL_1080_1920 render profile when compatible (<=60s classic Short target; YouTube also supports extended Shorts up to 180s). Reassign render_profile_id to VERTICAL_1080_1920_HQ if distinct encoding is ever needed.",
+  "requires_manual_review": false,
+  "updated_at": "2026-11-18T10:22:55.937231"
+}

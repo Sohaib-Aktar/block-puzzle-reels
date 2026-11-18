@@ -1,0 +1,390 @@
+{
+  "executed_at": "2026-11-18T11:53:36.074291",
+  "elapsed_seconds": 67.93,
+  "dataset_size": 22,
+  "metrics_overall": {
+    "total": 22,
+    "tp": 17,
+    "fp": 0,
+    "tn": 5,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "critical_false_pass_rate": 0.0,
+    "false_failure_rate": 0.0
+  },
+  "metrics_calibration_split": {
+    "total": 9,
+    "tp": 7,
+    "fp": 0,
+    "tn": 2,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "critical_false_pass_rate": 0.0,
+    "false_failure_rate": 0.0
+  },
+  "metrics_held_out_split": {
+    "total": 13,
+    "tp": 10,
+    "fp": 0,
+    "tn": 3,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "critical_false_pass_rate": 0.0,
+    "false_failure_rate": 0.0
+  },
+  "metrics_deterministic_only": {
+    "total": 14,
+    "tp": 12,
+    "fp": 0,
+    "tn": 2,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "critical_false_pass_rate": 0.0,
+    "false_failure_rate": 0.0
+  },
+  "metrics_ocr_only": {
+    "total": 5,
+    "tp": 3,
+    "fp": 0,
+    "tn": 2,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "critical_false_pass_rate": 0.0,
+    "false_failure_rate": 0.0
+  },
+  "metrics_real_studio_only": {
+    "total": 3,
+    "tp": 2,
+    "fp": 0,
+    "tn": 1,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "critical_false_pass_rate": 0.0,
+    "false_failure_rate": 0.0
+  },
+  "cases": [
+    {
+      "id": "CAL_DET_CLEAN_01",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": false,
+      "target_issue": null,
+      "overall_result": "PASS_WITH_WARNINGS",
+      "detected_issue_types": [
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": false,
+      "correct": true
+    },
+    {
+      "id": "CAL_DET_BLACK_02",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "unexpected_black_frames",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "blank_or_solid_frame",
+        "frozen_frames_detected",
+        "loudness_out_of_target_range",
+        "missing_cta",
+        "unexpected_black_frames"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "CAL_DET_FREEZE_03",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "frozen_frames_detected",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "frozen_frames_detected",
+        "loudness_out_of_target_range",
+        "missing_cta"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "CAL_DET_CLIP_04",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "audio_clipping",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "audio_clipping",
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "CAL_DET_NOAUD_05",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "missing_audio",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "audio_sample_rate_and_channels",
+        "audio_stream_present",
+        "missing_audio"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "CAL_DET_BRAND_06",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "incorrect_project_branding",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "incorrect_project_branding",
+        "loudness_out_of_target_range",
+        "ocr_low_confidence"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "CAL_DET_LIC_07",
+      "split": "calibration",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "restricted_or_unknown_audio_license",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "loudness_out_of_target_range",
+        "restricted_or_unknown_audio_license"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "CAL_OCR_CLEAN_08",
+      "split": "calibration",
+      "track": "ocr",
+      "expected_defect": false,
+      "target_issue": null,
+      "overall_result": "PASS_WITH_WARNINGS",
+      "detected_issue_types": [
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": false,
+      "correct": true
+    },
+    {
+      "id": "CAL_OCR_CLIPTXT_09",
+      "split": "calibration",
+      "track": "ocr",
+      "expected_defect": true,
+      "target_issue": "clipped_text",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "clipped_text",
+        "loudness_out_of_target_range",
+        "unsafe_text_placement"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_CLEAN16X9_10",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": false,
+      "target_issue": null,
+      "overall_result": "PASS_WITH_WARNINGS",
+      "detected_issue_types": [
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": false,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_SILENCE_11",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "excessive_silence",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "excessive_silence",
+        "silent_audio_track"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_AVSYNC_12",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "av_sync_mismatch",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "av_sync_mismatch",
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_WRONGPROF_13",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "resolution_match",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "aspect_ratio_match",
+        "loudness_out_of_target_range",
+        "resolution_match"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_NOCTA_14",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "missing_cta",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "loudness_out_of_target_range",
+        "missing_cta"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_CLAIM_15",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "unsupported_marketing_claim",
+      "overall_result": "REVIEW_REQUIRED",
+      "detected_issue_types": [
+        "loudness_out_of_target_range",
+        "ocr_low_confidence",
+        "unsupported_marketing_claim"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_DET_REVLIC_16",
+      "split": "held_out",
+      "track": "deterministic",
+      "expected_defect": true,
+      "target_issue": "unverified_audio_licensing",
+      "overall_result": "REVIEW_REQUIRED",
+      "detected_issue_types": [
+        "loudness_out_of_target_range",
+        "unverified_audio_licensing"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_OCR_CLEAN16X9_17",
+      "split": "held_out",
+      "track": "ocr",
+      "expected_defect": false,
+      "target_issue": null,
+      "overall_result": "PASS_WITH_WARNINGS",
+      "detected_issue_types": [
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": false,
+      "correct": true
+    },
+    {
+      "id": "VAL_OCR_UNSAFE_18",
+      "split": "held_out",
+      "track": "ocr",
+      "expected_defect": true,
+      "target_issue": "unsafe_text_placement",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "loudness_out_of_target_range",
+        "unsafe_text_placement"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_OCR_MISSTXT_19",
+      "split": "held_out",
+      "track": "ocr",
+      "expected_defect": true,
+      "target_issue": "expected_text_missing",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "expected_text_missing",
+        "loudness_out_of_target_range"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_REAL_DAY04_CLEAN_20",
+      "split": "held_out",
+      "track": "real_studio",
+      "expected_defect": false,
+      "target_issue": null,
+      "overall_result": "REVIEW_REQUIRED",
+      "detected_issue_types": [
+        "asr_unavailable_manual_review",
+        "audio_gap_detected"
+      ],
+      "detected_defect": false,
+      "correct": true
+    },
+    {
+      "id": "VAL_REAL_DAY04_SILENT_21",
+      "split": "held_out",
+      "track": "real_studio",
+      "expected_defect": true,
+      "target_issue": "silent_audio_track",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "asr_unavailable_manual_review",
+        "excessive_silence",
+        "silent_audio_track"
+      ],
+      "detected_defect": true,
+      "correct": true
+    },
+    {
+      "id": "VAL_REAL_EZISALES_DEFECT_22",
+      "split": "held_out",
+      "track": "real_studio",
+      "expected_defect": true,
+      "target_issue": "placeholder_or_non_erp_footage",
+      "overall_result": "FAIL",
+      "detected_issue_types": [
+        "asr_unavailable_manual_review",
+        "missing_cta",
+        "placeholder_or_non_erp_footage",
+        "static_hold_detected",
+        "unsupported_marketing_claim"
+      ],
+      "detected_defect": true,
+      "correct": true
+    }
+  ]
+}

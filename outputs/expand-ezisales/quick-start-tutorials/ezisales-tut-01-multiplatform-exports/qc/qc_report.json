@@ -1,0 +1,459 @@
+{
+  "qc_job_id": "QC_PACK_EXPAND-EZISALES_ezisales-tut-01-multiplatform-exports_20261118_114749_A86FC5",
+  "content_id": "ezisales-tut-01-multiplatform-exports",
+  "project_id": "expand-ezisales",
+  "master_video_hash": "66e47cab0af76eeb705fab13eb1196e0116398d08278d6f21021b4a2171af5dd",
+  "export_artifact_hash": null,
+  "production_manifest_ref": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_ezisales_tut01_pilot.json",
+  "rendering_profile": "4 unique physical artifact(s)",
+  "platform_destination": "instagram_reels, youtube_shorts, facebook_reels, youtube_standard",
+  "tool_versions": {
+    "qc_engine": "5.0.0",
+    "ffmpeg": "9.0.2-static",
+    "ocr_engine": "Windows.Media.Ocr.OcrEngine (en-US)",
+    "asr_engine": "NOT_INSTALLED (PENDING)",
+    "subjective_ai_judge": "NOT_CONFIGURED (HUMAN_REQUIRED)"
+  },
+  "overall_result": "FAIL",
+  "blocks_progression": true,
+  "requires_human_approval": true,
+  "summary_counts": {
+    "total_checks": 4,
+    "pass": 0,
+    "pass_with_warnings": 0,
+    "review_required": 0,
+    "fail": 4,
+    "blocked": 0
+  },
+  "automated_creative_score": {
+    "score": 46,
+    "max_automated": 70,
+    "subjective_dimensions_pending_human": 3,
+    "note": "Critical technical/brand/licensing failures always override any positive score."
+  },
+  "checks": [
+    {
+      "name": "platform_qc_instagram_reels",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform instagram_reels passes automated QC",
+      "actual": "FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)"
+    },
+    {
+      "name": "platform_qc_youtube_shorts",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform youtube_shorts passes automated QC",
+      "actual": "FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)"
+    },
+    {
+      "name": "platform_qc_facebook_reels",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform facebook_reels passes automated QC",
+      "actual": "FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)"
+    },
+    {
+      "name": "platform_qc_youtube_standard",
+      "category": "platform",
+      "method": "orchestrated",
+      "status": "FAIL",
+      "severity": "CRITICAL",
+      "expected": "Platform youtube_standard passes automated QC",
+      "actual": "FAIL (artifact=HORIZONTAL_1920_1080, reused_scan=False)"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.53s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "0.067s-2.133s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 2.07s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "CNT_001",
+      "severity": "CRITICAL",
+      "type": "placeholder_or_non_erp_footage",
+      "timestamp": "0.0s",
+      "expected": "Authentic expand-ezisales application interface footage",
+      "actual": "Detected non-ERP UI elements (['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime']) and empty screen-recordings folder",
+      "confidence": 0.95,
+      "recommendation": "Supply genuine screen recordings in source_assets/expand-ezisales/screen-recordings/ and re-render.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "CLM_001",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "11.0s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in manifest_overlay:scene_03_cloud_sync: \"Booked in Under 30s \u26a1\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "CLM_002",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "13.1s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in ocr:scene_03_cloud_sync: \"Booked in Under 30s\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "CRV_001",
+      "severity": "CRITICAL",
+      "type": "missing_cta",
+      "timestamp": "closing",
+      "expected": "Single clear CTA in closing scene",
+      "actual": "No CTA keywords detected in closing overlays or OCR",
+      "confidence": 0.92,
+      "recommendation": "Add approved closing CTA overlay matching the creative brief.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.53s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "0.067s-2.133s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 2.07s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "CNT_001",
+      "severity": "CRITICAL",
+      "type": "placeholder_or_non_erp_footage",
+      "timestamp": "0.0s",
+      "expected": "Authentic expand-ezisales application interface footage",
+      "actual": "Detected non-ERP UI elements (['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime']) and empty screen-recordings folder",
+      "confidence": 0.95,
+      "recommendation": "Supply genuine screen recordings in source_assets/expand-ezisales/screen-recordings/ and re-render.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "CLM_001",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "11.0s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in manifest_overlay:scene_03_cloud_sync: \"Booked in Under 30s \u26a1\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "CLM_002",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "13.1s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in ocr:scene_03_cloud_sync: \"Booked in Under 30s\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "CRV_001",
+      "severity": "CRITICAL",
+      "type": "missing_cta",
+      "timestamp": "closing",
+      "expected": "Single clear CTA in closing scene",
+      "actual": "No CTA keywords detected in closing overlays or OCR",
+      "confidence": 0.92,
+      "recommendation": "Add approved closing CTA overlay matching the creative brief.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.53s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "0.067s-2.133s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 2.07s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "CNT_001",
+      "severity": "CRITICAL",
+      "type": "placeholder_or_non_erp_footage",
+      "timestamp": "0.0s",
+      "expected": "Authentic expand-ezisales application interface footage",
+      "actual": "Detected non-ERP UI elements (['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime']) and empty screen-recordings folder",
+      "confidence": 0.95,
+      "recommendation": "Supply genuine screen recordings in source_assets/expand-ezisales/screen-recordings/ and re-render.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "CLM_001",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "11.0s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in manifest_overlay:scene_03_cloud_sync: \"Booked in Under 30s \u26a1\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "CLM_002",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "13.1s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in ocr:scene_03_cloud_sync: \"Booked in Under 30s\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "CRV_001",
+      "severity": "CRITICAL",
+      "type": "missing_cta",
+      "timestamp": "closing",
+      "expected": "Single clear CTA in closing scene",
+      "actual": "No CTA keywords detected in closing overlays or OCR",
+      "confidence": 0.92,
+      "recommendation": "Add approved closing CTA overlay matching the creative brief.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.53s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "0.067s-2.5s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 2.43s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "CNT_001",
+      "severity": "CRITICAL",
+      "type": "placeholder_or_non_erp_footage",
+      "timestamp": "0.0s",
+      "expected": "Authentic expand-ezisales application interface footage",
+      "actual": "Detected non-ERP UI elements (['mobile data', 'aeroplane', 'bluetooth', 'torch', 'bedtime']) and empty screen-recordings folder",
+      "confidence": 0.95,
+      "recommendation": "Supply genuine screen recordings in source_assets/expand-ezisales/screen-recordings/ and re-render.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "CLM_001",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "11.0s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in manifest_overlay:scene_03_cloud_sync: \"Booked in Under 30s \u26a1\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "CLM_002",
+      "severity": "VERIFICATION_REQUIRED",
+      "type": "unsupported_marketing_claim",
+      "timestamp": "13.1s",
+      "expected": "Verified claim present in approved project knowledge repository",
+      "actual": "Unverified claim 'Under 30s' in ocr:scene_03_cloud_sync: \"Booked in Under 30s D\"",
+      "confidence": 0.95,
+      "recommendation": "Claim 'Under 30s' is not substantiated in projects/expand-ezisales/knowledge/verified_features.md or marketing_claims.md. Obtain written approval or remove claim.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "CRV_001",
+      "severity": "CRITICAL",
+      "type": "missing_cta",
+      "timestamp": "closing",
+      "expected": "Single clear CTA in closing scene",
+      "actual": "No CTA keywords detected in closing overlays or OCR",
+      "confidence": 0.92,
+      "recommendation": "Add approved closing CTA overlay matching the creative brief.",
+      "platform": "youtube_standard"
+    }
+  ],
+  "creative_rubric": [
+    {
+      "dimension": "1. Hook Strength (0-2s)",
+      "method": "hybrid_automated_plus_human",
+      "automated_status": "PASS",
+      "score": 8,
+      "max": 10,
+      "evidence": "Opening hook text detected within first 2.5s",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "2. Story Clarity",
+      "method": "human_subjective_review",
+      "automated_status": "REVIEW_REQUIRED",
+      "score": null,
+      "max": 10,
+      "evidence": "Timeline checkpoints sampled: 3; narrative clarity requires human editorial sign-off.",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "3. Audience Relevance",
+      "method": "human_subjective_review",
+      "automated_status": "REVIEW_REQUIRED",
+      "score": null,
+      "max": 10,
+      "evidence": "Emotional appeal and audience resonance cannot be verified deterministically.",
+      "subjective_review_required": true
+    },
+    {
+      "dimension": "4. Product Accuracy & Ground Truth",
+      "method": "automated_evidence",
+      "automated_status": "FAIL",
+      "score": 2,
+      "max": 10,
+      "evidence": "Verified against project knowledge repository & screen OCR.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "5. Brand Consistency",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Zero foreign project branding detected.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "6. Text Readability & Safe Areas",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Local OCR extracted 34 text lines with bounding-box safe-zone verification.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "7. Pacing & Momentum",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "max_freeze=2.067s, max_black=0.0s",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "8. CTA Singularity",
+      "method": "automated_evidence",
+      "automated_status": "FAIL",
+      "score": 0,
+      "max": 10,
+      "evidence": "Missing closing CTA.",
+      "subjective_review_required": false
+    },
+    {
+      "dimension": "9. Platform Suitability",
+      "method": "automated_evidence",
+      "automated_status": "PASS",
+      "score": 9,
+      "max": 10,
+      "evidence": "Matches platform profile resolution, fps, duration, and codecs.",
+      "subjective_review_required": false
+    }
+  ],
+  "warnings": [],
+  "failure_explanations": [
+    "[platform_qc_instagram_reels] Expected: Platform instagram_reels passes automated QC | Actual: FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)",
+    "[platform_qc_youtube_shorts] Expected: Platform youtube_shorts passes automated QC | Actual: FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)",
+    "[platform_qc_facebook_reels] Expected: Platform facebook_reels passes automated QC | Actual: FAIL (artifact=VERTICAL_1080_1920, reused_scan=False)",
+    "[platform_qc_youtube_standard] Expected: Platform youtube_standard passes automated QC | Actual: FAIL (artifact=HORIZONTAL_1920_1080, reused_scan=False)"
+  ],
+  "audio_metrics": {},
+  "visual_metrics": {},
+  "timestamp": "2026-11-18T11:48:16.180775",
+  "unique_physical_artifacts_analyzed": 4,
+  "platforms_validated_independently": 4,
+  "platform_summaries": {
+    "instagram_reels": {
+      "overall_result": "FAIL",
+      "render_profile": "VERTICAL_1080_1920",
+      "physical_analysis_reused_from": null,
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\platform_results\\instagram_reels_qc.json"
+    },
+    "youtube_shorts": {
+      "overall_result": "FAIL",
+      "render_profile": "VERTICAL_1080_1920",
+      "physical_analysis_reused_from": null,
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\platform_results\\youtube_shorts_qc.json"
+    },
+    "facebook_reels": {
+      "overall_result": "FAIL",
+      "render_profile": "VERTICAL_1080_1920",
+      "physical_analysis_reused_from": null,
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\platform_results\\facebook_reels_qc.json"
+    },
+    "youtube_standard": {
+      "overall_result": "FAIL",
+      "render_profile": "HORIZONTAL_1920_1080",
+      "physical_analysis_reused_from": null,
+      "report_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\platform_results\\youtube_standard_qc.json"
+    }
+  }
+}

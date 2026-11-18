@@ -1,0 +1,63 @@
+{
+  "schema_version": "4.1.0",
+  "render_profiles_ref": "config/production/render_profiles.json",
+  "notes": "Platform destination profiles separated from physical rendering profiles. Multiple destinations referencing the same render_profile_id share one physical MP4 artifact whenever their full export fingerprints match, while maintaining independent platform validation and delivery records.",
+  "profiles": {
+    "instagram_reels": {
+      "profile_id": "instagram_reels",
+      "display_name": "Instagram Reels (9:16 Vertical)",
+      "platform": "instagram",
+      "render_profile_id": "VERTICAL_1080_1920",
+      "duration_min_seconds": 3.0,
+      "duration_max_seconds": 90.0,
+      "safe_zone_profile": "instagram_reels",
+      "spec_status": "PROVISIONAL_STUDIO_TARGET",
+      "spec_notes": "Targets 1080x1920 30fps H.264/AAC MP4 via shared VERTICAL_1080_1920 render profile. Independent IG safe-zone and duration checks always execute.",
+      "default_hashtags": ["#BlockPuzzle", "#PyapirasGames", "#Reels"]
+    },
+    "youtube_shorts": {
+      "profile_id": "youtube_shorts",
+      "display_name": "YouTube Shorts (9:16 Vertical)",
+      "platform": "youtube",
+      "render_profile_id": "VERTICAL_1080_1920",
+      "duration_min_seconds": 3.0,
+      "duration_max_seconds": 60.0,
+      "safe_zone_profile": "youtube_shorts",
+      "spec_status": "PROVISIONAL_STUDIO_TARGET",
+      "spec_notes": "Shares VERTICAL_1080_1920 render profile when compatible (<=60s classic Short target; YouTube also supports extended Shorts up to 180s). Reassign render_profile_id to VERTICAL_1080_1920_HQ if distinct encoding is ever needed.",
+      "default_hashtags": ["#Shorts", "#PyapirasGames"]
+    },
+    "facebook_reels": {
+      "profile_id": "facebook_reels",
+      "display_name": "Facebook Reels (9:16 Vertical)",
+      "platform": "facebook",
+      "render_profile_id": "VERTICAL_1080_1920",
+      "duration_min_seconds": 3.0,
+      "duration_max_seconds": 90.0,
+      "safe_zone_profile": "facebook_reels",
+      "spec_status": "PROVISIONAL_STUDIO_TARGET",
+      "spec_notes": "Shares VERTICAL_1080_1920 render profile with Instagram Reels while maintaining independent Facebook validation, safe zones, captions, and delivery records.",
+      "default_hashtags": ["#FacebookReels", "#PyapirasGames"]
+    },
+    "youtube_standard": {
+      "profile_id": "youtube_standard",
+      "display_name": "YouTube Standard Video (16:9 Horizontal)",
+      "platform": "youtube",
+      "render_profile_id": "HORIZONTAL_1920_1080",
+      "duration_min_seconds": 3.0,
+      "duration_max_seconds": 3600.0,
+      "safe_zone_profile": "youtube_standard",
+      "spec_status": "PROVISIONAL_STUDIO_TARGET",
+      "spec_notes": "Uses dedicated HORIZONTAL_1920_1080 render profile with non-destructive 9:16->16:9 adaptation (BLURRED_BACKGROUND for gameplay, FIT_WITH_BACKGROUND for ERP tutorials).",
+      "default_hashtags": ["#YouTube", "#PyapirasGames"]
+    }
+  },
+  "project_background_colors": {
+    "block-puzzle-burst": "#070B14",
+    "expand-ezisales": "#0A1428",
+    "expand-hr": "#0B192C",
+    "wms": "#0F172A",
+    "pos": "#111827",
+    "default": "#0A0F1A"
+  }
+}

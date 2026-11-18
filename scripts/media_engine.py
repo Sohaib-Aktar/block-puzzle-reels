@@ -27,10 +27,18 @@ CONFIG_DIR = os.path.join(WORKSPACE_ROOT, "config", "platform_presets")
 
 
 def get_ffmpeg_cmd() -> List[str]:
-    """Find system ffmpeg or fallback to Remotion's bundled ffmpeg binary."""
+    """Find system ffmpeg, imageio-ffmpeg full binary, or fallback to Remotion's bundled ffmpeg binary."""
     if shutil.which("ffmpeg"):
         return ["ffmpeg"]
-    # Direct bundled binary check (orders of magnitude faster than npx subprocess)
+    # Full-featured static binary check (supports pad, overlay, drawtext)
+    try:
+        import imageio_ffmpeg
+        full_exe = imageio_ffmpeg.get_ffmpeg_exe()
+        if os.path.exists(full_exe):
+            return [full_exe]
+    except Exception:
+        pass
+    # Remotion bundled binary check
     remotion_dir = os.path.join(MY_VIDEO_DIR, "node_modules", "@remotion")
     if os.path.exists(remotion_dir):
         for entry in os.listdir(remotion_dir):

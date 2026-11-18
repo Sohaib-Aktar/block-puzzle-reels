@@ -1,0 +1,105 @@
+{
+  "project": "expand-ezisales",
+  "campaign": "quick-start-tutorials",
+  "content_id": "ezisales-tut-01-order-booking-pipeline",
+  "output_profile": "software_tutorial_vertical",
+  "renderer": "ffmpeg",
+  "allow_review_audio": false,
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 15.5
+  },
+  "timeline": [
+    {
+      "scene_id": "scene_01_retailer_selection",
+      "source_file": "outputs/expand-ezisales/quick-start-tutorials/ezisales-tut-01-order-booking/final/software_tutorial_vertical.mp4",
+      "source_in": 0.0,
+      "source_out": 3.0,
+      "duration": 3.0,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "badge",
+          "title": "Expand eziSales SFA",
+          "subtitle": "Step 1: Select Retailer",
+          "position": "top",
+          "position_y": 200,
+          "start_time": 0.0,
+          "end_time": 2.8,
+          "style": "corporate_blue_badge"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02_sku_entry",
+      "source_file": "outputs/expand-ezisales/quick-start-tutorials/ezisales-tut-01-order-booking/final/software_tutorial_vertical.mp4",
+      "source_in": 3.0,
+      "source_out": 11.0,
+      "duration": 8.0,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "badge",
+          "title": "Fast SKU & Quantity Entry",
+          "subtitle": "Active Schemes Auto-Applied",
+          "position": "top",
+          "position_y": 200,
+          "start_time": 0.0,
+          "end_time": 4.0,
+          "style": "corporate_blue_badge"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03_cloud_sync",
+      "source_file": "outputs/expand-ezisales/quick-start-tutorials/ezisales-tut-01-order-booking/final/software_tutorial_vertical.mp4",
+      "source_in": 9.5,
+      "source_out": 14.0,
+      "duration": 4.5,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "badge",
+          "title": "Booked in Under 30s ⚡",
+          "subtitle": "Direct Sync to Expand Cloud ERP",
+          "position": "center",
+          "position_y": 700,
+          "start_time": 0.0,
+          "end_time": 4.2,
+          "style": "corporate_blue_badge"
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "music": {
+      "asset_id": "AUDIO_80A69D7B",
+      "volume": 0.18,
+      "start_time": 0.0,
+      "fade_in": 0.5,
+      "fade_out": 0.8
+    },
+    "voiceover": {
+      "text": "Book field sales orders in under thirty seconds. Select your retailer, add SKU items with active trade schemes, and sync directly with Expand Cloud ERP.",
+      "volume": 1.0,
+      "ducking": true,
+      "duck_level_db": -18.0,
+      "rate": 0
+    },
+    "sound_effects": [
+      {
+        "asset_id": "AUDIO_9B676924",
+        "timeline_start": 1.0,
+        "volume": 0.7
+      },
+      {
+        "asset_id": "AUDIO_E21CA98B",
+        "timeline_start": 10.5,
+        "volume": 0.75
+      }
+    ],
+    "master_loudness_target": -14.0
+  }
+}

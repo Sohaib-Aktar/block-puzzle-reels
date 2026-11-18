@@ -1,0 +1,315 @@
+{
+  "audited_at": "2026-11-18T11:56:24.541261",
+  "byte_identical_mp4_groups": [
+    {
+      "sha256": "7b9412ad73af42d07e58e176fc12a8d386963a48ff6eb28c6ed3fea8ca924e4b",
+      "size_bytes": 1966812,
+      "count": 2,
+      "redundant_bytes": 1966812,
+      "files": [
+        "generated_outputs\\videos\\Day_02_MyDayTwoReel.mp4",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-02-satisfying-clear\\final\\instagram_reel.mp4"
+      ]
+    },
+    {
+      "sha256": "793a4b6d6954a7056bab73795f7e8dcc618af84894f82dcf423b118c87b8df9b",
+      "size_bytes": 2335202,
+      "count": 2,
+      "redundant_bytes": 2335202,
+      "files": [
+        "generated_outputs\\videos\\Day_03_Puzzle_Challenge.mp4",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-03-puzzle-challenge\\final\\instagram_reel.mp4"
+      ]
+    },
+    {
+      "sha256": "a37cd97b7ebbf53aa21dd550f3a897bb35556191bb2146c56e63f7e1b87e7b8c",
+      "size_bytes": 1713351,
+      "count": 2,
+      "redundant_bytes": 1713351,
+      "files": [
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\youtube_standard\\day-04-multiplatform-exports_youtube_standard.mp4",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\HORIZONTAL_1920_1080\\day-04-shared-exports_HORIZONTAL_1920_1080.mp4"
+      ]
+    },
+    {
+      "sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+      "size_bytes": 3220384,
+      "count": 2,
+      "redundant_bytes": 3220384,
+      "files": [
+        "generated_outputs\\block-puzzle-burst\\day-04\\Day_04_Final_Revised_Center_Text.mp4",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-offline-proof\\final\\Day_04_Final_Revised_Center_Text.mp4"
+      ]
+    },
+    {
+      "sha256": "7abbcf39df0acee80fafe9620d85c628b00d01bba2020de674dbfe5b52d44589",
+      "size_bytes": 2408822,
+      "count": 2,
+      "redundant_bytes": 2408822,
+      "files": [
+        "outputs\\block-puzzle-burst\\30-day-challenge\\multiplatform-pack-01\\final\\facebook_reel.mp4",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\multiplatform-pack-01\\final\\instagram_reel.mp4"
+      ]
+    },
+    {
+      "sha256": "6c4ebfc85cc2476d2c3963973c82ebacb4ef0d9056c67a29103b9314f5d328d0",
+      "size_bytes": 5319797,
+      "count": 2,
+      "redundant_bytes": 5319797,
+      "files": [
+        "generated_outputs\\videos\\SolveItReel_Puzzle_Challenge.mp4",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\solve-it-reel\\final\\instagram_reel.mp4"
+      ]
+    }
+  ],
+  "byte_identical_png_groups": [
+    {
+      "sha256": "0b798cf8452e3e467f615656d6d8bf17f50bbf4f4ae663db04809f4b1987c427",
+      "size_bytes": 432763,
+      "count": 2,
+      "redundant_bytes": 432763,
+      "files": [
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\previews\\master_preview.png",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\master_preview.png"
+      ]
+    },
+    {
+      "sha256": "82236ab1fabe1fb0dc90b993d005121c95997484410609f73c78516ddc053bda",
+      "size_bytes": 289884,
+      "count": 2,
+      "redundant_bytes": 289884,
+      "files": [
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\previews\\reframing_comparison_9x16_vs_16x9.png",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\reframing_comparison_9x16_vs_16x9.png"
+      ]
+    },
+    {
+      "sha256": "0fdfa3b31e25e5b1e0c19fbf4cfa71e68bf0f822179c5769b5b945945b94e2ca",
+      "size_bytes": 264501,
+      "count": 2,
+      "redundant_bytes": 264501,
+      "files": [
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\previews\\youtube_standard_preview.png",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\HORIZONTAL_1920_1080_preview.png"
+      ]
+    },
+    {
+      "sha256": "34e6d9a3994fc24d4f957e1786e1f4327ff699985476e6a903f607f3a5aa7f97",
+      "size_bytes": 304753,
+      "count": 2,
+      "redundant_bytes": 304753,
+      "files": [
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\previews\\youtube_standard_safe_zone.png",
+        "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\youtube_standard_safe_zone.png"
+      ]
+    },
+    {
+      "sha256": "38911b9771260d3dfde9ddf3ed34a18216b8645fbbc416028e52bfd16bde1ed8",
+      "size_bytes": 353517,
+      "count": 2,
+      "redundant_bytes": 353517,
+      "files": [
+        "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\previews\\facebook_reels_preview.png",
+        "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\previews\\instagram_reels_preview.png"
+      ]
+    },
+    {
+      "sha256": "3ed610107cdc9676151a2be1b80c76cc7a69cbbcd9d8698d704da69cb5373f33",
+      "size_bytes": 461027,
+      "count": 2,
+      "redundant_bytes": 461027,
+      "files": [
+        "generated_outputs\\previews\\day3_badges_frame100.png",
+        "generated_outputs\\previews\\day3_badges_preview.png"
+      ]
+    },
+    {
+      "sha256": "bc9ee6d121f0c7aa982791793ae11b31882820b24b840e9eb2bfd9161e9b6036",
+      "size_bytes": 529882,
+      "count": 2,
+      "redundant_bytes": 529882,
+      "files": [
+        "generated_outputs\\previews\\day3_reveal_frame370.png",
+        "generated_outputs\\previews\\day3_reveal_preview.png"
+      ]
+    }
+  ],
+  "total_byte_identical_mp4_redundant_bytes": 16964368,
+  "total_byte_identical_png_redundant_bytes": 2636327,
+  "phase4_existing_exports": [
+    {
+      "export_dir": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports",
+      "mp4_files": [
+        {
+          "filename": "day-04-multiplatform-exports_facebook_reels.mp4",
+          "rel_path": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\facebook_reels\\day-04-multiplatform-exports_facebook_reels.mp4",
+          "size_bytes": 1838254,
+          "sha256": "de4ec148a2c18c9a89f95e93aae4a27b4801fda311af198fcf344b52f3b951fb",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration": 15.019,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        },
+        {
+          "filename": "day-04-multiplatform-exports_instagram_reels.mp4",
+          "rel_path": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\instagram_reels\\day-04-multiplatform-exports_instagram_reels.mp4",
+          "size_bytes": 1838369,
+          "sha256": "dfe020048f1e8cd070362a15e396e51c41ffe03a0416af2aeee7f3d83d37489e",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration": 15.019,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        },
+        {
+          "filename": "day-04-multiplatform-exports_youtube_shorts.mp4",
+          "rel_path": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\youtube_shorts\\day-04-multiplatform-exports_youtube_shorts.mp4",
+          "size_bytes": 2042920,
+          "sha256": "f4c7a57df49b87f47367b1af17c0a1d9ad556f6efe02f056817777b7ecb452c2",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration": 15.019,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        },
+        {
+          "filename": "day-04-multiplatform-exports_youtube_standard.mp4",
+          "rel_path": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\youtube_standard\\day-04-multiplatform-exports_youtube_standard.mp4",
+          "size_bytes": 1713351,
+          "sha256": "a37cd97b7ebbf53aa21dd550f3a897bb35556191bb2146c56e63f7e1b87e7b8c",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30.0,
+          "duration": 15.019,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        }
+      ],
+      "total_mp4_bytes": 7432894
+    },
+    {
+      "export_dir": "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports",
+      "mp4_files": [
+        {
+          "filename": "ezisales-tut-01-multiplatform-exports_facebook_reels.mp4",
+          "rel_path": "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\platform_exports\\facebook_reels\\ezisales-tut-01-multiplatform-exports_facebook_reels.mp4",
+          "size_bytes": 1557506,
+          "sha256": "47c47471232053b305a42a1ea61b16f71d4d3c29df1ab4526ae7def1ed59d2c2",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration": 15.533,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        },
+        {
+          "filename": "ezisales-tut-01-multiplatform-exports_instagram_reels.mp4",
+          "rel_path": "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\platform_exports\\instagram_reels\\ezisales-tut-01-multiplatform-exports_instagram_reels.mp4",
+          "size_bytes": 1558279,
+          "sha256": "a6e9edb001f9d92f54b131e2d14de88bf0a2f8b169a512406f2d365cbd7e662f",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration": 15.533,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        },
+        {
+          "filename": "ezisales-tut-01-multiplatform-exports_youtube_shorts.mp4",
+          "rel_path": "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\platform_exports\\youtube_shorts\\ezisales-tut-01-multiplatform-exports_youtube_shorts.mp4",
+          "size_bytes": 1630546,
+          "sha256": "0155b953489df817ff69f8873a6b2cb7687d4ccdbad55e930ed937d1ba79b841",
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration": 15.533,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        },
+        {
+          "filename": "ezisales-tut-01-multiplatform-exports_youtube_standard.mp4",
+          "rel_path": "outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\platform_exports\\youtube_standard\\ezisales-tut-01-multiplatform-exports_youtube_standard.mp4",
+          "size_bytes": 1109735,
+          "sha256": "112ceca6bb68b52507e1990444e51e5482eb843c59e6453f47608d3f2ccfb225",
+          "width": 1920,
+          "height": 1080,
+          "fps": 30.0,
+          "duration": 15.533,
+          "video_codec": "h264",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2
+        }
+      ],
+      "total_mp4_bytes": 5856066
+    }
+  ],
+  "safe_consolidation_recommendations": [
+    {
+      "candidate_for_removal": "generated_outputs\\videos\\Day_02_MyDayTwoReel.mp4",
+      "canonical_keep": "outputs\\block-puzzle-burst\\30-day-challenge\\day-02-satisfying-clear\\final\\instagram_reel.mp4",
+      "sha256": "7b9412ad73af42d07e58e176fc12a8d386963a48ff6eb28c6ed3fea8ca924e4b",
+      "reclaimable_bytes": 1966812,
+      "referenced_in_tracker_or_jobs": false,
+      "action": "DO_NOT_DELETE_WITHOUT_APPROVAL"
+    },
+    {
+      "candidate_for_removal": "generated_outputs\\videos\\Day_03_Puzzle_Challenge.mp4",
+      "canonical_keep": "outputs\\block-puzzle-burst\\30-day-challenge\\day-03-puzzle-challenge\\final\\instagram_reel.mp4",
+      "sha256": "793a4b6d6954a7056bab73795f7e8dcc618af84894f82dcf423b118c87b8df9b",
+      "reclaimable_bytes": 2335202,
+      "referenced_in_tracker_or_jobs": false,
+      "action": "DO_NOT_DELETE_WITHOUT_APPROVAL"
+    },
+    {
+      "candidate_for_removal": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\HORIZONTAL_1920_1080\\day-04-shared-exports_HORIZONTAL_1920_1080.mp4",
+      "canonical_keep": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\youtube_standard\\day-04-multiplatform-exports_youtube_standard.mp4",
+      "sha256": "a37cd97b7ebbf53aa21dd550f3a897bb35556191bb2146c56e63f7e1b87e7b8c",
+      "reclaimable_bytes": 1713351,
+      "referenced_in_tracker_or_jobs": false,
+      "action": "DO_NOT_DELETE_WITHOUT_APPROVAL"
+    },
+    {
+      "candidate_for_removal": "generated_outputs\\block-puzzle-burst\\day-04\\Day_04_Final_Revised_Center_Text.mp4",
+      "canonical_keep": "outputs\\block-puzzle-burst\\30-day-challenge\\day-04-offline-proof\\final\\Day_04_Final_Revised_Center_Text.mp4",
+      "sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+      "reclaimable_bytes": 3220384,
+      "referenced_in_tracker_or_jobs": false,
+      "action": "DO_NOT_DELETE_WITHOUT_APPROVAL"
+    },
+    {
+      "candidate_for_removal": "outputs\\block-puzzle-burst\\30-day-challenge\\multiplatform-pack-01\\final\\instagram_reel.mp4",
+      "canonical_keep": "outputs\\block-puzzle-burst\\30-day-challenge\\multiplatform-pack-01\\final\\facebook_reel.mp4",
+      "sha256": "7abbcf39df0acee80fafe9620d85c628b00d01bba2020de674dbfe5b52d44589",
+      "reclaimable_bytes": 2408822,
+      "referenced_in_tracker_or_jobs": false,
+      "action": "DO_NOT_DELETE_WITHOUT_APPROVAL"
+    },
+    {
+      "candidate_for_removal": "generated_outputs\\videos\\SolveItReel_Puzzle_Challenge.mp4",
+      "canonical_keep": "outputs\\block-puzzle-burst\\30-day-challenge\\solve-it-reel\\final\\instagram_reel.mp4",
+      "sha256": "6c4ebfc85cc2476d2c3963973c82ebacb4ef0d9056c67a29103b9314f5d328d0",
+      "reclaimable_bytes": 5319797,
+      "referenced_in_tracker_or_jobs": false,
+      "action": "DO_NOT_DELETE_WITHOUT_APPROVAL"
+    }
+  ]
+}

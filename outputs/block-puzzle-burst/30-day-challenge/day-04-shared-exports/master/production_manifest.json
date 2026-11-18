@@ -1,0 +1,132 @@
+{
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "content_id": "day-04-no-wifi-revision",
+  "output_profile": "instagram_reel",
+  "renderer": "ffmpeg",
+  "allow_review_audio": false,
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_seconds": 15.0
+  },
+  "timeline": [
+    {
+      "scene_id": "scene_01_hook",
+      "asset_id": "VID_0DD488E3",
+      "source_in": 0.0,
+      "source_out": 2.0,
+      "duration": 2.0,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "badge",
+          "title": "No WiFi? No problem.",
+          "subtitle": "100% Offline Gameplay",
+          "position": "center",
+          "position_y": 700,
+          "start_time": 0.0,
+          "end_time": 1.9,
+          "style": "purple_gold_badge"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02_airplane_toggle",
+      "asset_id": "VID_0DD488E3",
+      "source_in": 6.5,
+      "source_out": 8.5,
+      "duration": 2.0,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "pill",
+          "title": "Airplane Mode: ON ✈️",
+          "position": "top",
+          "position_y": 220,
+          "start_time": 0.0,
+          "end_time": 2.0,
+          "style": "pill_badge"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03_return_to_game",
+      "asset_id": "VID_0DD488E3",
+      "source_in": 8.5,
+      "source_out": 9.5,
+      "duration": 1.0,
+      "fit_mode": "contain",
+      "overlays": []
+    },
+    {
+      "scene_id": "scene_04_offline_gameplay",
+      "asset_id": "VID_0DD488E3",
+      "source_in": 9.5,
+      "source_out": 17.5,
+      "duration": 8.0,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "pill",
+          "title": "Zero Data • Zero Lag ⚡",
+          "position": "top",
+          "position_y": 220,
+          "start_time": 0.0,
+          "end_time": 3.0,
+          "style": "pill_badge"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05_closing_cta",
+      "asset_id": "VID_0DD488E3",
+      "source_in": 17.5,
+      "source_out": 19.5,
+      "duration": 2.0,
+      "fit_mode": "contain",
+      "overlays": [
+        {
+          "type": "badge",
+          "title": "Play Free Today 🧩",
+          "subtitle": "Pyapiras Games",
+          "position": "center",
+          "position_y": 700,
+          "start_time": 0.0,
+          "end_time": 2.0,
+          "style": "purple_gold_badge"
+        }
+      ]
+    }
+  ],
+  "audio": {
+    "music": {
+      "asset_id": "AUDIO_753DE70D",
+      "volume": 0.25,
+      "start_time": 0.0,
+      "fade_in": 0.4,
+      "fade_out": 0.6
+    },
+    "voiceover": {
+      "text": "No Wi-Fi? No problem! Play Block Puzzle Burst anywhere offline. Zero data, zero lag. Try it free today!",
+      "volume": 1.0,
+      "ducking": true,
+      "duck_level_db": -18.0,
+      "rate": 0
+    },
+    "sound_effects": [
+      {
+        "asset_id": "AUDIO_92744730",
+        "timeline_start": 5.5,
+        "volume": 0.8
+      },
+      {
+        "asset_id": "AUDIO_1C511C81",
+        "timeline_start": 10.0,
+        "volume": 0.85
+      }
+    ],
+    "master_loudness_target": -14.0
+  }
+}

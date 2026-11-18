@@ -1,0 +1,17 @@
+{
+  "qc_job_id": "QC_PACK_BLOCK-PUZZLE-BURST_day-04-shared-exports_20261118_114642_760CDC",
+  "workflow_state": "BLOCKED_QC_FAILED",
+  "overall_result": "FAIL",
+  "content_id": "day-04-shared-exports",
+  "project_id": "block-puzzle-burst",
+  "platform_destination": "instagram_reels, youtube_shorts, facebook_reels, youtube_standard",
+  "qc_dir": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc",
+  "report_files": {
+    "qc_report_json": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\qc_report.json",
+    "issue_timeline_json": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\issue_timeline.json",
+    "qc_summary_md": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\qc\\qc_summary.md"
+  },
+  "human_decision": null,
+  "created_at": "2026-11-18T11:47:00.194185",
+  "updated_at": "2026-11-18T11:47:00.194185"
+}

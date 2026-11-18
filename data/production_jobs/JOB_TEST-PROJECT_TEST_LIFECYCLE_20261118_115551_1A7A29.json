@@ -1,0 +1,25 @@
+{
+  "job_id": "JOB_TEST-PROJECT_TEST_LIFECYCLE_20261118_115551_1A7A29",
+  "status": "CREATED",
+  "project": "test-project",
+  "campaign": "test-campaign",
+  "content_id": "TEST_LIFECYCLE",
+  "output_profile": "instagram_reel",
+  "created_at": "2026-11-18T11:55:51.656065",
+  "updated_at": "2026-11-18T11:55:51.656065",
+  "output_file": null,
+  "error_message": null,
+  "metrics": {
+    "render_seconds": 0.0,
+    "intermediate_files_count": 0,
+    "final_file_size_bytes": 0
+  },
+  "manifest_path": null,
+  "manifest": {
+    "project": "test-project",
+    "campaign": "test-campaign",
+    "content_id": "TEST_LIFECYCLE",
+    "timeline": []
+  },
+  "execution_log": []
+}

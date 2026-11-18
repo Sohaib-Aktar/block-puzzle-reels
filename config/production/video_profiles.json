@@ -1,0 +1,104 @@
+{
+  "instagram_reel": {
+    "display_name": "Instagram Reel (9:16 Vertical)",
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16",
+    "fps": 30.0,
+    "min_duration": 3.0,
+    "max_duration": 90.0,
+    "safe_areas": {
+      "top_px": 220,
+      "bottom_px": 280,
+      "left_px": 60,
+      "right_px": 120
+    },
+    "crf": 22,
+    "bitrate_ceiling_kbps": 3500
+  },
+  "youtube_short": {
+    "display_name": "YouTube Shorts (9:16 Vertical)",
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16",
+    "fps": 30.0,
+    "min_duration": 3.0,
+    "max_duration": 60.0,
+    "safe_areas": {
+      "top_px": 180,
+      "bottom_px": 240,
+      "left_px": 60,
+      "right_px": 120
+    },
+    "crf": 22,
+    "bitrate_ceiling_kbps": 4000
+  },
+  "facebook_reel": {
+    "display_name": "Facebook Reel (9:16 Vertical)",
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16",
+    "fps": 30.0,
+    "min_duration": 3.0,
+    "max_duration": 90.0,
+    "safe_areas": {
+      "top_px": 200,
+      "bottom_px": 260,
+      "left_px": 60,
+      "right_px": 120
+    },
+    "crf": 22,
+    "bitrate_ceiling_kbps": 3500
+  },
+  "software_tutorial_vertical": {
+    "display_name": "Software Tutorial (9:16 Vertical)",
+    "width": 1080,
+    "height": 1920,
+    "aspect_ratio": "9:16",
+    "fps": 30.0,
+    "min_duration": 5.0,
+    "max_duration": 60.0,
+    "safe_areas": {
+      "top_px": 200,
+      "bottom_px": 260,
+      "left_px": 60,
+      "right_px": 60
+    },
+    "crf": 21,
+    "bitrate_ceiling_kbps": 4000
+  },
+  "product_demo_horizontal": {
+    "display_name": "Product Demo / Longform (16:9 Landscape)",
+    "width": 1920,
+    "height": 1080,
+    "aspect_ratio": "16:9",
+    "fps": 30.0,
+    "min_duration": 10.0,
+    "max_duration": 300.0,
+    "safe_areas": {
+      "top_px": 90,
+      "bottom_px": 120,
+      "left_px": 120,
+      "right_px": 120
+    },
+    "crf": 20,
+    "bitrate_ceiling_kbps": 6000
+  },
+  "square_feed": {
+    "display_name": "Social Feed Square (1:1)",
+    "width": 1080,
+    "height": 1080,
+    "aspect_ratio": "1:1",
+    "fps": 30.0,
+    "min_duration": 3.0,
+    "max_duration": 60.0,
+    "safe_areas": {
+      "top_px": 100,
+      "bottom_px": 120,
+      "left_px": 80,
+      "right_px": 80
+    },
+    "crf": 22,
+    "bitrate_ceiling_kbps": 3000
+  }
+}

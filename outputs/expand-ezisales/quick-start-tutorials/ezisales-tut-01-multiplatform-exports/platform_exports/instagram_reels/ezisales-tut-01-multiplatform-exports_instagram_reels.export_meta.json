@@ -1,0 +1,12 @@
+{
+  "profile_id": "instagram_reels",
+  "content_id": "ezisales-tut-01-multiplatform-exports",
+  "project": "expand-ezisales",
+  "fingerprint": "241080be6d6551de",
+  "master_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-order-booking-pipeline\\final\\software_tutorial_vertical.mp4",
+  "master_sha256": "66e47cab0af76eeb705fab13eb1196e0116398d08278d6f21021b4a2171af5dd",
+  "reframe_strategy": "FIT_WITH_BACKGROUND",
+  "validation_passed": true,
+  "passed_checks": "18/18",
+  "generated_at": "2026-11-18T09:58:48.655825"
+}

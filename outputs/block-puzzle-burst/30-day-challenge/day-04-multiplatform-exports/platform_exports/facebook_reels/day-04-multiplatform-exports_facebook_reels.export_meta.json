@@ -1,0 +1,12 @@
+{
+  "profile_id": "facebook_reels",
+  "content_id": "day-04-multiplatform-exports",
+  "project": "block-puzzle-burst",
+  "fingerprint": "7e3ca09da9fa4709",
+  "master_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-offline-proof\\final\\Day_04_Final_Revised_Center_Text.mp4",
+  "master_sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+  "reframe_strategy": "FIT_WITH_BACKGROUND",
+  "validation_passed": true,
+  "passed_checks": "18/18",
+  "generated_at": "2026-11-18T09:57:24.226139"
+}

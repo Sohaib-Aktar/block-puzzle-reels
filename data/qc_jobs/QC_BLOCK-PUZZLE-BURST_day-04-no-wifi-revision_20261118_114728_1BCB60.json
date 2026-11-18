@@ -1,0 +1,17 @@
+{
+  "qc_job_id": "QC_BLOCK-PUZZLE-BURST_day-04-no-wifi-revision_20261118_114728_1BCB60",
+  "workflow_state": "AWAITING_HUMAN_APPROVAL",
+  "overall_result": "REVIEW_REQUIRED",
+  "content_id": "day-04-no-wifi-revision",
+  "project_id": "block-puzzle-burst",
+  "platform_destination": "instagram_reels",
+  "qc_dir": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\qc",
+  "report_files": {
+    "qc_report_json": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\qc\\qc_report.json",
+    "issue_timeline_json": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\qc\\issue_timeline.json",
+    "qc_summary_md": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-no-wifi-revision\\qc\\qc_summary.md"
+  },
+  "human_decision": null,
+  "created_at": "2026-11-18T11:47:36.411415",
+  "updated_at": "2026-11-18T11:47:36.411415"
+}

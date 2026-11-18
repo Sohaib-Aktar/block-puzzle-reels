@@ -1,0 +1,19 @@
+{
+  "has_audio": true,
+  "codec": "aac",
+  "sample_rate": 48000,
+  "channels": 2,
+  "video_duration": 15.466667,
+  "audio_duration": 15.531313,
+  "av_sync_delta_sec": 0.0646,
+  "integrated_lufs": -14.1,
+  "loudness_range_lu": 2.8,
+  "true_peak_dbtp": -1.3,
+  "mean_volume_db": -17.5,
+  "max_volume_db": -1.3,
+  "tail_volume_db": -91.0,
+  "silence_ratio": 0.0,
+  "max_silence_gap_sec": 0.0,
+  "silence_events": [],
+  "asr_available": false
+}

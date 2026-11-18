@@ -1,0 +1,28 @@
+{
+  "qc_job_id": "QC_BLOCK-PUZZLE-BURST_day-04-no-wifi-revision_20261118_114728_1BCB60",
+  "content_id": "day-04-no-wifi-revision",
+  "overall_result": "REVIEW_REQUIRED",
+  "issue_count": 2,
+  "issues": [
+    {
+      "issue_id": "AUD_005",
+      "severity": "WARNING",
+      "type": "audio_gap_detected",
+      "timestamp": "10.603s-15.033s",
+      "expected": "Max silence gap < 2.5s",
+      "actual": "silence_ratio=29.5%, max_gap=4.43s",
+      "confidence": 1.0,
+      "recommendation": "Review silent intervals to ensure they are intentional."
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.03s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy."
+    }
+  ]
+}

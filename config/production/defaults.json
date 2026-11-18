@@ -1,0 +1,49 @@
+{
+  "system": {
+    "engine_name": "Pyapiras Production Pipeline",
+    "version": "3.0.0",
+    "default_renderer": "ffmpeg",
+    "keep_intermediate": false,
+    "log_level": "INFO"
+  },
+  "video": {
+    "codec": "libx264",
+    "preset": "fast",
+    "crf": 22,
+    "pixel_format": "yuv420p",
+    "fps": 30.0,
+    "default_width": 1080,
+    "default_height": 1920,
+    "aspect_ratio_mode": "contain",
+    "movflags": "+faststart"
+  },
+  "audio": {
+    "codec": "aac",
+    "bitrate": "160k",
+    "sample_rate": 48000,
+    "channels": 2,
+    "target_loudness_lufs": -14.0,
+    "true_peak_dbtp": -1.5,
+    "loudness_range_lu": 11.0,
+    "default_bgm_volume": 0.25,
+    "default_vo_volume": 1.0,
+    "voiceover_ducking_attenuation_db": -18.0
+  },
+  "licensing": {
+    "commercial_publishing_allowed_statuses": [
+      "VERIFIED_COMMERCIAL_USE",
+      "CLEARED",
+      "PUBLIC_DOMAIN",
+      "STUDIO_ORIGINAL"
+    ],
+    "preview_only_statuses": [
+      "NEEDS_REVIEW",
+      "USER_DECLARED_NO_COPYRIGHT"
+    ],
+    "blocked_statuses": [
+      "RESTRICTED",
+      "UNKNOWN",
+      "NON_COMMERCIAL_ONLY"
+    ]
+  }
+}

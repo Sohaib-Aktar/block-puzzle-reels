@@ -1,0 +1,151 @@
+{
+  "qc_job_id": "QC_PACK_BLOCK-PUZZLE-BURST_day-04-shared-exports_20261118_114642_760CDC",
+  "content_id": "day-04-shared-exports",
+  "overall_result": "FAIL",
+  "issue_count": 13,
+  "issues": [
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "instagram_reels"
+    },
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "youtube_shorts"
+    },
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "facebook_reels"
+    },
+    {
+      "issue_id": "AUD_004",
+      "severity": "CRITICAL",
+      "type": "silent_audio_track",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Audible mix near -14.0 LUFS",
+      "actual": "integrated_lufs=-70.0 LUFS (effectively silent)",
+      "confidence": 1.0,
+      "recommendation": "Verify audio stem routing; track is silent.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "AUD_005",
+      "severity": "CRITICAL",
+      "type": "excessive_silence",
+      "timestamp": "0.0s-15.019s",
+      "expected": "Silence ratio < 75% and max gap < 4.5s",
+      "actual": "silence_ratio=100.0%, max_gap=15.02s (1 event(s))",
+      "confidence": 1.0,
+      "recommendation": "Check missing BGM/VO segments or audio dropouts.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "AUD_007",
+      "severity": "REVIEW",
+      "type": "asr_unavailable_manual_review",
+      "timestamp": "0.0s-15.02s",
+      "expected": "Automated speech-to-text alignment against voiceover script",
+      "actual": "No offline ASR model installed in workspace environment",
+      "confidence": 0.0,
+      "recommendation": "Human reviewer must listen to verify voiceover intelligibility and script accuracy.",
+      "platform": "youtube_standard"
+    },
+    {
+      "issue_id": "VIS_002",
+      "severity": "WARNING",
+      "type": "static_hold_detected",
+      "timestamp": "5.2s-8.433s",
+      "expected": "Dynamic pacing without long static holds",
+      "actual": "Static segment of 3.23s",
+      "confidence": 0.95,
+      "recommendation": "Verify static hold (e.g. opening board pause or outro card) is intentional.",
+      "platform": "youtube_standard"
+    }
+  ]
+}

@@ -1,0 +1,864 @@
+{
+  "export_job_id": "EXP_BLOCK-PUZZLE-BURST_day-04-shared-exports_20261118_102236_A1D3E8",
+  "status": "COMPLETED_VALIDATED",
+  "project": "block-puzzle-burst",
+  "campaign": "30-day-challenge",
+  "content_id": "day-04-shared-exports",
+  "master_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-offline-proof\\final\\Day_04_Final_Revised_Center_Text.mp4",
+  "master_sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+  "manifest_path": "C:\\Users\\Dell\\Downloads\\video gen\\config\\manifests\\manifest_bpb_day04_revision.json",
+  "export_root": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports",
+  "requested_profiles": [
+    "instagram_reels",
+    "youtube_shorts",
+    "facebook_reels",
+    "youtube_standard"
+  ],
+  "failed_profiles": [],
+  "reframe_strategy_override": null,
+  "focal_point_override": null,
+  "profile_render_overrides": {},
+  "storage_summary": {
+    "total_platform_destinations": 4,
+    "unique_physical_artifacts": 2,
+    "deduplicated_destination_references": 2,
+    "actual_video_storage_bytes": 3569218,
+    "unshared_equivalent_bytes": 7280952,
+    "bytes_saved": 3711734,
+    "percent_saved": 50.98
+  },
+  "artifacts": {
+    "4c05550bfb33e739d5d0": {
+      "render_profile_id": "VERTICAL_1080_1920",
+      "artifact_fingerprint": "4c05550bfb33e739d5d0",
+      "fingerprint_components": {
+        "master_sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+        "manifest_sha256": "a7e3b5b7ed82eb915693d6003848b3875b8ee162eca225936b8fe788d2e60d5f",
+        "render_profile_hash": "d8cacbc1b2f50d69",
+        "source_asset_hash": "f982305c6fdeac2c",
+        "overlay_audio_reframe_hash": "943dd3779ab7ffec"
+      },
+      "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_sha256": "77fe309f49dae6b4b8274eedcdebca05db70516261cffb28316f6fdf42034d86",
+      "artifact_size_bytes": 1855867,
+      "status": "RENDERED",
+      "action": "WRITE",
+      "reframe_plan": {
+        "strategy": "FIT_WITH_BACKGROUND",
+        "reason": "Source and target aspect ratios match; preserving 100% of original framing.",
+        "uses_filter_complex": false,
+        "vf": "scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=w=1080:h=1920:x=(ow-iw)/2:y=(oh-ih)/2:color=0x070B14,setsar=1,fps=fps=30.0,format=yuv420p",
+        "filter_complex": null,
+        "video_map": "0:v:0",
+        "crop_loss_percent": 0.0,
+        "focal_point": [
+          0.5,
+          0.5
+        ],
+        "requires_manual_review": false,
+        "review_reasons": [],
+        "background_color": "0x070B14"
+      },
+      "elapsed_seconds": 3.91,
+      "log_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\export_logs\\VERTICAL_1080_1920_ffmpeg.log",
+      "error": null
+    },
+    "207311ee7b35d4961bfe": {
+      "render_profile_id": "HORIZONTAL_1920_1080",
+      "artifact_fingerprint": "207311ee7b35d4961bfe",
+      "fingerprint_components": {
+        "master_sha256": "3acaaff83288f5f9869e3529ce2d3f13d3c5a45115bc06f1f2b2e6b2bdb7353b",
+        "manifest_sha256": "a7e3b5b7ed82eb915693d6003848b3875b8ee162eca225936b8fe788d2e60d5f",
+        "render_profile_hash": "2bc7ff217f65f62c",
+        "source_asset_hash": "f982305c6fdeac2c",
+        "overlay_audio_reframe_hash": "7f10a9db856e6e4f"
+      },
+      "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\HORIZONTAL_1920_1080\\day-04-shared-exports_HORIZONTAL_1920_1080.mp4",
+      "artifact_sha256": "a37cd97b7ebbf53aa21dd550f3a897bb35556191bb2146c56e63f7e1b87e7b8c",
+      "artifact_size_bytes": 1713351,
+      "status": "RENDERED",
+      "action": "WRITE",
+      "reframe_plan": {
+        "strategy": "BLURRED_BACKGROUND",
+        "reason": "Vertical gameplay/social master (1080x1920) adapted to 16:9 (1920x1080) using darkened blurred ambient fill to preserve 100% of game board, score, and overlays without black bars.",
+        "uses_filter_complex": true,
+        "vf": null,
+        "filter_complex": "[0:v]split=2[bg_in][fg_in];[bg_in]scale=w=1920:h=1080:force_original_aspect_ratio=increase,crop=1920:1080,boxblur=24:4,eq=brightness=-0.20:saturation=1.08,setsar=1[bg];[fg_in]scale=w=608:h=1080,setsar=1[fg];[bg][fg]overlay=x=(W-w)/2:y=(H-h)/2,fps=fps=30.0,format=yuv420p[v_reframed]",
+        "video_map": "[v_reframed]",
+        "crop_loss_percent": 0.0,
+        "foreground_box": {
+          "x": 656,
+          "y": 0,
+          "width": 608,
+          "height": 1080
+        },
+        "focal_point": [
+          0.5,
+          0.5
+        ],
+        "requires_manual_review": false,
+        "review_reasons": []
+      },
+      "elapsed_seconds": 13.0,
+      "log_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\export_logs\\HORIZONTAL_1920_1080_ffmpeg.log",
+      "error": null
+    }
+  },
+  "total_elapsed_seconds": 21.88,
+  "created_at": "2026-11-18T10:22:58.391261",
+  "previews": {
+    "master_preview": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\master_preview.png",
+    "VERTICAL_1080_1920_preview": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\VERTICAL_1080_1920_preview.png",
+    "HORIZONTAL_1920_1080_preview": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\HORIZONTAL_1920_1080_preview.png",
+    "instagram_reels_safe_zone": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\instagram_reels_safe_zone.png",
+    "youtube_shorts_safe_zone": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\youtube_shorts_safe_zone.png",
+    "facebook_reels_safe_zone": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\facebook_reels_safe_zone.png",
+    "youtube_standard_safe_zone": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\youtube_standard_safe_zone.png",
+    "reframing_comparison": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\reframing_comparison_9x16_vs_16x9.png",
+    "contact_sheet": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\previews\\multi_platform_contact_sheet.png"
+  },
+  "results": {
+    "instagram_reels": {
+      "profile_id": "instagram_reels",
+      "render_profile_id": "VERTICAL_1080_1920",
+      "status": "VALIDATED",
+      "action": "WRITE",
+      "output_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_fingerprint": "4c05550bfb33e739d5d0",
+      "shared_artifact": true,
+      "shared_with_platforms": [
+        "youtube_shorts",
+        "facebook_reels"
+      ],
+      "delivery_record_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\platform_exports\\instagram_reels\\delivery_record.json",
+      "reframe_plan": {
+        "strategy": "FIT_WITH_BACKGROUND",
+        "reason": "Source and target aspect ratios match; preserving 100% of original framing.",
+        "uses_filter_complex": false,
+        "vf": "scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=w=1080:h=1920:x=(ow-iw)/2:y=(oh-ih)/2:color=0x070B14,setsar=1,fps=fps=30.0,format=yuv420p",
+        "filter_complex": null,
+        "video_map": "0:v:0",
+        "crop_loss_percent": 0.0,
+        "focal_point": [
+          0.5,
+          0.5
+        ],
+        "requires_manual_review": false,
+        "review_reasons": [],
+        "background_color": "0x070B14"
+      },
+      "validation": {
+        "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+        "profile_id": "instagram_reels",
+        "file_size_bytes": 1855867,
+        "passed": true,
+        "passed_count": 18,
+        "total_checks": 18,
+        "checks": [
+          {
+            "id": 1,
+            "name": "file_exists_non_empty",
+            "expected": "Existing file > 0 bytes",
+            "actual": "1855867 bytes",
+            "status": "PASS"
+          },
+          {
+            "id": 2,
+            "name": "ffprobe_readable",
+            "expected": "Valid FFprobe metadata",
+            "actual": "Readable JSON streams",
+            "status": "PASS"
+          },
+          {
+            "id": 3,
+            "name": "full_video_decode",
+            "expected": "Exit code 0, zero decode errors",
+            "actual": "Clean full decode",
+            "status": "PASS"
+          },
+          {
+            "id": 4,
+            "name": "resolution_match",
+            "expected": "1080x1920",
+            "actual": "1080x1920",
+            "status": "PASS"
+          },
+          {
+            "id": 5,
+            "name": "aspect_ratio_match",
+            "expected": "9:16 (0.5625)",
+            "actual": "0.5625",
+            "status": "PASS"
+          },
+          {
+            "id": 6,
+            "name": "frame_rate_match",
+            "expected": "30.00 fps",
+            "actual": "30.00 fps",
+            "status": "PASS"
+          },
+          {
+            "id": 7,
+            "name": "codec_and_container_match",
+            "expected": "h264 / mp4 / yuv420p",
+            "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+            "status": "PASS"
+          },
+          {
+            "id": 8,
+            "name": "audio_stream_present",
+            "expected": "Audio stream required",
+            "actual": "Present (aac)",
+            "status": "PASS"
+          },
+          {
+            "id": 9,
+            "name": "audio_sample_rate_and_channels",
+            "expected": "aac / 48000 Hz / 2ch",
+            "actual": "aac / 48000 Hz / 2ch",
+            "status": "PASS"
+          },
+          {
+            "id": 10,
+            "name": "audio_video_sync",
+            "expected": "A/V duration delta <= 0.35s",
+            "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+            "status": "PASS"
+          },
+          {
+            "id": 11,
+            "name": "duration_consistent_with_master",
+            "expected": "15.02s (\u00b10.45s) & <= 90s platform max",
+            "actual": "15.02s (delta=0.000s)",
+            "status": "PASS"
+          },
+          {
+            "id": 12,
+            "name": "no_accidental_stretching",
+            "expected": "Square pixels (SAR 1:1)",
+            "actual": "SAR=1:1",
+            "status": "PASS"
+          },
+          {
+            "id": 13,
+            "name": "no_unexpected_black_frames",
+            "expected": "No black segment > 0.80s",
+            "actual": "max_black_segment=0.00s (0 event(s))",
+            "status": "PASS"
+          },
+          {
+            "id": 14,
+            "name": "no_missing_or_corrupted_frames",
+            "expected": "~451 frames, 0 decode errors",
+            "actual": "450 frames (diff=1)",
+            "status": "PASS"
+          },
+          {
+            "id": 15,
+            "name": "no_audio_clipping",
+            "expected": "max_volume <= 0.0 dBFS",
+            "actual": "max_volume=-91.0 dB",
+            "status": "PASS"
+          },
+          {
+            "id": 16,
+            "name": "safe_zone_compliance",
+            "expected": "Provisional safe zone 'instagram_reels' evaluated",
+            "actual": "Within configured safe bounds (provisional)",
+            "status": "PASS"
+          },
+          {
+            "id": 17,
+            "name": "no_unexpected_watermark",
+            "expected": "Zero unauthorized watermark filters applied",
+            "actual": "Clean filtergraph (manual visual confirmation recommended)",
+            "status": "PASS"
+          },
+          {
+            "id": 18,
+            "name": "no_opening_or_ending_truncation",
+            "expected": "start_time ~0.0s and full duration preserved",
+            "actual": "start_time=0.000s, duration=15.02s",
+            "status": "PASS"
+          }
+        ],
+        "warnings": [],
+        "media_info": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration_seconds": 15.018667,
+          "video_codec": "h264",
+          "pix_fmt": "yuvj420p",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2,
+          "bitrate_kbps": 988.6,
+          "max_volume_db": -91.0
+        }
+      },
+      "elapsed_seconds": 3.91,
+      "log_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\export_logs\\VERTICAL_1080_1920_ffmpeg.log",
+      "requires_manual_review": false,
+      "error": null
+    },
+    "youtube_shorts": {
+      "profile_id": "youtube_shorts",
+      "render_profile_id": "VERTICAL_1080_1920",
+      "status": "VALIDATED",
+      "action": "WRITE",
+      "output_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_fingerprint": "4c05550bfb33e739d5d0",
+      "shared_artifact": true,
+      "shared_with_platforms": [
+        "instagram_reels",
+        "facebook_reels"
+      ],
+      "delivery_record_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\platform_exports\\youtube_shorts\\delivery_record.json",
+      "reframe_plan": {
+        "strategy": "FIT_WITH_BACKGROUND",
+        "reason": "Source and target aspect ratios match; preserving 100% of original framing.",
+        "uses_filter_complex": false,
+        "vf": "scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=w=1080:h=1920:x=(ow-iw)/2:y=(oh-ih)/2:color=0x070B14,setsar=1,fps=fps=30.0,format=yuv420p",
+        "filter_complex": null,
+        "video_map": "0:v:0",
+        "crop_loss_percent": 0.0,
+        "focal_point": [
+          0.5,
+          0.5
+        ],
+        "requires_manual_review": false,
+        "review_reasons": [],
+        "background_color": "0x070B14"
+      },
+      "validation": {
+        "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+        "profile_id": "youtube_shorts",
+        "file_size_bytes": 1855867,
+        "passed": true,
+        "passed_count": 18,
+        "total_checks": 18,
+        "checks": [
+          {
+            "id": 1,
+            "name": "file_exists_non_empty",
+            "expected": "Existing file > 0 bytes",
+            "actual": "1855867 bytes",
+            "status": "PASS"
+          },
+          {
+            "id": 2,
+            "name": "ffprobe_readable",
+            "expected": "Valid FFprobe metadata",
+            "actual": "Readable JSON streams",
+            "status": "PASS"
+          },
+          {
+            "id": 3,
+            "name": "full_video_decode",
+            "expected": "Exit code 0, zero decode errors",
+            "actual": "Clean full decode",
+            "status": "PASS"
+          },
+          {
+            "id": 4,
+            "name": "resolution_match",
+            "expected": "1080x1920",
+            "actual": "1080x1920",
+            "status": "PASS"
+          },
+          {
+            "id": 5,
+            "name": "aspect_ratio_match",
+            "expected": "9:16 (0.5625)",
+            "actual": "0.5625",
+            "status": "PASS"
+          },
+          {
+            "id": 6,
+            "name": "frame_rate_match",
+            "expected": "30.00 fps",
+            "actual": "30.00 fps",
+            "status": "PASS"
+          },
+          {
+            "id": 7,
+            "name": "codec_and_container_match",
+            "expected": "h264 / mp4 / yuv420p",
+            "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+            "status": "PASS"
+          },
+          {
+            "id": 8,
+            "name": "audio_stream_present",
+            "expected": "Audio stream required",
+            "actual": "Present (aac)",
+            "status": "PASS"
+          },
+          {
+            "id": 9,
+            "name": "audio_sample_rate_and_channels",
+            "expected": "aac / 48000 Hz / 2ch",
+            "actual": "aac / 48000 Hz / 2ch",
+            "status": "PASS"
+          },
+          {
+            "id": 10,
+            "name": "audio_video_sync",
+            "expected": "A/V duration delta <= 0.35s",
+            "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+            "status": "PASS"
+          },
+          {
+            "id": 11,
+            "name": "duration_consistent_with_master",
+            "expected": "15.02s (\u00b10.45s) & <= 60s platform max",
+            "actual": "15.02s (delta=0.000s)",
+            "status": "PASS"
+          },
+          {
+            "id": 12,
+            "name": "no_accidental_stretching",
+            "expected": "Square pixels (SAR 1:1)",
+            "actual": "SAR=1:1",
+            "status": "PASS"
+          },
+          {
+            "id": 13,
+            "name": "no_unexpected_black_frames",
+            "expected": "No black segment > 0.80s",
+            "actual": "max_black_segment=0.00s (0 event(s))",
+            "status": "PASS"
+          },
+          {
+            "id": 14,
+            "name": "no_missing_or_corrupted_frames",
+            "expected": "~451 frames, 0 decode errors",
+            "actual": "450 frames (diff=1)",
+            "status": "PASS"
+          },
+          {
+            "id": 15,
+            "name": "no_audio_clipping",
+            "expected": "max_volume <= 0.0 dBFS",
+            "actual": "max_volume=-91.0 dB",
+            "status": "PASS"
+          },
+          {
+            "id": 16,
+            "name": "safe_zone_compliance",
+            "expected": "Provisional safe zone 'youtube_shorts' evaluated",
+            "actual": "Within configured safe bounds (provisional)",
+            "status": "PASS"
+          },
+          {
+            "id": 17,
+            "name": "no_unexpected_watermark",
+            "expected": "Zero unauthorized watermark filters applied",
+            "actual": "Clean filtergraph (manual visual confirmation recommended)",
+            "status": "PASS"
+          },
+          {
+            "id": 18,
+            "name": "no_opening_or_ending_truncation",
+            "expected": "start_time ~0.0s and full duration preserved",
+            "actual": "start_time=0.000s, duration=15.02s",
+            "status": "PASS"
+          }
+        ],
+        "warnings": [],
+        "media_info": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration_seconds": 15.018667,
+          "video_codec": "h264",
+          "pix_fmt": "yuvj420p",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2,
+          "bitrate_kbps": 988.6,
+          "max_volume_db": -91.0
+        }
+      },
+      "elapsed_seconds": 3.91,
+      "log_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\export_logs\\VERTICAL_1080_1920_ffmpeg.log",
+      "requires_manual_review": false,
+      "error": null
+    },
+    "facebook_reels": {
+      "profile_id": "facebook_reels",
+      "render_profile_id": "VERTICAL_1080_1920",
+      "status": "VALIDATED",
+      "action": "WRITE",
+      "output_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+      "artifact_fingerprint": "4c05550bfb33e739d5d0",
+      "shared_artifact": true,
+      "shared_with_platforms": [
+        "instagram_reels",
+        "youtube_shorts"
+      ],
+      "delivery_record_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\platform_exports\\facebook_reels\\delivery_record.json",
+      "reframe_plan": {
+        "strategy": "FIT_WITH_BACKGROUND",
+        "reason": "Source and target aspect ratios match; preserving 100% of original framing.",
+        "uses_filter_complex": false,
+        "vf": "scale=w=1080:h=1920:force_original_aspect_ratio=decrease,pad=w=1080:h=1920:x=(ow-iw)/2:y=(oh-ih)/2:color=0x070B14,setsar=1,fps=fps=30.0,format=yuv420p",
+        "filter_complex": null,
+        "video_map": "0:v:0",
+        "crop_loss_percent": 0.0,
+        "focal_point": [
+          0.5,
+          0.5
+        ],
+        "requires_manual_review": false,
+        "review_reasons": [],
+        "background_color": "0x070B14"
+      },
+      "validation": {
+        "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\VERTICAL_1080_1920\\day-04-shared-exports_VERTICAL_1080_1920.mp4",
+        "profile_id": "facebook_reels",
+        "file_size_bytes": 1855867,
+        "passed": true,
+        "passed_count": 18,
+        "total_checks": 18,
+        "checks": [
+          {
+            "id": 1,
+            "name": "file_exists_non_empty",
+            "expected": "Existing file > 0 bytes",
+            "actual": "1855867 bytes",
+            "status": "PASS"
+          },
+          {
+            "id": 2,
+            "name": "ffprobe_readable",
+            "expected": "Valid FFprobe metadata",
+            "actual": "Readable JSON streams",
+            "status": "PASS"
+          },
+          {
+            "id": 3,
+            "name": "full_video_decode",
+            "expected": "Exit code 0, zero decode errors",
+            "actual": "Clean full decode",
+            "status": "PASS"
+          },
+          {
+            "id": 4,
+            "name": "resolution_match",
+            "expected": "1080x1920",
+            "actual": "1080x1920",
+            "status": "PASS"
+          },
+          {
+            "id": 5,
+            "name": "aspect_ratio_match",
+            "expected": "9:16 (0.5625)",
+            "actual": "0.5625",
+            "status": "PASS"
+          },
+          {
+            "id": 6,
+            "name": "frame_rate_match",
+            "expected": "30.00 fps",
+            "actual": "30.00 fps",
+            "status": "PASS"
+          },
+          {
+            "id": 7,
+            "name": "codec_and_container_match",
+            "expected": "h264 / mp4 / yuv420p",
+            "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+            "status": "PASS"
+          },
+          {
+            "id": 8,
+            "name": "audio_stream_present",
+            "expected": "Audio stream required",
+            "actual": "Present (aac)",
+            "status": "PASS"
+          },
+          {
+            "id": 9,
+            "name": "audio_sample_rate_and_channels",
+            "expected": "aac / 48000 Hz / 2ch",
+            "actual": "aac / 48000 Hz / 2ch",
+            "status": "PASS"
+          },
+          {
+            "id": 10,
+            "name": "audio_video_sync",
+            "expected": "A/V duration delta <= 0.35s",
+            "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+            "status": "PASS"
+          },
+          {
+            "id": 11,
+            "name": "duration_consistent_with_master",
+            "expected": "15.02s (\u00b10.45s) & <= 90s platform max",
+            "actual": "15.02s (delta=0.000s)",
+            "status": "PASS"
+          },
+          {
+            "id": 12,
+            "name": "no_accidental_stretching",
+            "expected": "Square pixels (SAR 1:1)",
+            "actual": "SAR=1:1",
+            "status": "PASS"
+          },
+          {
+            "id": 13,
+            "name": "no_unexpected_black_frames",
+            "expected": "No black segment > 0.80s",
+            "actual": "max_black_segment=0.00s (0 event(s))",
+            "status": "PASS"
+          },
+          {
+            "id": 14,
+            "name": "no_missing_or_corrupted_frames",
+            "expected": "~451 frames, 0 decode errors",
+            "actual": "450 frames (diff=1)",
+            "status": "PASS"
+          },
+          {
+            "id": 15,
+            "name": "no_audio_clipping",
+            "expected": "max_volume <= 0.0 dBFS",
+            "actual": "max_volume=-91.0 dB",
+            "status": "PASS"
+          },
+          {
+            "id": 16,
+            "name": "safe_zone_compliance",
+            "expected": "Provisional safe zone 'facebook_reels' evaluated",
+            "actual": "Within configured safe bounds (provisional)",
+            "status": "PASS"
+          },
+          {
+            "id": 17,
+            "name": "no_unexpected_watermark",
+            "expected": "Zero unauthorized watermark filters applied",
+            "actual": "Clean filtergraph (manual visual confirmation recommended)",
+            "status": "PASS"
+          },
+          {
+            "id": 18,
+            "name": "no_opening_or_ending_truncation",
+            "expected": "start_time ~0.0s and full duration preserved",
+            "actual": "start_time=0.000s, duration=15.02s",
+            "status": "PASS"
+          }
+        ],
+        "warnings": [],
+        "media_info": {
+          "width": 1080,
+          "height": 1920,
+          "fps": 30.0,
+          "duration_seconds": 15.018667,
+          "video_codec": "h264",
+          "pix_fmt": "yuvj420p",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2,
+          "bitrate_kbps": 988.6,
+          "max_volume_db": -91.0
+        }
+      },
+      "elapsed_seconds": 3.91,
+      "log_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\export_logs\\VERTICAL_1080_1920_ffmpeg.log",
+      "requires_manual_review": false,
+      "error": null
+    },
+    "youtube_standard": {
+      "profile_id": "youtube_standard",
+      "render_profile_id": "HORIZONTAL_1920_1080",
+      "status": "VALIDATED",
+      "action": "WRITE",
+      "output_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\HORIZONTAL_1920_1080\\day-04-shared-exports_HORIZONTAL_1920_1080.mp4",
+      "artifact_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\HORIZONTAL_1920_1080\\day-04-shared-exports_HORIZONTAL_1920_1080.mp4",
+      "artifact_fingerprint": "207311ee7b35d4961bfe",
+      "shared_artifact": false,
+      "shared_with_platforms": [],
+      "delivery_record_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\platform_exports\\youtube_standard\\delivery_record.json",
+      "reframe_plan": {
+        "strategy": "BLURRED_BACKGROUND",
+        "reason": "Vertical gameplay/social master (1080x1920) adapted to 16:9 (1920x1080) using darkened blurred ambient fill to preserve 100% of game board, score, and overlays without black bars.",
+        "uses_filter_complex": true,
+        "vf": null,
+        "filter_complex": "[0:v]split=2[bg_in][fg_in];[bg_in]scale=w=1920:h=1080:force_original_aspect_ratio=increase,crop=1920:1080,boxblur=24:4,eq=brightness=-0.20:saturation=1.08,setsar=1[bg];[fg_in]scale=w=608:h=1080,setsar=1[fg];[bg][fg]overlay=x=(W-w)/2:y=(H-h)/2,fps=fps=30.0,format=yuv420p[v_reframed]",
+        "video_map": "[v_reframed]",
+        "crop_loss_percent": 0.0,
+        "foreground_box": {
+          "x": 656,
+          "y": 0,
+          "width": 608,
+          "height": 1080
+        },
+        "focal_point": [
+          0.5,
+          0.5
+        ],
+        "requires_manual_review": false,
+        "review_reasons": []
+      },
+      "validation": {
+        "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\artifacts\\HORIZONTAL_1920_1080\\day-04-shared-exports_HORIZONTAL_1920_1080.mp4",
+        "profile_id": "youtube_standard",
+        "file_size_bytes": 1713351,
+        "passed": true,
+        "passed_count": 18,
+        "total_checks": 18,
+        "checks": [
+          {
+            "id": 1,
+            "name": "file_exists_non_empty",
+            "expected": "Existing file > 0 bytes",
+            "actual": "1713351 bytes",
+            "status": "PASS"
+          },
+          {
+            "id": 2,
+            "name": "ffprobe_readable",
+            "expected": "Valid FFprobe metadata",
+            "actual": "Readable JSON streams",
+            "status": "PASS"
+          },
+          {
+            "id": 3,
+            "name": "full_video_decode",
+            "expected": "Exit code 0, zero decode errors",
+            "actual": "Clean full decode",
+            "status": "PASS"
+          },
+          {
+            "id": 4,
+            "name": "resolution_match",
+            "expected": "1920x1080",
+            "actual": "1920x1080",
+            "status": "PASS"
+          },
+          {
+            "id": 5,
+            "name": "aspect_ratio_match",
+            "expected": "16:9 (1.7778)",
+            "actual": "1.7778",
+            "status": "PASS"
+          },
+          {
+            "id": 6,
+            "name": "frame_rate_match",
+            "expected": "30.00 fps",
+            "actual": "30.00 fps",
+            "status": "PASS"
+          },
+          {
+            "id": 7,
+            "name": "codec_and_container_match",
+            "expected": "h264 / mp4 / yuv420p",
+            "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+            "status": "PASS"
+          },
+          {
+            "id": 8,
+            "name": "audio_stream_present",
+            "expected": "Audio stream required",
+            "actual": "Present (aac)",
+            "status": "PASS"
+          },
+          {
+            "id": 9,
+            "name": "audio_sample_rate_and_channels",
+            "expected": "aac / 48000 Hz / 2ch",
+            "actual": "aac / 48000 Hz / 2ch",
+            "status": "PASS"
+          },
+          {
+            "id": 10,
+            "name": "audio_video_sync",
+            "expected": "A/V duration delta <= 0.35s",
+            "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+            "status": "PASS"
+          },
+          {
+            "id": 11,
+            "name": "duration_consistent_with_master",
+            "expected": "15.02s (\u00b10.45s) & <= 3600s platform max",
+            "actual": "15.02s (delta=0.000s)",
+            "status": "PASS"
+          },
+          {
+            "id": 12,
+            "name": "no_accidental_stretching",
+            "expected": "Square pixels (SAR 1:1)",
+            "actual": "SAR=1:1",
+            "status": "PASS"
+          },
+          {
+            "id": 13,
+            "name": "no_unexpected_black_frames",
+            "expected": "No black segment > 0.80s",
+            "actual": "max_black_segment=0.00s (0 event(s))",
+            "status": "PASS"
+          },
+          {
+            "id": 14,
+            "name": "no_missing_or_corrupted_frames",
+            "expected": "~451 frames, 0 decode errors",
+            "actual": "450 frames (diff=1)",
+            "status": "PASS"
+          },
+          {
+            "id": 15,
+            "name": "no_audio_clipping",
+            "expected": "max_volume <= 0.0 dBFS",
+            "actual": "max_volume=-91.0 dB",
+            "status": "PASS"
+          },
+          {
+            "id": 16,
+            "name": "safe_zone_compliance",
+            "expected": "Provisional safe zone 'youtube_standard' evaluated",
+            "actual": "Within configured safe bounds (provisional)",
+            "status": "PASS"
+          },
+          {
+            "id": 17,
+            "name": "no_unexpected_watermark",
+            "expected": "Zero unauthorized watermark filters applied",
+            "actual": "Clean filtergraph (manual visual confirmation recommended)",
+            "status": "PASS"
+          },
+          {
+            "id": 18,
+            "name": "no_opening_or_ending_truncation",
+            "expected": "start_time ~0.0s and full duration preserved",
+            "actual": "start_time=0.000s, duration=15.02s",
+            "status": "PASS"
+          }
+        ],
+        "warnings": [],
+        "media_info": {
+          "width": 1920,
+          "height": 1080,
+          "fps": 30.0,
+          "duration_seconds": 15.018667,
+          "video_codec": "h264",
+          "pix_fmt": "yuvj420p",
+          "audio_codec": "aac",
+          "audio_sample_rate": 48000,
+          "audio_channels": 2,
+          "bitrate_kbps": 912.7,
+          "max_volume_db": -91.0
+        }
+      },
+      "elapsed_seconds": 13.0,
+      "log_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-shared-exports\\reports\\export_logs\\HORIZONTAL_1920_1080_ffmpeg.log",
+      "requires_manual_review": false,
+      "error": null
+    }
+  }
+}

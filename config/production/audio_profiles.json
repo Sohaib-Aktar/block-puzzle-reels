@@ -1,0 +1,48 @@
+{
+  "broadcast_standards": {
+    "ebu_r128": {
+      "integrated_lufs": -14.0,
+      "loudness_range_lu": 11.0,
+      "true_peak_dbtp": -1.5,
+      "sample_rate_hz": 48000,
+      "channels": 2
+    },
+    "voiceover_ducking": {
+      "attenuation_db": -18.0,
+      "attack_ms": 50,
+      "release_ms": 300
+    }
+  },
+  "project_defaults": {
+    "block-puzzle-burst": {
+      "bgm_volume": 0.28,
+      "sfx_volume": 0.85,
+      "vo_volume": 1.0,
+      "preferred_moods": ["cheerful", "playful", "relaxing", "upbeat"]
+    },
+    "expand-ezisales": {
+      "bgm_volume": 0.18,
+      "sfx_volume": 0.60,
+      "vo_volume": 1.0,
+      "preferred_moods": ["corporate", "modern", "tech", "efficient"]
+    },
+    "expand-hr": {
+      "bgm_volume": 0.18,
+      "sfx_volume": 0.60,
+      "vo_volume": 1.0,
+      "preferred_moods": ["corporate", "calm", "trustworthy"]
+    },
+    "wms": {
+      "bgm_volume": 0.18,
+      "sfx_volume": 0.60,
+      "vo_volume": 1.0,
+      "preferred_moods": ["operational", "focused", "rhythmic"]
+    },
+    "pos": {
+      "bgm_volume": 0.20,
+      "sfx_volume": 0.70,
+      "vo_volume": 1.0,
+      "preferred_moods": ["retail", "energetic", "snappy"]
+    }
+  }
+}

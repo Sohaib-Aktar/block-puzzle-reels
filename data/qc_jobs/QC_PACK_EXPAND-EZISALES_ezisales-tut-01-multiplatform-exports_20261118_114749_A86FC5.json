@@ -1,0 +1,17 @@
+{
+  "qc_job_id": "QC_PACK_EXPAND-EZISALES_ezisales-tut-01-multiplatform-exports_20261118_114749_A86FC5",
+  "workflow_state": "BLOCKED_QC_FAILED",
+  "overall_result": "FAIL",
+  "content_id": "ezisales-tut-01-multiplatform-exports",
+  "project_id": "expand-ezisales",
+  "platform_destination": "instagram_reels, youtube_shorts, facebook_reels, youtube_standard",
+  "qc_dir": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc",
+  "report_files": {
+    "qc_report_json": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\qc_report.json",
+    "issue_timeline_json": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\issue_timeline.json",
+    "qc_summary_md": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\expand-ezisales\\quick-start-tutorials\\ezisales-tut-01-multiplatform-exports\\qc\\qc_summary.md"
+  },
+  "human_decision": null,
+  "created_at": "2026-11-18T11:48:16.180775",
+  "updated_at": "2026-11-18T11:48:16.180775"
+}

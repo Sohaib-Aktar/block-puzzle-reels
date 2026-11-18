@@ -1,0 +1,602 @@
+{
+  "instagram_reels": {
+    "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\instagram_reels\\day-04-multiplatform-exports_instagram_reels.mp4",
+    "profile_id": "instagram_reels",
+    "file_size_bytes": 1838369,
+    "passed": true,
+    "passed_count": 18,
+    "total_checks": 18,
+    "checks": [
+      {
+        "id": 1,
+        "name": "file_exists_non_empty",
+        "expected": "Existing file > 0 bytes",
+        "actual": "1838369 bytes",
+        "status": "PASS"
+      },
+      {
+        "id": 2,
+        "name": "ffprobe_readable",
+        "expected": "Valid FFprobe metadata",
+        "actual": "Readable JSON streams",
+        "status": "PASS"
+      },
+      {
+        "id": 3,
+        "name": "full_video_decode",
+        "expected": "Exit code 0, zero decode errors",
+        "actual": "Clean full decode",
+        "status": "PASS"
+      },
+      {
+        "id": 4,
+        "name": "resolution_match",
+        "expected": "1080x1920",
+        "actual": "1080x1920",
+        "status": "PASS"
+      },
+      {
+        "id": 5,
+        "name": "aspect_ratio_match",
+        "expected": "9:16 (0.5625)",
+        "actual": "0.5625",
+        "status": "PASS"
+      },
+      {
+        "id": 6,
+        "name": "frame_rate_match",
+        "expected": "30.00 fps",
+        "actual": "30.00 fps",
+        "status": "PASS"
+      },
+      {
+        "id": 7,
+        "name": "codec_and_container_match",
+        "expected": "h264 / mp4 / yuv420p",
+        "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+        "status": "PASS"
+      },
+      {
+        "id": 8,
+        "name": "audio_stream_present",
+        "expected": "Audio stream required",
+        "actual": "Present (aac)",
+        "status": "PASS"
+      },
+      {
+        "id": 9,
+        "name": "audio_sample_rate_and_channels",
+        "expected": "aac / 48000 Hz / 2ch",
+        "actual": "aac / 48000 Hz / 2ch",
+        "status": "PASS"
+      },
+      {
+        "id": 10,
+        "name": "audio_video_sync",
+        "expected": "A/V duration delta <= 0.35s",
+        "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+        "status": "PASS"
+      },
+      {
+        "id": 11,
+        "name": "duration_consistent_with_master",
+        "expected": "15.02s (\u00b10.45s)",
+        "actual": "15.02s (delta=0.000s)",
+        "status": "PASS"
+      },
+      {
+        "id": 12,
+        "name": "no_accidental_stretching",
+        "expected": "Square pixels (SAR 1:1)",
+        "actual": "SAR=1:1",
+        "status": "PASS"
+      },
+      {
+        "id": 13,
+        "name": "no_unexpected_black_frames",
+        "expected": "No black segment > 0.80s",
+        "actual": "max_black_segment=0.00s (0 event(s))",
+        "status": "PASS"
+      },
+      {
+        "id": 14,
+        "name": "no_missing_or_corrupted_frames",
+        "expected": "~451 frames, 0 decode errors",
+        "actual": "450 frames (diff=1)",
+        "status": "PASS"
+      },
+      {
+        "id": 15,
+        "name": "no_audio_clipping",
+        "expected": "max_volume <= 0.0 dBFS",
+        "actual": "max_volume=-91.0 dB",
+        "status": "PASS"
+      },
+      {
+        "id": 16,
+        "name": "safe_zone_compliance",
+        "expected": "Provisional safe zone 'instagram_reels' evaluated",
+        "actual": "Within configured safe bounds (provisional)",
+        "status": "PASS"
+      },
+      {
+        "id": 17,
+        "name": "no_unexpected_watermark",
+        "expected": "Zero unauthorized watermark filters applied",
+        "actual": "Clean filtergraph (manual visual confirmation recommended)",
+        "status": "PASS"
+      },
+      {
+        "id": 18,
+        "name": "no_opening_or_ending_truncation",
+        "expected": "start_time ~0.0s and full duration preserved",
+        "actual": "start_time=0.000s, duration=15.02s",
+        "status": "PASS"
+      }
+    ],
+    "warnings": [],
+    "media_info": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "duration_seconds": 15.018667,
+      "video_codec": "h264",
+      "pix_fmt": "yuvj420p",
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "bitrate_kbps": 979.2,
+      "max_volume_db": -91.0
+    }
+  },
+  "youtube_shorts": {
+    "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\youtube_shorts\\day-04-multiplatform-exports_youtube_shorts.mp4",
+    "profile_id": "youtube_shorts",
+    "file_size_bytes": 2042920,
+    "passed": true,
+    "passed_count": 18,
+    "total_checks": 18,
+    "checks": [
+      {
+        "id": 1,
+        "name": "file_exists_non_empty",
+        "expected": "Existing file > 0 bytes",
+        "actual": "2042920 bytes",
+        "status": "PASS"
+      },
+      {
+        "id": 2,
+        "name": "ffprobe_readable",
+        "expected": "Valid FFprobe metadata",
+        "actual": "Readable JSON streams",
+        "status": "PASS"
+      },
+      {
+        "id": 3,
+        "name": "full_video_decode",
+        "expected": "Exit code 0, zero decode errors",
+        "actual": "Clean full decode",
+        "status": "PASS"
+      },
+      {
+        "id": 4,
+        "name": "resolution_match",
+        "expected": "1080x1920",
+        "actual": "1080x1920",
+        "status": "PASS"
+      },
+      {
+        "id": 5,
+        "name": "aspect_ratio_match",
+        "expected": "9:16 (0.5625)",
+        "actual": "0.5625",
+        "status": "PASS"
+      },
+      {
+        "id": 6,
+        "name": "frame_rate_match",
+        "expected": "30.00 fps",
+        "actual": "30.00 fps",
+        "status": "PASS"
+      },
+      {
+        "id": 7,
+        "name": "codec_and_container_match",
+        "expected": "h264 / mp4 / yuv420p",
+        "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+        "status": "PASS"
+      },
+      {
+        "id": 8,
+        "name": "audio_stream_present",
+        "expected": "Audio stream required",
+        "actual": "Present (aac)",
+        "status": "PASS"
+      },
+      {
+        "id": 9,
+        "name": "audio_sample_rate_and_channels",
+        "expected": "aac / 48000 Hz / 2ch",
+        "actual": "aac / 48000 Hz / 2ch",
+        "status": "PASS"
+      },
+      {
+        "id": 10,
+        "name": "audio_video_sync",
+        "expected": "A/V duration delta <= 0.35s",
+        "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+        "status": "PASS"
+      },
+      {
+        "id": 11,
+        "name": "duration_consistent_with_master",
+        "expected": "15.02s (\u00b10.45s)",
+        "actual": "15.02s (delta=0.000s)",
+        "status": "PASS"
+      },
+      {
+        "id": 12,
+        "name": "no_accidental_stretching",
+        "expected": "Square pixels (SAR 1:1)",
+        "actual": "SAR=1:1",
+        "status": "PASS"
+      },
+      {
+        "id": 13,
+        "name": "no_unexpected_black_frames",
+        "expected": "No black segment > 0.80s",
+        "actual": "max_black_segment=0.00s (0 event(s))",
+        "status": "PASS"
+      },
+      {
+        "id": 14,
+        "name": "no_missing_or_corrupted_frames",
+        "expected": "~451 frames, 0 decode errors",
+        "actual": "450 frames (diff=1)",
+        "status": "PASS"
+      },
+      {
+        "id": 15,
+        "name": "no_audio_clipping",
+        "expected": "max_volume <= 0.0 dBFS",
+        "actual": "max_volume=-91.0 dB",
+        "status": "PASS"
+      },
+      {
+        "id": 16,
+        "name": "safe_zone_compliance",
+        "expected": "Provisional safe zone 'youtube_shorts' evaluated",
+        "actual": "Within configured safe bounds (provisional)",
+        "status": "PASS"
+      },
+      {
+        "id": 17,
+        "name": "no_unexpected_watermark",
+        "expected": "Zero unauthorized watermark filters applied",
+        "actual": "Clean filtergraph (manual visual confirmation recommended)",
+        "status": "PASS"
+      },
+      {
+        "id": 18,
+        "name": "no_opening_or_ending_truncation",
+        "expected": "start_time ~0.0s and full duration preserved",
+        "actual": "start_time=0.000s, duration=15.02s",
+        "status": "PASS"
+      }
+    ],
+    "warnings": [],
+    "media_info": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "duration_seconds": 15.018667,
+      "video_codec": "h264",
+      "pix_fmt": "yuvj420p",
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "bitrate_kbps": 1088.2,
+      "max_volume_db": -91.0
+    }
+  },
+  "facebook_reels": {
+    "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\facebook_reels\\day-04-multiplatform-exports_facebook_reels.mp4",
+    "profile_id": "facebook_reels",
+    "file_size_bytes": 1838254,
+    "passed": true,
+    "passed_count": 18,
+    "total_checks": 18,
+    "checks": [
+      {
+        "id": 1,
+        "name": "file_exists_non_empty",
+        "expected": "Existing file > 0 bytes",
+        "actual": "1838254 bytes",
+        "status": "PASS"
+      },
+      {
+        "id": 2,
+        "name": "ffprobe_readable",
+        "expected": "Valid FFprobe metadata",
+        "actual": "Readable JSON streams",
+        "status": "PASS"
+      },
+      {
+        "id": 3,
+        "name": "full_video_decode",
+        "expected": "Exit code 0, zero decode errors",
+        "actual": "Clean full decode",
+        "status": "PASS"
+      },
+      {
+        "id": 4,
+        "name": "resolution_match",
+        "expected": "1080x1920",
+        "actual": "1080x1920",
+        "status": "PASS"
+      },
+      {
+        "id": 5,
+        "name": "aspect_ratio_match",
+        "expected": "9:16 (0.5625)",
+        "actual": "0.5625",
+        "status": "PASS"
+      },
+      {
+        "id": 6,
+        "name": "frame_rate_match",
+        "expected": "30.00 fps",
+        "actual": "30.00 fps",
+        "status": "PASS"
+      },
+      {
+        "id": 7,
+        "name": "codec_and_container_match",
+        "expected": "h264 / mp4 / yuv420p",
+        "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+        "status": "PASS"
+      },
+      {
+        "id": 8,
+        "name": "audio_stream_present",
+        "expected": "Audio stream required",
+        "actual": "Present (aac)",
+        "status": "PASS"
+      },
+      {
+        "id": 9,
+        "name": "audio_sample_rate_and_channels",
+        "expected": "aac / 48000 Hz / 2ch",
+        "actual": "aac / 48000 Hz / 2ch",
+        "status": "PASS"
+      },
+      {
+        "id": 10,
+        "name": "audio_video_sync",
+        "expected": "A/V duration delta <= 0.35s",
+        "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+        "status": "PASS"
+      },
+      {
+        "id": 11,
+        "name": "duration_consistent_with_master",
+        "expected": "15.02s (\u00b10.45s)",
+        "actual": "15.02s (delta=0.000s)",
+        "status": "PASS"
+      },
+      {
+        "id": 12,
+        "name": "no_accidental_stretching",
+        "expected": "Square pixels (SAR 1:1)",
+        "actual": "SAR=1:1",
+        "status": "PASS"
+      },
+      {
+        "id": 13,
+        "name": "no_unexpected_black_frames",
+        "expected": "No black segment > 0.80s",
+        "actual": "max_black_segment=0.00s (0 event(s))",
+        "status": "PASS"
+      },
+      {
+        "id": 14,
+        "name": "no_missing_or_corrupted_frames",
+        "expected": "~451 frames, 0 decode errors",
+        "actual": "450 frames (diff=1)",
+        "status": "PASS"
+      },
+      {
+        "id": 15,
+        "name": "no_audio_clipping",
+        "expected": "max_volume <= 0.0 dBFS",
+        "actual": "max_volume=-91.0 dB",
+        "status": "PASS"
+      },
+      {
+        "id": 16,
+        "name": "safe_zone_compliance",
+        "expected": "Provisional safe zone 'facebook_reels' evaluated",
+        "actual": "Within configured safe bounds (provisional)",
+        "status": "PASS"
+      },
+      {
+        "id": 17,
+        "name": "no_unexpected_watermark",
+        "expected": "Zero unauthorized watermark filters applied",
+        "actual": "Clean filtergraph (manual visual confirmation recommended)",
+        "status": "PASS"
+      },
+      {
+        "id": 18,
+        "name": "no_opening_or_ending_truncation",
+        "expected": "start_time ~0.0s and full duration preserved",
+        "actual": "start_time=0.000s, duration=15.02s",
+        "status": "PASS"
+      }
+    ],
+    "warnings": [],
+    "media_info": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "duration_seconds": 15.018667,
+      "video_codec": "h264",
+      "pix_fmt": "yuvj420p",
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "bitrate_kbps": 979.2,
+      "max_volume_db": -91.0
+    }
+  },
+  "youtube_standard": {
+    "export_path": "C:\\Users\\Dell\\Downloads\\video gen\\outputs\\block-puzzle-burst\\30-day-challenge\\day-04-multiplatform-exports\\platform_exports\\youtube_standard\\day-04-multiplatform-exports_youtube_standard.mp4",
+    "profile_id": "youtube_standard",
+    "file_size_bytes": 1713351,
+    "passed": true,
+    "passed_count": 18,
+    "total_checks": 18,
+    "checks": [
+      {
+        "id": 1,
+        "name": "file_exists_non_empty",
+        "expected": "Existing file > 0 bytes",
+        "actual": "1713351 bytes",
+        "status": "PASS"
+      },
+      {
+        "id": 2,
+        "name": "ffprobe_readable",
+        "expected": "Valid FFprobe metadata",
+        "actual": "Readable JSON streams",
+        "status": "PASS"
+      },
+      {
+        "id": 3,
+        "name": "full_video_decode",
+        "expected": "Exit code 0, zero decode errors",
+        "actual": "Clean full decode",
+        "status": "PASS"
+      },
+      {
+        "id": 4,
+        "name": "resolution_match",
+        "expected": "1920x1080",
+        "actual": "1920x1080",
+        "status": "PASS"
+      },
+      {
+        "id": 5,
+        "name": "aspect_ratio_match",
+        "expected": "16:9 (1.7778)",
+        "actual": "1.7778",
+        "status": "PASS"
+      },
+      {
+        "id": 6,
+        "name": "frame_rate_match",
+        "expected": "30.00 fps",
+        "actual": "30.00 fps",
+        "status": "PASS"
+      },
+      {
+        "id": 7,
+        "name": "codec_and_container_match",
+        "expected": "h264 / mp4 / yuv420p",
+        "actual": "h264 / mov,mp4,m4a,3gp,3g2,mj2 / yuvj420p",
+        "status": "PASS"
+      },
+      {
+        "id": 8,
+        "name": "audio_stream_present",
+        "expected": "Audio stream required",
+        "actual": "Present (aac)",
+        "status": "PASS"
+      },
+      {
+        "id": 9,
+        "name": "audio_sample_rate_and_channels",
+        "expected": "aac / 48000 Hz / 2ch",
+        "actual": "aac / 48000 Hz / 2ch",
+        "status": "PASS"
+      },
+      {
+        "id": 10,
+        "name": "audio_video_sync",
+        "expected": "A/V duration delta <= 0.35s",
+        "actual": "video=15.000s, audio=15.019s (delta=0.019s)",
+        "status": "PASS"
+      },
+      {
+        "id": 11,
+        "name": "duration_consistent_with_master",
+        "expected": "15.02s (\u00b10.45s)",
+        "actual": "15.02s (delta=0.000s)",
+        "status": "PASS"
+      },
+      {
+        "id": 12,
+        "name": "no_accidental_stretching",
+        "expected": "Square pixels (SAR 1:1)",
+        "actual": "SAR=1:1",
+        "status": "PASS"
+      },
+      {
+        "id": 13,
+        "name": "no_unexpected_black_frames",
+        "expected": "No black segment > 0.80s",
+        "actual": "max_black_segment=0.00s (0 event(s))",
+        "status": "PASS"
+      },
+      {
+        "id": 14,
+        "name": "no_missing_or_corrupted_frames",
+        "expected": "~451 frames, 0 decode errors",
+        "actual": "450 frames (diff=1)",
+        "status": "PASS"
+      },
+      {
+        "id": 15,
+        "name": "no_audio_clipping",
+        "expected": "max_volume <= 0.0 dBFS",
+        "actual": "max_volume=-91.0 dB",
+        "status": "PASS"
+      },
+      {
+        "id": 16,
+        "name": "safe_zone_compliance",
+        "expected": "Provisional safe zone 'youtube_standard' evaluated",
+        "actual": "Within configured safe bounds (provisional)",
+        "status": "PASS"
+      },
+      {
+        "id": 17,
+        "name": "no_unexpected_watermark",
+        "expected": "Zero unauthorized watermark filters applied",
+        "actual": "Clean filtergraph (manual visual confirmation recommended)",
+        "status": "PASS"
+      },
+      {
+        "id": 18,
+        "name": "no_opening_or_ending_truncation",
+        "expected": "start_time ~0.0s and full duration preserved",
+        "actual": "start_time=0.000s, duration=15.02s",
+        "status": "PASS"
+      }
+    ],
+    "warnings": [],
+    "media_info": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "duration_seconds": 15.018667,
+      "video_codec": "h264",
+      "pix_fmt": "yuvj420p",
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "bitrate_kbps": 912.7,
+      "max_volume_db": -91.0
+    }
+  }
+}
