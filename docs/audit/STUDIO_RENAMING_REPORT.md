@@ -5,7 +5,7 @@
 **Target Local Folder Name:** `Social Media Video Production Studio`  
 **Date:** 2026-11-18  
 **Current Local Folder (Active IDE Session):** `C:\Users\Dell\Downloads\video gen` *(rename pending IDE close — see Section 6)*  
-**Current GitHub Remote:** `https://github.com/Sohaib-Aktar/block-puzzle-reels.git` *(rename pending manual GitHub Settings action — see Section 6)*
+**Current GitHub Remote:** `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` *(COMPLETED & VERIFIED)*
 
 ---
 
@@ -16,8 +16,8 @@
 | **Official Studio Display Title** | `AI Social Media Content Studio` / `Pyapiras Games — AI Marketing & Creative Content Production Studio` | **Social Media Video Production Studio** | **COMPLETED** across active configs, metadata, README, scripts, project headers, and operational docs |
 | **Package / Project Metadata Slug** | `block-puzzle-reels` (`package.json`) | `social-media-video-production-studio` (`package.json` & `pyproject.toml`) | **COMPLETED** |
 | **Local Workspace Root Folder** | `C:\Users\Dell\Downloads\video gen` | `C:\Users\Dell\Downloads\Social Media Video Production Studio` | **PENDING MANUAL ACTION** (folder currently locked by active Antigravity IDE session & shell CWD) |
-| **GitHub Repository Name / URL** | `https://github.com/Sohaib-Aktar/block-puzzle-reels` | `https://github.com/Sohaib-Aktar/social-media-video-production-studio` | **PENDING MANUAL ACTION** (`gh` CLI not installed; no GitHub admin API token available) |
-| **Local Git Remote (`origin`)** | `https://github.com/Sohaib-Aktar/block-puzzle-reels.git` | `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` | **INTENTIONALLY PRESERVED** until GitHub remote rename completes so `git fetch`/`push` does not 404 |
+| **GitHub Repository Name / URL** | `https://github.com/Sohaib-Aktar/block-puzzle-reels` | `https://github.com/Sohaib-Aktar/social-media-video-production-studio` | **COMPLETED & VERIFIED** (`git ls-remote` & `git fetch origin` succeeded on `1128111`) |
+| **Local Git Remote (`origin`)** | `https://github.com/Sohaib-Aktar/block-puzzle-reels.git` | `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` | **COMPLETED & VERIFIED** via `git remote set-url origin` |
 
 ---
 
@@ -95,20 +95,9 @@ git ls-remote origin HEAD:
 
 ## 6. Pending Manual Actions (Exact Instructions)
 
-### Action A — Rename GitHub Repository & Update Local Remote
-1. Open `https://github.com/Sohaib-Aktar/block-puzzle-reels/settings` in your browser.
-2. Under **General -> Repository name**, change `block-puzzle-reels` to:
-   ```text
-   social-media-video-production-studio
-   ```
-   and click **Rename** *(preserves all commits, branches, issues, PRs, releases, collaborators, secrets, and redirects automatically)*.
-3. In the repository **About** sidebar, set the description to `Social Media Video Production Studio`.
-4. Run in PowerShell inside the local repository:
-   ```powershell
-   git remote set-url origin https://github.com/Sohaib-Aktar/social-media-video-production-studio.git
-   git remote -v
-   git fetch origin
-   ```
+### Action A — Rename GitHub Repository & Update Local Remote *(COMPLETED)*
+- Verified live at `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` (`HEAD = 1128111`).
+- Local `origin` updated via `git remote set-url origin https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` and verified with `git fetch origin`.
 
 ### Action B — Rename Local Workspace Folder (After Closing Antigravity IDE)
 Because Antigravity IDE and its Python language server currently hold open directory handles inside `C:\Users\Dell\Downloads\video gen`, renaming while open can fail with a Windows sharing violation or disconnect the live workspace session.

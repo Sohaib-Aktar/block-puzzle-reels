@@ -128,7 +128,7 @@ Bengali and Hindi belong in:
 Never burn non-English text into a video file.
 
 ## Git repository
-Target Remote: `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git` *(currently `block-puzzle-reels.git` pending manual GitHub rename)*  
+Remote: `https://github.com/Sohaib-Aktar/social-media-video-production-studio.git`  
 Branch: `main`
 
 ## Status (2026-11-17)

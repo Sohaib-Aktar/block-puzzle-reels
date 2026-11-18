@@ -48,5 +48,5 @@ python scripts/inspect_footage.py Raw_input_files/recording_1.mp4
 See [`docs/architecture.md`](docs/architecture.md).
 
 ## GitHub
-Target Repository: https://github.com/Sohaib-Aktar/social-media-video-production-studio *(currently hosted at `Sohaib-Aktar/block-puzzle-reels` pending manual GitHub rename — see `docs/audit/STUDIO_RENAMING_REPORT.md`)*  
+Repository: https://github.com/Sohaib-Aktar/social-media-video-production-studio  
 Branch: `main`
