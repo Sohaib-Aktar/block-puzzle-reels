@@ -5,6 +5,7 @@ import { MyDayTwoReel } from "./MyDayTwoReel";
 import { SolveItReel } from "./SolveItReel";
 import { DayFourOfflineReel } from "./DayFourOfflineReel";
 import { DayFiveLifestyleReel } from "./DayFiveLifestyleReel";
+import { BoredLetsPlayReel } from "./BoredLetsPlayReel";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ export const RemotionRoot: React.FC = () => {
       <SolveItReel />
       <DayFourOfflineReel />
       <DayFiveLifestyleReel />
+      <BoredLetsPlayReel />
     </>
   );
 };

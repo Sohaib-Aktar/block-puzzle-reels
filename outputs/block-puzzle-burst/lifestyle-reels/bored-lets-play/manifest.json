@@ -1,0 +1,209 @@
+{
+  "content_id": "BPB-LIFESTYLE-BORED-LETS-PLAY-V02",
+  "project": "block-puzzle-burst",
+  "campaign": "lifestyle-reels",
+  "title": "Bored? Let's Play! (v02 Revision)",
+  "concept": "Tired corporate employee discovers Block Puzzle Burst during boring metro commute",
+  "version": "v02",
+  "created_at": "2026-11-20",
+  "output_filename": "Block_Puzzle_Burst_Boring_Commute_Reel_v02.mp4",
+  "output_path": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/final/Block_Puzzle_Burst_Boring_Commute_Reel_v02.mp4",
+  "previous_version": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/final/Block_Puzzle_Burst_Boring_Commute_Reel_v01.mp4",
+
+  "source_assets": {
+    "lifestyle_clip": {
+      "original": "Raw_input_files/Corporate_employee_escaping_on_s…_ba00c730_1080p.mp4",
+      "converted": "my-video/public/lifestyle_commute_cfr30.mp4",
+      "duration": "10.00s",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "audio": "aac 48kHz stereo",
+      "note": "Google Flow generated lifestyle footage. CFR30 conversion for Remotion compatibility."
+    },
+    "splash_screen_asset": {
+      "original": "Raw_input_files/splash_screen.jpg",
+      "resolution": "1080x2293",
+      "color_profile": "sRGB",
+      "features": ["Centered 3D glowing squircle block icon", "Solid black background", "White bottom iOS/Android home bar"],
+      "compositing_method": "Deterministic pixel floodfill bounded by physical bezel"
+    },
+    "lifestyle_splash_composite_video": {
+      "file": "my-video/public/lifestyle_splash_cfr30.mp4",
+      "duration": "2.67s (80 frames @ 30fps)",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "note": "Frames with commuter holding phone forward, white display replaced with official splash screen, zero white leakage"
+    },
+    "gameplay_clip": {
+      "original": "source_assets/block-puzzle-burst/gameplay/recording_1.mp4",
+      "canonical_sha256_location": "source_assets/block-puzzle-burst/gameplay/recording_1.mp4",
+      "converted": "my-video/public/gameplay_bored_cfr30.mp4",
+      "source_segment": "55s to 75s (20s extracted)",
+      "resolution": "720x1600 source → 1080x1920 upscaled",
+      "fps": "60fps source → 30fps CFR",
+      "authenticity": "100% genuine Block Puzzle Burst gameplay recording. No fabrication.",
+      "score_visible_at_segment_start": "~480"
+    },
+    "game_icon": "source_assets/block-puzzle-burst/logos/icon_block_game.png",
+    "studio_icon": "source_assets/block-puzzle-burst/logos/pyapiras games icon.png",
+    "music": {
+      "file": "source_assets/shared/music/apalonbeats-no-copyright-music-597079.mp3",
+      "converted": "my-video/public/bgm_bored_lets_play.m4a",
+      "license": "No copyright music",
+      "bpm": 120,
+      "duration_used": "25s",
+      "mood": "upbeat, playful, energetic"
+    }
+  },
+
+  "output_spec": {
+    "resolution": "1080x1920",
+    "fps": 30,
+    "codec": "H.264",
+    "audio_codec": "AAC",
+    "audio_sample_rate": "48000 Hz",
+    "audio_channels": 2,
+    "duration_target": "20.0s",
+    "total_frames": 600,
+    "aspect_ratio": "9:16"
+  },
+
+  "composition": {
+    "id": "BoredLetsPlayReel",
+    "source_file": "my-video/src/BoredLetsPlayReel.tsx",
+    "registered_in": "my-video/src/Root.tsx"
+  },
+
+  "scenes": [
+    {
+      "id": "scene_01",
+      "name": "Office Tired",
+      "frames": "0–75",
+      "timecode": "0.0s–2.5s",
+      "duration": "2.5s",
+      "source": "lifestyle_commute_cfr30.mp4",
+      "src_start_frame": 0,
+      "src_timecode": "0.0s–2.5s",
+      "text_overlay": "Tired after a long day? 😴",
+      "text_position": "top safe area, pill banner",
+      "watermark_cover": "Pyapiras Games badge bottom-right",
+      "content": "Corporate employee typing at laptop in busy office"
+    },
+    {
+      "id": "scene_02",
+      "name": "Metro Bored",
+      "frames": "75–180",
+      "timecode": "2.5s–6.0s",
+      "duration": "3.5s",
+      "source": "lifestyle_commute_cfr30.mp4",
+      "src_start_frame": 75,
+      "src_timecode": "2.5s–6.0s",
+      "text_overlay": "Long commute. Nothing to do? 😑",
+      "text_position": "top safe area, pill banner",
+      "watermark_cover": "Pyapiras Games badge bottom-right",
+      "content": "Employee standing in metro, holding overhead handle, looking bored"
+    },
+    {
+      "id": "scene_03",
+      "name": "Phone Discovery",
+      "frames": "180–250",
+      "timecode": "6.0s–8.33s",
+      "duration": "2.33s",
+      "source": "lifestyle_commute_cfr30.mp4",
+      "src_start_frame": 180,
+      "src_timecode": "6.0s–8.33s",
+      "text_overlay": "Why stay bored? 🤔",
+      "text_position": "top safe area, pill banner",
+      "watermark_cover": "Pyapiras Games badge bottom-right",
+      "zoom_effect": "Ken Burns 1.0→1.14 (zoomPulse)",
+      "content": "Employee looks down at phone in hands while in metro. Cut strictly before phone turns forward to eliminate white screen leakage."
+    },
+    {
+      "id": "scene_04",
+      "name": "Phone Reveal, Splash Screen & Zoom to Gameplay",
+      "frames": "250–330",
+      "timecode": "8.33s–11.0s",
+      "duration": "2.67s",
+      "source": "lifestyle_splash_cfr30.mp4",
+      "src_start_frame": 0,
+      "src_timecode": "0.0s–2.67s",
+      "text_overlay": "Let's Play! 🎮",
+      "text_position": "top safe area banner (top: 240px)",
+      "content": "Commuter extends phone toward camera. Phone screen 100% naturally displays official Block Puzzle Burst splash screen inside physical bezel. Subtle golden glowing aura on squircle logo. Camera zooms smoothly (1.0x to 2.48x) centered on phone display (535, 980), resolving seamlessly into full-screen gameplay.",
+      "screen_replacement": {
+        "active": true,
+        "content": "Official Block Puzzle Burst splash screen with centered glowing squircle",
+        "aspect_ratio": "19.5:9 mobile display",
+        "features": ["Native waterdrop camera notch", "Native bezel boundary", "Native commuter fingers", "Zero white leakage", "Zero duplicate bezels"]
+      },
+      "watermark_cover": "Pyapiras Games badge bottom-right (fades before zoom completes)"
+    },
+    {
+      "id": "scene_05",
+      "name": "Authentic Gameplay",
+      "frames": "330–525",
+      "timecode": "11.0s–17.5s",
+      "duration": "6.5s",
+      "source": "gameplay_bored_cfr30.mp4",
+      "src_start_frame": 0,
+      "src_timecode": "0s–6.5s (from 55s of original recording_1.mp4)",
+      "pill_text": "Let's Play! 🧩",
+      "bottom_label": "Block Puzzle Burst (with game icon)",
+      "audio_volume": 0.6,
+      "authenticity_assertion": "100% authentic Block Puzzle Burst gameplay. No fabricated UI, scores, or block placements.",
+      "content": "Active colourful gameplay with blocks being placed on 10×10 grid"
+    },
+    {
+      "id": "scene_06",
+      "name": "Branded Outro",
+      "frames": "525–600",
+      "timecode": "17.5s–20.0s",
+      "duration": "2.5s",
+      "type": "generated_card",
+      "title": "BLOCK PUZZLE BURST",
+      "subtitle": "Turn boring moments into fun!",
+      "cta": "Play Free Today 🧩",
+      "icons": ["icon_block_game.png", "pyapiras_games_icon.png"],
+      "studio_credit": "Pyapiras Games"
+    }
+  ],
+
+  "watermark_handling": {
+    "watermark_type": "Google Flow / Gemini 4-pointed sparkle (✦)",
+    "position": "Bottom-right corner, approximately 60×60px region",
+    "strategy": "BRAND_BADGE_COVER",
+    "implementation": "Pyapiras Games circular logo badge (120×120px) placed at bottom: 120, right: 120",
+    "covers_face": false,
+    "scenes_affected": "1, 2, 3, 4"
+  },
+
+  "audio_mix": {
+    "bgm": {
+      "file": "bgm_bored_lets_play.m4a",
+      "volume_curve": "0→0.55 (ramp in), ducked to 0.25 during gameplay audio, out at end"
+    },
+    "gameplay_audio": {
+      "source": "gameplay_bored_cfr30.mp4",
+      "volume": 0.6,
+      "frames": "330–525"
+    }
+  },
+
+  "qc_verification": {
+    "status": "PASSED",
+    "white_screen_check": "0 white screen frames detected across 7.0s-11.5s window (mathematically verified)",
+    "phone_screen_integration": "Deterministic floodfill bounded by physical bezel; 0 duplicate bezels, 0 artificial notches",
+    "transition_sequence": "Phone Reveal -> Splash Screen Pulse -> Smooth Camera Zoom -> Gameplay",
+    "authenticity_verified": true
+  },
+
+  "deliverables": {
+    "final_video_v02": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/final/Block_Puzzle_Burst_Boring_Commute_Reel_v02.mp4",
+    "final_video_v01_preserved": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/final/Block_Puzzle_Burst_Boring_Commute_Reel_v01.mp4",
+    "contact_sheet_v02": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/contact_sheet/Bored_Lets_Play_Contact_Sheet_v02.png",
+    "manifest": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/manifest.json",
+    "qc_report": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/qc_report.md",
+    "revision_notes": "outputs/block-puzzle-burst/lifestyle-reels/bored-lets-play/revision_notes.md",
+    "remotion_composition": "my-video/src/BoredLetsPlayReel.tsx"
+  }
+}

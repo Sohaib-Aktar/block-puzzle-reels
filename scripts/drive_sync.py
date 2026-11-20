@@ -38,6 +38,11 @@ def sync_to_drive(
                 os.path.join(WORKSPACE_ROOT, "outputs", project_id, "30-day-challenge", "day-05-puzzle-break"),
                 os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "day-05"),
             ])
+        elif "bored" in cid_lower or "lifestyle" in cid_lower or "commute" in cid_lower:
+            candidates.extend([
+                os.path.join(WORKSPACE_ROOT, "outputs", project_id, "lifestyle-reels", "bored-lets-play"),
+                os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, "bored-lets-play"),
+            ])
         candidates.extend([
             os.path.join(WORKSPACE_ROOT, "generated_outputs", project_id, content_id),
             os.path.join(WORKSPACE_ROOT, "outputs", project_id, content_id),
@@ -63,8 +68,22 @@ def sync_to_drive(
             shutil.copy2(src_item, dst_item)
             synced_files.append(item)
         elif os.path.isdir(src_item):
-            shutil.copytree(src_item, dst_item, dirs_exist_ok=True)
-            synced_files.append(f"{item}/ (folder)")
+            # Special handling for final/ and contact_sheet/ to avoid copying hundreds of temporary diagnostic frames
+            if item == "final":
+                for f in os.listdir(src_item):
+                    if f.endswith(".mp4"):
+                        shutil.copy2(os.path.join(src_item, f), os.path.join(dest_folder, f))
+                        synced_files.append(f)
+            elif item == "contact_sheet":
+                # Only copy top-level contact sheet images, not intermediate debug subdirectories
+                for f in os.listdir(src_item):
+                    p = os.path.join(src_item, f)
+                    if os.path.isfile(p) and f.endswith((".png", ".jpg")):
+                        shutil.copy2(p, os.path.join(dest_folder, f))
+                        synced_files.append(f)
+            elif item not in ("intermediate", "temp", "cache"):
+                shutil.copytree(src_item, dst_item, dirs_exist_ok=True)
+                synced_files.append(f"{item}/ (folder)")
 
     return {
         "status": "success",
